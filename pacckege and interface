@@ -58,8 +58,35 @@ final
 and
 static
 , meaning they cannot be changed by the implementing class. They must also be
-initialized. All methods and variables are implicitly
-public
+initialized. All methods and variables are implicitly public
+
+
+You can declare variables as object references that use an interface rather than a class type.
+When you call a method through one of these references, the correct version will
+be called based on the actual instance of the interface being referred to(see page 195)
+. The method to be executed is looked up dynamically at run time
+
+
+coution : Because dynamic lookup of a method at run time incurs a significant overhead when
+compared with the normal method invocation in Java, you should be careful not to use interfaces
+casually in performance-critical code
+
+
+note(page 195):object refference of interface can acees only those member of implimented class which are declared in interface
+
+
+Partial Implementations
+If a class includes an interface but does not fully implement the methods defined by that
+interface, then that class must be declared as
+abstract
+. 
+
+
+
+qustion :: if two classes impliment same interface then create different object do that object share same dada
+
+
+interface can be extended
   
 
 
