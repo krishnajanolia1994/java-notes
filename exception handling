@@ -1,0 +1,25 @@
+exception :-A Java exception is an object that describes an exceptional (that is, error) condition that has
+occurred in a piece of code. 
+
+
+Although the default exception handler provided by the Java run-time system is useful for
+debugging, you will usually want to handle an exception yourself. Doing so provides two
+benefits. First, it allows you to fix the error. Second, it prevents the program from automatical termination
+
+
+when you use multiple catch statements, it is important to remember that exception
+subclasses must come before any of their superclasses This is because a catch statement
+that uses a superclass will catch exceptions of that type plus any of its subclasses.
+
+to fix the problem, reverse the order of the catch statements.(page no 211)
+Here,
+new is used to construct an instance of NullPointerException . Many of Java’s built-
+in run-time exceptions have at least two constructors: one with no parameter and one that
+takes a string parameter. When the second form is used, the argument specifies a string that
+describes the exception. This string is displayed when the object is used as an argument to
+print( )
+or
+println( )
+. It can also be obtained by a call to
+getMessage( )
+, which is defined by
