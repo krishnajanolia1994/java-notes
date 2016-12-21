@@ -1,0 +1,55 @@
+
+
+    A thread can voluntarily relinquish control. This is done by explicitly yielding, sleeping,
+or blocking on pending I/O. In this scenario, all other threads are examined, and the
+highest-priority thread that is ready to run is given the CPU.
+
+    • A thread can be preempted by a higher-priority thread. In this case, a lower-priority thread
+that does not yield the processor is simply preempted—no matter what it is doing—
+by a higher-priority thread. Basically, as soon as a higher-priority thread wants to
+run, it does. This is called preemptive multitasking.
+
+
+Synchronization:
+or this purpose, Java
+implements an elegant twist on an age-old model of interprocess synchronization: the monitor.
+The monitor is a control mechanism first defined by C.A.R. Hoare. You can think of a monitor
+as a very small box that can hold only one thread. Once a thread enters a monitor, all other
+threads must wait until that thread exits the monitor. In this way, a monitor can be used to
+protect a shared asset from being manipulated by more than one thread at a time
+
+messenging :
+Java provides a clean, low-cost way for two or more
+threads to talk to each other, via calls to predefined methods that all objects have. Java’s
+messaging system allows a thread to enter a synchronized method on an object, and then
+wait there until some other thread explicitly notifies it to come out.
+
+To create a new thread, your program will either extend Thread or
+implement the Runnable interface.
+
+the main thread:-When a Java program starts up, one thread begins running immediately. this thread is called main thread
+impotance of main thread:-
+                        • It is the thread from which other “child” threads will be spawned.
+                        • Often, it must be the last thread to finish execution because it performs various
+                        shutdown actions.
+                        
+although the main thread is created automatically when your program is started, it can
+be controlled through a Thread object. To do so, you must obtain a reference to it by calling
+the method currentThread( ), which is a public static member of Thread. Its general form is
+shown here:
+static Thread currentThread( )
+
+
+Implementing Runnable:to impliment tread u need to use ruanable interface 
+u need to imliment one method of runable called run().Inside run( ), you will define the code that constitutes the new thread. It is important to
+understand that run( ) can call other methods, use other classes, and declare variables, just
+like the main thread can. The only difference is that run( ) establishes the entry point for
+another, concurrent thread of execution within your program. This thread will end when
+run( ) returns.
+
+
+constructor of thread :-
+Thread(Runnable threadOb, String threadName)
+In this constructor, threadOb is an instance of a class that implements the Runnable interface.
+This defines where execution of the thread will begin. The name of the new thread is specified
+by threadName.
