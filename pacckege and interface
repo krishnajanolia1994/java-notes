@@ -1,0 +1,5 @@
+difference between package and interface :---
+                     Methods of a Java interface are implicitly abstract and cannot have implementations.
+                     A Java abstract class can have instance methods that implements a default behaviour.
+                     Variables declared in a Java interface are by default final. 
+                     ... A Java class can implement multiple interfaces but it can extend only one abstract class.
