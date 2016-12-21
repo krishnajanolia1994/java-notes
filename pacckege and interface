@@ -3,3 +3,64 @@ difference between package and interface :---
                      A Java abstract class can have instance methods that implements a default behaviour.
                      Variables declared in a Java interface are by default final. 
                      ... A Java class can implement multiple interfaces but it can extend only one abstract class.
+                     
+                     
+                     
+                     If a class with the same name exists in two different packages that you import using the
+star form, the compiler will remain silent, unless you try to use one of the classes. In that case,
+you will get a compile-time error and have to explicitly name the class specifying its package.
+It must be emphasized that the
+import
+statement is optional. Any place you use a class
+
+
+you can use its
+fully qualified name
+, which includes its full package hierarchy. For
+example, this fragment uses an import statement:
+
+import java.util.*;
+class MyDate extends Date {
+}
+
+
+The same example without the
+import statement looks like this:
+
+class MyDate extends java.util.Date {
+}
+  
+  
+  importan note:
+  when a package is imported, only those items within the package declared as public 
+  will be available to non-subclasses in the importing code.
+  
+  important note:
+  default member  can acees  by  all classes in same package but not different package 
+  protected member  can acees  by  all sub-classes in same package as well as different package 
+  public  member  can acees  by  all classes in same package as well as different package
+  private  member  can not acees  by  all classes in same package as well as different package
+  
+  interface:
+  dedination:Interfaces are syntactically similar to classes, but they lack instance variables, and their methods are
+  declared without any body. I
+  Interfaces are designed to support dynamic method resolution at run time. 
+  
+  
+  Normally, in order for a method to be called from one class to another, both classes need to be present
+at compile time so the Java compiler can check to ensure that the method signatures are
+compatible
+
+
+hin an interface. Each class that includes an interface must implement all of the methods.
+Variables can be declared inside of interface declarations. They are implicitly
+final
+and
+static
+, meaning they cannot be changed by the implementing class. They must also be
+initialized. All methods and variables are implicitly
+public
+  
+
+
+  
