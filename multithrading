@@ -69,3 +69,10 @@ awakened due to a spurious wakeup. In this case, a waiting thread resumes withou
 or notifyAll( ) having been called. (In essence, the thread resumes for no apparent reason.)
 Because of this remote possibility, Sun recommends that calls to wait( ) should take place
 within a loop that checks the condition on which the thread is waiting
+
+
+While the suspend( ), resume( ), and stop( ) methods defined by Thread seem to be a perfectly
+reasonable and convenient approach to managing the execution of threads, they must not
+be used for new Java programs. Here’s why. The suspend( ) method of the Thread class was
+deprecated by Java 2 several years ago. This was done because suspend( ) can sometimes
+cause serious system failures.
