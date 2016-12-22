@@ -61,3 +61,11 @@ other thread enters the same monitor and calls notify( ).
 • notify( ) wakes up a thread that called wait( ) on the same object.
 • notifyAll( ) wakes up all the threads that called wait( ) on the same object. One of
 the threads will be granted access.
+
+
+Although wait( ) normally waits until notify( ) or
+notifyAll( ) is called, there is a possibility that in very rare cases the waiting thread could be
+awakened due to a spurious wakeup. In this case, a waiting thread resumes without notify( )
+or notifyAll( ) having been called. (In essence, the thread resumes for no apparent reason.)
+Because of this remote possibility, Sun recommends that calls to wait( ) should take place
+within a loop that checks the condition on which the thread is waiting
