@@ -1,0 +1,9 @@
+What Are Generics?
+At its core, the term generics means parameterized types. Parameterized types are important
+because they enable you to create classes, interfaces, and methods in which the type of data
+upon which they operate is specified as a parameter.
+
+Because Object is the superclass of all other classes, an Object reference can refer to any type object.
+
+With generics, all casts are automatic and implicit.
+Thus, generics expand your ability to reuse code and let you do so safely and easily.
