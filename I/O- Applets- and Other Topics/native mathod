@@ -1,0 +1,6 @@
+Native Methods
+Although it is rare, occasionally you may want to call a subroutine that is written in a
+language other than Java. Typically, such a subroutine exists as executable code for the CPU
+and environment in which you are working—that is, native code.
+
+Java provides the native keyword, which is used to declare native code methods.
