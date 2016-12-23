@@ -1,0 +1,13 @@
+When working with overloaded constructors, it is sometimes useful for one constructor to
+invoke another. In Java, this is accomplished by using another form of the this keyword.
+The general form is shown here:
+this(arg-list)
+
+The call to MyClass(8) causes this(8, 8) to be executed, which translates into a call to
+MyClass(8, 8), because this is the version of the MyClass constructor whose parameter list
+matches the arguments passed via this( ). Now, consider the following statement, which
+uses the default constructor:
+
+However, you need to be careful. Constructors that call this( ) will execute a bit slower
+than those that contain all of their initialization code inline. This is because the call and
+return mechanism used when the second constructor is invoked adds overhead.
