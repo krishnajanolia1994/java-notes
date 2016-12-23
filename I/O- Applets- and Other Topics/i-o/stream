@@ -46,3 +46,20 @@ InputStreamReader(System.in));
 
 reading consol input:--
 constructor of BufferReader:--- BufferedReader(Reader inputReader)
+Reading Characters
+
+To read a character from a BufferedReader, use read( ). The version of read( ) that we will
+be using is
+int read( ) throws IOException
+
+Each time that read( ) is called, it reads a character from the input stream and returns it as
+an integer value
+
+To read a string from the keyboard, use the version of readLine( ) that is a member of the
+BufferedReader class. Its general form is shown here:---
+
+PrintWriter is one of the character-based classes.
+Using a character-based class for console output makes it easier to internationalize your
+program.
+PrintWriter defines several constructors. The one we will use is shown here:
+PrintWriter(OutputStream outputStream, boolean flushOnNewline)
