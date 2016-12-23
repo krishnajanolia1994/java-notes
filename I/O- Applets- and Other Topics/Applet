@@ -1,0 +1,11 @@
+
+
+
+applets are small applications that are accessed on an
+Internet server, transported over the Internet, automatically installed, and run as part of a web
+document
+
+
+paint():--Inside SimpleApplet, paint( ) is declared. This method is defined by the AWT and must
+be overridden by the applet. paint( ) is called each time that the applet must redisplay its
+output.
