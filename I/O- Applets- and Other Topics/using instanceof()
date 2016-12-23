@@ -1,0 +1,5 @@
+Using instanceof
+Sometimes, knowing the type of an object during run time is useful. For example, you might
+have one thread of execution that generates various types of objects, and another thread
+that processes these objects. In this situation, it might be useful for the processing thread to
+know the type of each object when it receives it
