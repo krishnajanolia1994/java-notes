@@ -1,0 +1,2 @@
+The volatile modifier tells the compiler that the variable modified by volatile can be
+changed unexpectedly by other parts of your program
