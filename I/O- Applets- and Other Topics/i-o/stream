@@ -1,0 +1,48 @@
+. A stream is an abstraction that either produces or consumes information.
+A stream is linked to a physical device by the Java I/O system.
+All streams behave in the same manner, even if the actual physical devices to which they are
+linked differ.
+Thus, the same I/O classes and methods can be applied to any type of device
+
+Byte stream :--
+Byte streams provide a convenient
+means for handling input and output of bytes.
+
+Charcter stream :--
+Character streams provide a convenient means for handling
+input and output of characters.
+
+the Character Stream Classes:--
+Character streams are defined by using two class hierarchies. At the top are two abstract
+classes, Reader and Writer.
+The abstract classes Reader and Writer define several key methods that the other stream
+classes implement.
+
+
+The Predefined Streams
+As you know, all Java programs automatically import the java.lang package. This package
+defines a class called System, which encapsulates several aspects of the run-time environment.
+System also contains three predefined stream
+variables: in, out, and err.These fields are declared as public, static, and final within
+System.
+
+
+System.out refers to the standard output stream. By default, this is the console. System.in
+refers to standard input, which is the keyboard by default. System.err refers to the standard
+error stream, which also is the console by default. However, these streams may be redirected
+to any compatible I/O device.
+System.in is an object of type InputStream
+System.out and System.err are objects of
+type PrintStream
+
+In Java, console input is accomplished by reading from System.in. To obtain a character-
+based stream that is attached to the console, wrap System.in in a BufferedReader object.
+BufferedReader supports a buffered input stream. Its most commonly used constructor
+is shown here:
+
+BufferedReader br = new BufferedReader(new
+InputStreamReader(System.in));
+
+
+reading consol input:--
+constructor of BufferReader:--- BufferedReader(Reader inputReader)
