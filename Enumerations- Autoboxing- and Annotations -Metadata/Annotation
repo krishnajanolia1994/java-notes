@@ -1,0 +1,8 @@
+Beginning with JDK 5, a new facility was added to Java that enables you to embed
+supplemental information into a source file. This information, called an annotation, does not
+change the actions of a program. 
+
+An annotation cannot include an extends clause. However, all annotation types
+automatically extend the Annotation interfaceIt overrides hashCode( ),
+equals( ), and toString( ), which are defined by Object. It also specifies annotationType( ),
+which returns a Class object that represents the invoking annotation.
