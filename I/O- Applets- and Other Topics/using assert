@@ -1,0 +1,4 @@
+Using assert
+Another relatively new addition to Java is the keyword assert. It is used during program
+development to create an assertion, which is a condition that should be true during the
+execution of the program.
