@@ -1,0 +1,6 @@
+When an instance variable is declared as transient, then its value need not persist when
+an object is stored. For example:
+class T {
+transient int a; // will not persist
+int b; // will persist
+}
