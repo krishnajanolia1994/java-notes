@@ -3,3 +3,18 @@ Sometimes, knowing the type of an object during run time is useful. For example,
 have one thread of execution that generates various types of objects, and another thread
 that processes these objects. In this situation, it might be useful for the processing thread to
 know the type of each object when it receives it
+However, casts involving
+class hierarchies can produce invalid casts that can be detected only at run time. For example,
+a superclass called A can produce two subclasses, called B and C. Thus, casting a B object
+into type A or casting a C object into type A is legal, but casting a B object into type C (or
+vice versa) isn’t legal. Because an object of type A can refer to objects of either B or C, how
+can you know, at run time, what type of object is actually being referred to before attempting
+the cast to type C? It could be an object of type A, B, or C. If it is an object of type B, a run-
+time exception will be thrown. Java provides the run-time operator instanceof to answer
+this question.
+objref instanceof type
+Here, objref is a reference to an instance of a class, and type is a class type. If objref is of the
+specified type or can be cast into the specified type, then the instanceof operator evaluates to
+true. Otherwise, its result is false. Thus, instanceof is the means by which your program can
+obtain run-time type information about an object.
+The following program demonstrates instanceof:
