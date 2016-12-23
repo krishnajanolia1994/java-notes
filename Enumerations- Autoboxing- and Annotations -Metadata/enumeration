@@ -23,3 +23,16 @@ ap = Apple.RedDel;
 switch case using enum
 Notice that in the case statements, the names of the enumeration constants are used without
 being qualified by their enumeration type name. That is, Winesap, not Apple.Winesap, is used.
+
+
+When an enumeration constant is displayed, such as in a println( ) statement, its name
+is output. For example, given this statement:
+System.out.println(Apple.Winesap);
+the name Winesap is displayed.
+
+
+public static enum-type[ ] values( )
+public static enum-type valueOf(String str)
+The values( ) method returns an array that contains a list of the enumeration constants. The
+valueOf( ) method returns the enumeration constant whose value corresponds to the string
+passed in str
