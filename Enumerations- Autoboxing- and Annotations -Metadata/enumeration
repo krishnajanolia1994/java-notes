@@ -19,3 +19,7 @@ Apple ap;
 Because ap is of type Apple, the only values that it can be assigned (or can contain) are those
 defined by the enumeration. For example, this assigns ap the value RedDel:
 ap = Apple.RedDel;
+
+switch case using enum
+Notice that in the case statements, the names of the enumeration constants are used without
+being qualified by their enumeration type name. That is, Winesap, not Apple.Winesap, is used.
