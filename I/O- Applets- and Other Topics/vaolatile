@@ -4,3 +4,6 @@ multithreaded programs. (You saw an example of this in Chapter 11.) In a multith
 program, sometimes two or more threads share the same variable. For efficiency considerations,
 each thread can keep its own, private copy of such a shared variable. The real (or master) copy of
 the variable is updated at various times, such as when a synchronized method is entered.
+. In some cases, all that really matters is
+that the master copy of a variable always reflects its current state. To ensure this, simply specify
+the variable as volatile
