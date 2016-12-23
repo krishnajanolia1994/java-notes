@@ -2,3 +2,16 @@ Using assert
 Another relatively new addition to Java is the keyword assert. It is used during program
 development to create an assertion, which is a condition that should be true during the
 execution of the program.
+
+
+The assert keyword has two forms. The first is shown here:
+assert condition;
+Here, condition is an expression that must evaluate to a Boolean result. If the result is true,
+then the assertion is true and no other action takes place. If the condition is false, then the
+assertion fails and a default AssertionError object is thrown.
+The second form of assert is shown here:
+assert condition : expr;
+In this version, expr is a value that is passed to the AssertionError constructor. This value is
+converted to its string format and displayed if an assertion fails. Typically, you will specify
+a string for expr, but any non-void expression is allowed as long as it defines a reasonable
+string conversion.
