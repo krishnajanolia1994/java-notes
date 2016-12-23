@@ -1,0 +1,5 @@
+strictfp
+A relatively new keyword is strictfp. With the creation of Java 2, the floating-point computation
+model was relaxed slightly
+
+This prevents overflow or underflow in some cases.
