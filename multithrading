@@ -83,3 +83,15 @@ because this method can sometimes cause serious system failures. Assume that a t
 writing to a critically important data structure and has completed only part of its changes.
 If that thread is stopped at that point, that data structure might be left in a corrupted state.
 251
+
+
+
+ulternative of suspend and stop:--
+The NewThread class contains a boolean instance variable named suspendFlag, which
+is used to control the execution of the thread. It is initialized to false by the constructor. The
+run( ) method contains a synchronized statement block that checks suspendFlag. If that
+variable is true, the wait( ) method is invoked to suspend the execution of the thread. The
+mysuspend( ) method sets suspendFlag to true. The myresume( ) method sets suspendFlag
+to false and invokes notify( ) to wake up the thread. Finally, the main( ) method has been
+modified to invoke the mysuspend( ) and myresume( ) methods.
+
