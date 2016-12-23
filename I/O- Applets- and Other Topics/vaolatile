@@ -1,2 +1,6 @@
 The volatile modifier tells the compiler that the variable modified by volatile can be
-changed unexpectedly by other parts of your program
+changed unexpectedly by other parts of your program . One of these situations involves
+multithreaded programs. (You saw an example of this in Chapter 11.) In a multithreaded
+program, sometimes two or more threads share the same variable. For efficiency considerations,
+each thread can keep its own, private copy of such a shared variable. The real (or master) copy of
+the variable is updated at various times, such as when a synchronized method is entered.
