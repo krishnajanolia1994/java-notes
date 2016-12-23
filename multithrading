@@ -76,3 +76,10 @@ reasonable and convenient approach to managing the execution of threads, they mu
 be used for new Java programs. Here’s why. The suspend( ) method of the Thread class was
 deprecated by Java 2 several years ago. This was done because suspend( ) can sometimes
 cause serious system failures.
+
+
+The stop( ) method of the Thread class, too, was deprecated by Java 2. This was done
+because this method can sometimes cause serious system failures. Assume that a thread is
+writing to a critically important data structure and has completed only part of its changes.
+If that thread is stopped at that point, that data structure might be left in a corrupted state.
+251
