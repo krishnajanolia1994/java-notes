@@ -3,3 +3,16 @@ be used to import the static members of a class or interface. When using static 
 possible to refer to static members directly by their names, without having to qualify them
 with the name of their class. This simplifies and shortens the syntax required to use a static
 member.
+
+
+
+there are two way of static import 
+1:-import static pkg.type-name.static-member-name;
+2:-import static pkg.type-name.*;
+
+
+Remember, the reason
+that Java organizes its libraries into packages is to avoid namespace collisions. When you
+import static members, you are bringing those members into the global namespace. Thus,
+you are increasing the potential for namespace conflicts and for the inadvertent hiding of
+other names.
