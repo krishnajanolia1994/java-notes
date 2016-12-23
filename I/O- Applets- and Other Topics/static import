@@ -1,0 +1,5 @@
+By following import with the keyword static, an import statement can
+be used to import the static members of a class or interface. When using static import, it is
+possible to refer to static members directly by their names, without having to qualify them
+with the name of their class. This simplifies and shortens the syntax required to use a static
+member.
