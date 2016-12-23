@@ -1,0 +1,21 @@
+basics:--
+In its simplest form, an enumeration is a list of named constants.In Java, an enumeration defines a class type. By
+making enumerations into classes, the concept of the enumeration is greatly expanded. For
+example, in Java, an enumeration can have constructors, methods, and instance variables.
+
+Enumeration Fundamentals:--
+An enumeration is created using the enum keyword. For example, here is a simple
+enumeration that lists various apple varieties:
+// An enumeration of apple varieties.
+enum Apple {
+Jonathan, GoldenDel, RedDel, Winesap, Cortland
+}
+The identifiers Jonathan, GoldenDel, and so on, are called enumeration constants. Each is
+implicitly declared as a public, static final member of Apple
+though enumerations define a class type, you do not instantiate an enum using new.
+you declare and use an enumeration variable in much the same way as you do one
+of the primitive types. For example, this declares ap as a variable of enumeration type Apple:
+Apple ap;
+Because ap is of type Apple, the only values that it can be assigned (or can contain) are those
+defined by the enumeration. For example, this assigns ap the value RedDel:
+ap = Apple.RedDel;
