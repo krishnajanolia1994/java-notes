@@ -1,0 +1,3 @@
+There are two important generics restrictions that apply to arrays. First, you cannot instantiate
+an array whose base type is a type parameter. Second, you cannot create an array of type-
+specific generic references. The following short program shows both situations:
