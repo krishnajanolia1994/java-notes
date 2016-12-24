@@ -7,3 +7,9 @@ when you try to compile Stats, an error is reported that indicates that the doub
 method is unknown. To solve this problem, you need some way to tell the compiler that
 you intend to pass only numeric types to T. Furthermore, you need some way to ensure that
 only numeric types are actually passed.
+
+
+To handle such situations, Java provides bounded types. When specifying a type parameter,
+you can create an upper bound that declares the superclass from which all type arguments
+must be derived. This is accomplished through the use of an extends clause when specifying
+the type parameter, as shown here:
