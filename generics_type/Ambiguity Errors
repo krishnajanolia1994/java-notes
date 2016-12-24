@@ -13,3 +13,8 @@ void set(V o) {
 ob2 = o;
 }
 }
+
+
+MyGenClass<String, String> obj = new MyGenClass<String, String>()
+In this case, both T and V will be replaced by String. This makes both versions of set( )
+identical, which is, of course, an error
