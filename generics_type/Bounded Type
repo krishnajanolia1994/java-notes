@@ -1,0 +1,6 @@
+sometimes it is useful to limit the types that can be passed to a
+type parameter. For example, assume that you want to create a generic class that contains a
+method that returns the average of an array of numbers. Furthermore, you want to use the
+class to obtain the average of an array of any type of number, including integers, floats, and
+doubles. Thus, you want to specify the type of the numbers generically, using a type parameter.
+To create such a class, you might try something like this
