@@ -5,3 +5,43 @@ casts (as determined by the type arguments) to maintain type compatibility with 
 specified by the type arguments. The compiler also enforces this type compatibility. This
 approach to generics means that no type parameters exist at run time. They are simply a
 source-code mechanism.
+
+
+o better understand how erasure works, consider the following two classes:
+// Here, T is bound by Object by default.
+class Gen<T> {
+T ob; // here, T will be replaced by Object
+Gen(T o) {
+ob = o;
+}
+// Return ob.
+T getob() {
+return ob;
+}
+}
+// Here, T is bound by String.
+class GenStr<T extends String> {
+T str; // here, T will be replaced by String
+GenStr(T o) {
+str = o;
+}
+T getstr() { return str; }
+}
+After these two classes are compiled, the T in Gen will be replaced by Object. The T in
+GenStr will be replaced by String. You can confirm this by running javap on their compiled
+classes. The results are shown here:
+class Gen extends java.lang.Object{
+java.lang.Object ob;
+Gen(java.lang.Object);
+java.lang.Object getob();
+}
+class GenStr extends java.lang.Object{
+java.lang.String str;
+GenStr(java.lang.String);
+java.lang.String getstr();
+}
+Within the code for Gen and GenStr, casts are employed to ensure proper typing. For
+example, this sequence:
+Gen<Integer> iOb = new Gen<Integer>(99);
+int x = iOb.getob();
+would be compiled as if it were written like this:
