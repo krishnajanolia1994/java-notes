@@ -1,0 +1,23 @@
+we can inisialise sring by string literal
+String s2 = "abc"; // use string literal
+
+string concatination
+we can join two string by + and also we can add other data type exa.  String s= "hey u are "+ k +"year old" 
+
+String Conversion and toString( )
+When Java converts data into its string representation during concatenation, it does so by
+calling one of the overloaded versions of the string conversion method valueOf( ) defined
+by String
+
+objects of classes that you create.
+Every class implements toString( ) because it is defined by Object. However, the default
+implementation of toString( ) is seldom sufficient. For most important classes that you create,
+you will want to override toString( ) and provide your own string representations. Fortunately,
+this is easy to do. The toString( ) method has this general form:
+String toString( )
+To implement toString( ), simply return a String object that contains the human-readable
+string that appropriately describes an object of your class.
+By overriding toString( ) for classes that you create, you allow them to be fully integrated
+into Java’s programming environment. For example, they can be used in print( ) and println( )
+statements and in concatenation expressions. The following program demonstrates this by
+overriding toString( ) for the Box class:
