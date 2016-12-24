@@ -1,0 +1,17 @@
+String s = new String();
+will create an instance of String with no characters in it
+
+To create a String initialized by an array
+of characters, use the constructor shown here:
+String(char chars[ ])
+Here is an example:
+char chars[] = { 'a', 'b', 'c' };
+String s = new String(chars);
+
+You can specify a subrange of a character array as an initializer using the following
+constructor:
+String(char chars[ ], int startIndex, int numChars)
+
+You can construct a String object that contains the same character sequence as another
+String object using this constructor:
+String(String strObj)
