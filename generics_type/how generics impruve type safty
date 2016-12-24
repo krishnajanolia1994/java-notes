@@ -1,0 +1,32 @@
+we can also make a generic class by using object of Object class but there is one problem with this way
+
+/ This compiles, but is conceptually wrong!
+iOb = strOb;
+
+iob is Integer object object
+strob is String object
+v = (Integer) iOb.getob(); // run-time error!
+
+There are several things of interest in this version. First, notice that NonGen replaces all
+uses of T with Object. This makes NonGen able to store any type of object, as can the generic
+version. However, it also prevents the Java compiler from having any real knowledge about
+the type of data actually stored in NonGen which is bad for two reasons. First, explicit casts
+must be employed to retrieve the stored data. Second, many kinds of type mismatch errors
+cannot be found until run time. Let’s look closely at each problem.
+
+int v = (Integer) iOb.getob();
+Because the return type of getob( ) is Object, the cast to Integer is necessary to enable that
+value to be auto-unboxed and stored in v. If you remove the cast, the program will not compile.
+
+
+// This compiles, but is conceptually wrong!
+iOb = strOb;
+v = (Integer) iOb.getob(); // run-time error!
+Here, strOb is assigned to iOb. However, strOb refers to an object that contains a string, not
+an integer. This assignment is syntactically valid because all NonGen references are the same,
+and any NonGen reference can refer to any other NonGen object. However, the statement is
+semantically wrong, as the next line shows. Here, the return type of getob( ) is cast to Integer,
+and then an attempt is made to assign this value to v. The trouble is that iOb now refers to
+an object that stores a String, not an Integer. Unfortunately, without the use of generics, the
+Java compiler has no way to know this. Instead, a run-time exception occurs when the cast
+to Integer is attempted.
