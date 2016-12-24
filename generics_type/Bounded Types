@@ -13,3 +13,7 @@ To handle such situations, Java provides bounded types. When specifying a type p
 you can create an upper bound that declares the superclass from which all type arguments
 must be derived. This is accomplished through the use of an extends clause when specifying
 the type parameter, as shown here:
+
+<T extends superclass>
+This specifies that T can only be replaced by superclass, or subclasses of superclass. Thus,
+superclass defines an inclusive, upper limit.
