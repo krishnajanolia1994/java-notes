@@ -69,3 +69,7 @@ This is necessary because the type of the object (in this case iOb) to which the
 being assigned is of type Gen<Integer>. Thus, the reference returned by new must also be
 of type Gen<Integer>. If it isn’t, a compile-time error will result. For example, the following
 assignment will cause a compile-time error:
+
+it’s not necessary to use the auto-unboxing feature. The preceding line could
+have been written like this, too:
+int v = iOb.getob().intValue();
