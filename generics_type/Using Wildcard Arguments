@@ -1,0 +1,9 @@
+As useful as type safety is, sometimes it can get in the way of perfectly acceptable constructs.
+For example, given the Stats class shown at the end of the preceding section, assume that
+you want to add a method called sameAvg( ) that determines if two Stats objects contain
+arrays that yield the same average, no matter what type of numeric data each object holds.
+For example, if one object contains the double values 1.0, 2.0, and 3.0, and the other object
+contains the integer values 2, 1, and 3, then the averages will be the same. One way to
+implement sameAvg( ) is to pass it a Stats argument, and then compare the average of that
+argument against the invoking object, returning true only if the averages are the same. For
+example, you want to be able to call sameAvg( ), as shown here:
