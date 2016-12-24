@@ -1,0 +1,2 @@
+When declaring an instance of a generic type, the type argument passed to the type parameter
+must be a class type. You cannot use a primitive type, such as int or char.
