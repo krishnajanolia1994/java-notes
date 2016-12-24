@@ -5,3 +5,7 @@ requiring an upper bound of Comparable ensures that MinMax can be used only with
 objects that are capable of being compared. (See Chapter 16 for more information on
 Comparable.) Notice that Comparable is also generic. (It was retrofitted for generics by
 JDK 5.) It takes a type parameter that specifies the type of the objects being compared.
+
+
+class MyClass implements MinMax<T> { // Wrong!
+if interfase is generic then implimenting class should be generic in same way as interface
