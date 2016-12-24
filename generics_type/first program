@@ -61,3 +61,11 @@ parameterized type.
 
 
 ob.getClass().getName()::::--- this method is used for getting the type of perameter
+
+
+
+Notice that when the Gen constructor is called, the type argument Integer is also specified.
+This is necessary because the type of the object (in this case iOb) to which the reference is
+being assigned is of type Gen<Integer>. Thus, the reference returned by new must also be
+of type Gen<Integer>. If it isn’t, a compile-time error will result. For example, the following
+assignment will cause a compile-time error:
