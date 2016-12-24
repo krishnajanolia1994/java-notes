@@ -1,0 +1,3 @@
+Restrictions on Static Members
+No static member can use a type parameter declared by the enclosing class. For example, all
+of the static members of this class are illegal:
