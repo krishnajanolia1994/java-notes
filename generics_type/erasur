@@ -38,6 +38,10 @@ java.lang.Object getob();
 class GenStr extends java.lang.Object{
 java.lang.String str;
 GenStr(java.lang.String);
+
+
+Within the code for Gen and GenStr, casts are employed to ensure proper typing. For
+example, this sequence:
 java.lang.String getstr();
 }
 Within the code for Gen and GenStr, casts are employed to ensure proper typing. For
