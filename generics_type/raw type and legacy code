@@ -1,0 +1,27 @@
+To handle the transition to generics, Java allows a generic class to be used without any
+type arguments. This creates a raw type for the class. This raw type is compatible with legacy
+code, which has no knowledge of generics. The main drawback to using the raw type is that
+the type safety of generics is los
+
+// Create a raw-type Gen object and give it
+// a Double value.
+Gen raw = new Gen(new Double(98.6));
+// Cast here is necessary because type is unknown.
+double d = (Double) raw.getob();
+System.out.println("value: " + d);
+// The use of a raw type can lead to run-time
+// exceptions. Here are some examples.
+// // The following cast causes a run-time error!
+int i = (Integer) raw.getob(); // run-time error
+// // This assignment overrides type safety.
+strOb = raw; // OK, but potentially wrong
+String str = strOb.getob(); // run-time error
+//
+}
+}
+// This assignment also overrides type safety.
+raw = iOb; // OK, but potentially wrong
+d = (Double) raw.getob(); // run-time error
+
+
+here we get same error as error we got in program to make generic class using object of Object class
