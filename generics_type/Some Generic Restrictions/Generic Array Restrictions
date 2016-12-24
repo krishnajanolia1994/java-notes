@@ -1,3 +1,27 @@
 There are two important generics restrictions that apply to arrays. First, you cannot instantiate
 an array whose base type is a type parameter. Second, you cannot create an array of type-
 specific generic references. The following short program shows both situations:
+
+
+/ This statement is illegal.
+// vals = new T[10]; // can't create an array of T
+
+//But, this statement is OK.
+vals = nums; // OK to assign reference to existent array
+
+/ vals = new T[10]; // can't create an array of T
+The reason you can’t create an array of T is that T does not exist at run time, so there is no
+way for the compiler to know what type of array to actually create
+
+Inside main( ), notice that you can’t declare an array of references to a specific generic type.
+That is, this line
+// Gen<Integer> gens[] = new Gen<Integer>[10]; // Wrong!
+
+won’t compile. Arrays of specific generic types simply aren’t allowed, because they can lead
+to a loss of type safety.
+
+You can create an array of references to a generic type if you use a wildcard, however,
+as shown here:
+Gen<?> gens[] = new Gen<?>[10]; // OK
+This approach is better than using an array of raw types, because at least some type checking
+will still be enforced.
