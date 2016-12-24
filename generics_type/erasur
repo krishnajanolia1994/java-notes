@@ -1,0 +1,7 @@
+In general, here is how erasure works. When your Java code is compiled, all generic type
+information is removed (erased). This means replacing type parameters with their bound
+type, which is Object if no explicit bound is specified, and then applying the appropriate
+casts (as determined by the type arguments) to maintain type compatibility with the types
+specified by the type arguments. The compiler also enforces this type compatibility. This
+approach to generics means that no type parameters exist at run time. They are simply a
+source-code mechanism.
