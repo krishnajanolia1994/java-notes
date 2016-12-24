@@ -1,0 +1,7 @@
+In general, a generic interface is declared in the same way as is a generic class. In this case,
+the type parameter is T, and its upper bound is Comparable, which is an interface defined by
+java.lang. A class that implements Comparable defines objects that can be ordered. Thus,
+requiring an upper bound of Comparable ensures that MinMax can be used only with
+objects that are capable of being compared. (See Chapter 16 for more information on
+Comparable.) Notice that Comparable is also generic. (It was retrofitted for generics by
+JDK 5.) It takes a type parameter that specifies the type of the objects being compared.
