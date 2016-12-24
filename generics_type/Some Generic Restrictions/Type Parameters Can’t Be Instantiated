@@ -1,0 +1,8 @@
+It is not possible to create an instance of a type parameter. For example, consider this class:
+// Can't create an instance of T.
+class Gen<T> {
+T ob;
+Gen() {
+ob = new T(); // Illegal!!!
+}
+}
