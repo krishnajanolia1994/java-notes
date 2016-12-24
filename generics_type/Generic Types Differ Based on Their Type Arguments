@@ -1,0 +1,2 @@
+A key point to understand about generic types is that a reference of one specific version of a
+generic type is not type compatible with another version of the same generic type.
