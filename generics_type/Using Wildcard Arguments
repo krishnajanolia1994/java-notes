@@ -7,3 +7,37 @@ contains the integer values 2, 1, and 3, then the averages will be the same. One
 implement sameAvg( ) is to pass it a Stats argument, and then compare the average of that
 argument against the invoking object, returning true only if the averages are the same. For
 example, you want to be able to call sameAvg( ), as shown here:
+
+At first, creating sameAvg( ) seems like an easy problem. Because Stats is generic and its
+average( ) method can work on any type of Stats object, it seems that creating sameAvg( )
+would be straightforward. Unfortunately, trouble starts as soon as you try to declare a
+parameter of type Stats. Because Stats is a parameterized type, what do you specify for
+Stats’ type parameter when you declare a parameter of that type?
+At first, you might think of a solution like this, in which T is used as the type parameter:
+// This won't work!
+// Determine if two averages are the same.
+boolean sameAvg(Stats<T> ob) {
+if(average() == ob.average())
+return true;
+return false;
+}
+The trouble with this attempt is that it will work only with other Stats objects whose type is
+the same as the invoking object. For example, if the invoking object is of type Stats<Integer>,
+then the parameter ob must also be of type Stats<Integer>. It can’t be used to compare the
+average of an object of type Stats<Double> with the average of an object of type Stats<Short>,
+for example. Therefore, this approach won’t work except in a very narrow context and does
+not yield a general (that is, generic) solution.
+
+
+To create a generic sameAvg( ) method, you must use another feature of Java generics:
+the wildcard argument. The wildcard argument is specified by the ?, and it represents an
+unknown type. Using a wildcard, here is one way to write the sameAvg( ) method:
+// Determine if two averages are the same.
+// Notice the use of the wildcard.
+boolean sameAvg(Stats<?> ob) {
+if(average() == ob.average())
+return true;
+return false;
+}
+Here, Stats<?> matches any Stats object, allowing any two Stats objects to have their
+averages compared. The following program demonstrates this:
