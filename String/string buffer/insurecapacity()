@@ -1,1 +1,1 @@
-we can use insurecapacity method after initialising stingbuffer
+we can use insurecapacity method after initialising stingbuffer with valid dada other then null;
