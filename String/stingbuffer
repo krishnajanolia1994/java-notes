@@ -1,0 +1,8 @@
+StringBuffer is a peer class of String that provides much of the functionality of strings.
+As you know, String represents fixed-length, immutable character sequences. In contrast,
+StringBuffer represents growable and writeable character sequences. StringBuffer may have
+characters and substrings inserted in the middle or appended to the end. StringBuffer will
+automatically grow to make room for such additions and often has more characters preallocated
+than are actually needed, to allow room for growth. Java uses both classes heavily, but many
+programmers deal only with String and let Java manipulate StringBuffers behind the scenes
+by using the overloaded + operator.
