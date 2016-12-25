@@ -1,0 +1,4 @@
+As mentioned in Part I of this book, Java uses primitive types, such as int and char, for
+performance reasons. These data types are not part of the object hierarchy. They are passed
+by value to methods and cannot be directly passed by reference. Also, there is no way for
+two methods to refer to the same instance of an int
