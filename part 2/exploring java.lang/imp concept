@@ -1,0 +1,2 @@
+in java all static methods of wrapper class which takes primitive type as argument calls directctly by class name not by object of 
+that class
