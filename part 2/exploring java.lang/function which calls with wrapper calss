@@ -1,0 +1,15 @@
+static int compare(float num1,float num2) Compares the values of num1 and num2. Returns 0 if
+                                            the values are equal. Returns a negative value if num1
+                                            is less than num2. Returns a positive value if num1 is
+                                            greater than num2. 
+ int compareTo(Float f) Compares the numerical value of the invoking object with that
+                        of f. Returns 0 if the values are equal. Returns a negative
+                        value if the invoking object has a lower value. Returns a
+                        positive value if the invoking object has a greater value
+static int floatToIntBits(float num) Returns the IEEE-compatible, single-precision bit pattern
+                                    that corresponds to num.
+static int floatToRawIntBits(float num) Returns the IEEE-compatible single-precision bit pattern
+                                        that corresponds to num. A NaN value is preserved.
+static float intBitsToFloat(int num)
+static float parseFloat(String str)
+throws NumberFormatExceptio
