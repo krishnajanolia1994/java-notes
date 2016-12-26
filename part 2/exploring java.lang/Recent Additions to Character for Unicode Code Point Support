@@ -1,0 +1,6 @@
+Recently, major additions have been made to Character. Beginning with JDK 5, the Character
+class has included support for 32-bit Unicode characters. In the past, all Unicode characters
+could be held by 16 bits, which is the size of a char (and the size of the value encapsulated
+within a Character), because those values ranged from 0 to FFFF. However, the Unicode
+character set has been expanded, and more than 16 bits are required. Characters can now range
+from 0 to 10FFFF.
