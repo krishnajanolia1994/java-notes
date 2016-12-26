@@ -1,0 +1,7 @@
+
+1. Float is a wrapper class but we can call some of its method withought creating its object for example we can call IntToFloatBits()
+   method as follow :-  int i= Float.IntToFloatBita(); 
+   expalin the above concept ;(java complete reference page no. 387  ch-Chapter 16:
+    Exploring java.lang)
+2. Why we can not assign the return value of isNaN() method into a boolean variable;(java complite refference page no 388 
+   Chapter 16:Exploring java.lang)
