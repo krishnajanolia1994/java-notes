@@ -1,0 +1,10 @@
+
+	
+
+I am curious as to why float literals must be declared as so:
+
+float f = 0.1f;
+
+Instead of
+
+float f = 0.1;
