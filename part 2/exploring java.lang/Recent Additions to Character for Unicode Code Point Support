@@ -4,3 +4,24 @@ could be held by 16 bits, which is the size of a char (and the size of the value
 within a Character), because those values ranged from 0 to FFFF. However, the Unicode
 character set has been expanded, and more than 16 bits are required. Characters can now range
 from 0 to 10FFFF.
+
+
+Here are two important terms: code point and supplemental character. A code point is a
+character in the range 0 to 10FFFF. Characters that have values greater than FFFF are
+called supplemental characters.
+
+The expansion of the Unicode character set caused a fundamental problem for Java. Because
+a supplemental character has a value greater than a char can hold, some means of handling
+the supplemental characters was needed. Java addressed this problem two ways. First,
+Java uses two chars to represent a supplemental character. The first char is called the high
+surrogate, and the second is called the low surrogate. New methods, such as codePointAt( ),
+were provided to translate between code points and supplemental characters.
+Secondly, Java overloaded several preexisting methods in the Character class. The
+overloaded forms use int rather than char data. Because an int is large enough to hold any
+character as a single value, it can be used to store any character. For example, all of the methods
+in Table 16-7 have overloaded forms that operate on int. Here is a sampling:
+static boolean isDigit(int cp)
+static boolean isLetter(int cp)
+static int toLowerCase(int cp)
+In addition to the methods overloaded to accept code points, Character adds methods
+that provide additional support for code points. A sampling is shown in Table 16-8.
