@@ -1,0 +1,11 @@
+
+his chapter begins our examination of java.util. This important package contains a large
+assortment of classes and interfaces that support a broad range of functionality. For
+example, java.util has classes that generate pseudorandom numbers, manage date and
+time, observe events, manipulate sets of bits, tokenize strings, and handle formatted data.
+The java.util package also contains one of Java’s most powerful subsystems: The Collections
+Framework. The Collections Framework is a sophisticated hierarchy of interfaces and classes
+that provide state-of-the-art technology for managing groups of objects. It merits close attention
+by all programmers.
+Because java.util contains a wide array of functionality, it is quite large. Here is a list of
+its classes:
