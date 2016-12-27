@@ -1,0 +1,6 @@
+To provide the greatest flexibility in their use, the collection interfaces allow some methods
+to be optional. The optional methods enable you to modify the contents of a collection.
+Collections that support these methods are called modifiable. Collections that do not allow
+their contents to be changed are called unmodifiable. If an attempt is made to use one of these
+methods on an unmodifiable collection, an UnsupportedOperationException is thrown. All
+the built-in collections are modifiable.
