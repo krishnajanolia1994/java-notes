@@ -1,0 +1,5 @@
+Generics add the one feature that collections had been missing: type safety. Prior to generics,
+all collections stored Object references, which meant that any collection could store any type
+of object. Thus, it was possible to accidentally store incompatible types in a collection. Doing
+so could result in run-time type mismatch errors. With generics, it is possible to explicitly
+state the type of data being stored, and run-time type mismatch errors can be avoided.
