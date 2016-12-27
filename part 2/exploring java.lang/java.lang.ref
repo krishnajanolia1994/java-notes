@@ -1,0 +1,15 @@
+java.lang.ref
+You learned earlier that the garbage collection facilities in Java automatically determine when
+no references exist to an object. The object is then assumed to be no longer needed and its
+memory is reclaimed. The classes in the java.lang.ref package provide more flexible control
+over the garbage collection process. For example, assume that your program has created
+numerous objects that you want to reuse at some later time. You can continue to hold references
+to these objects, but that may require too much memory.
+Instead, you can define “soft” references to these objects. An object that is “softly reachable”
+can be reclaimed by the garbage collector, if available memory runs low. In that case, the
+garbage collector sets the “soft” references to that object to null. Otherwise, the garbage
+collector saves the object for possible future use.
+A programmer has the ability to determine whether a “softly reachable” object has been
+reclaimed. If it has been reclaimed, it can be re-created. Otherwise, the object is still available
+for reuse. You may also create “weak” and “phantom” references to objects. Discussion of
+these and other features of the java.lang.ref package is beyond the scope of this book.
