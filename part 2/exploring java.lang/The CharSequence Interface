@@ -1,0 +1,4 @@
+The CharSequence interface defines methods that grant read-only access to a sequence of
+characters. These methods are shown in Table 16-22. This interface is implemented by String,
+StringBuffer, and StringBuilder. It is also implemented by CharBuffer, which is in the
+java.nio package
