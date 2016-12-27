@@ -1,0 +1,3 @@
+Autoboxing/unboxing facilitates the storing of primitive types in collections. As you will see,
+a collection can store only references, not primitive values. In the past, if you wanted to store
+a primitive value, such as an int, in a collection, you had to manually box it into its type
