@@ -1,2 +1,15 @@
 The Java Collections Framework standardizes the way in which groups of objects are handled
 by your programs
+
+Java provided ad hoc classes such as Dictionary,
+Vector, Stack, and Properties to store and manipulate groups of objects
+
+The Collections Framework was designed to meet several goals. First, the framework had
+to be high-performance. The implementations for the fundamental collections (dynamic arrays,
+linked lists, trees, and hash tables) are highly efficient.
+
+
+Algorithms are another important part of the collection mechanism. Algorithms operate
+on collections and are defined as static methods within the Collections class. Thus, they are
+available for all collections. Each collection class need not implement its own versions. The
+algorithms provide a standard means of manipulating collections.
