@@ -12,4 +12,4 @@ linked lists, trees, and hash tables) are highly efficient.
 Algorithms are another important part of the collection mechanism. Algorithms operate
 on collections and are defined as static methods within the Collections class. Thus, they are
 available for all collections. Each collection class need not implement its own versions. The
-algorithms provide a standard means of manipulating collections.
+algorithms provide a standard means of manipulating collections.j
