@@ -1,0 +1,4 @@
+SortedSet defines several methods that make set processing more convenient. To obtain
+the first object in the set, call first( ). To get the last element, use last( ). You can obtain a subset
+of a sorted set by calling subSet( ), specifying the first and last object in the set. If you need
+the subset that starts with the fir
