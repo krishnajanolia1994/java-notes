@@ -1,0 +1,2 @@
+The List interface extends Collection and declares the behavior of a collection that stores a
+sequence of elements. Elements can be inserted or accessed by their position in the list
