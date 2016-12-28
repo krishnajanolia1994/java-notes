@@ -1,0 +1,11 @@
+The sort( ) method sorts an array so that it is arranged in ascending order. The sort( )
+method has two versions. The first version, shown here, sorts the entire array:
+static void sort(byte array[ ])
+static void sort(char array[ ])
+static void sort(double array[ ])
+static void sort(float array[ ])
+static void sort(int array[ ])
+static void sort(long array[ ])
+static void sort(short array[ ])
+static void sort(Object array[ ])
+static <T> void sort(T array[ ], Comparator<? super T> c)
