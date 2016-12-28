@@ -1,0 +1,11 @@
+The binarySearch( ) method uses a binary search to find a specified value. This method
+must be applied to sorted arrays. Here are some of its forms. (Java SE 6 adds several others.)
+static int binarySearch(byte array[ ], byte value)
+static int binarySearch(char array[ ], char value)
+static int binarySearch(double array[ ], double value)
+static int binarySearch(float array[ ], float value)
+static int binarySearch(int array[ ], int value)
+static int binarySearch(long array[ ], long value)
+static int binarySearch(short array[ ], short value)
+static int binarySearch(Object array[ ], Object value)
+static <T> int binarySearch(T[ ] array, T value, Comparator<? super T> c)
