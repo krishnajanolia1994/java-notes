@@ -1,0 +1,12 @@
+TreeSet extends AbstractSet and implements the NavigableSet interface. It creates a
+collection that uses a tree for storage. Objects are stored in sorted, ascending order. Access
+and retrieval times are quite fast, which makes TreeSet an excellent choice when storing large
+amounts of sorted information that must be found quickly.
+TreeSet is a generic class that has this declaration:
+class TreeSet<E>
+Here, E specifies the type of objects that the set will hold.
+TreeSet has the following constructors:
+TreeSet( )
+TreeSet(Collection<? extends E> c)
+TreeSet(Comparator<? super E> comp)
+TreeSet(SortedSet<E> ss)
