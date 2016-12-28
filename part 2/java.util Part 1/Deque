@@ -1,0 +1,4 @@
+The Deque interface was added by Java SE 6. It extends Queue and declares the behavior of
+a double-ended queue. Double-ended queues can function as standard, first-in, first-out
+queues or as last-in, first-out stacks. Deque is a generic interface that has this declaration:
+interface Deque<E>
