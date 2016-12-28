@@ -10,3 +10,6 @@ static long[ ] copyOf(long[ ] source, int len)
 static short[ ] copyOf(short[ ] source, int len)
 static <T> T[ ] copyOf(T[ ] source, int len)
 static <T,U> T[ ] copyOf(U[ ] source, int len, Class<? extends T[ ]> resultT)
+
+The original array is specified by source, and the length of the copy is specified by len. If the
+copy is longer than source, then the copy is padded with zeros
