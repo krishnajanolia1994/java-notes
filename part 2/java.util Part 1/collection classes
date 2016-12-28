@@ -1,0 +1,3 @@
+Some of the classes provide full implementations that can be
+used as-is. Others are abstract, providing skeletal implementations that are used as starting
+points for creating concrete collections.
