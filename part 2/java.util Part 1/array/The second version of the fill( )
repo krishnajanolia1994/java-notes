@@ -1,0 +1,14 @@
+The second version of the fill( ) method assigns a value to a subset of an array. Its forms
+are shown here:
+static void fill(boolean array[ ], int start, int end, boolean value)
+static void fill(byte array[ ], int start, int end, byte value)
+static void fill(char array[ ], int start, int end, char value)
+static void fill(double array[ ], int start, int end, double value)
+static void fill(float array[ ], int start, int end, float value)
+static void fill(int array[ ], int start, int end, int value)
+static void fill(long array[ ], int start, int end, long value)
+static void fill(short array[ ], int start, int end, short value)
+static void fill(Object array[ ], int start, int end, Object value)
+Here, value is assigned to the elements in array from position start to position end–1. These
+methods may all throw an IllegalArgumentException if start is greater than end, or an
+ArrayIndexOutOfBoundsException if start or end is out of bounds.
