@@ -33,3 +33,7 @@ extending and/or adapting a collection had to be easy
 Beginning with the collection interfaces is necessary because they determine
 the fundamental nature of the collection classes. Put differently, the concrete classes simply
 provide different implementations of the standard interfaces
+
+
+Here, E specifies the type of objects that the collection will hold. Collection extends the
+Iterable interface.
