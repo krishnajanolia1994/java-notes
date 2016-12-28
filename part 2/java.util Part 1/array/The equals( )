@@ -1,0 +1,12 @@
+The equals( ) method returns true if two arrays are equivalent. Otherwise, it returns false.
+The equals( ) method has the following forms:
+static boolean equals(boolean array1[ ], boolean array2[ ])
+static boolean equals(byte array1[ ], byte array2[ ])
+static boolean equals(char array1[ ], char array2[ ])
+static boolean equals(double array1[ ], double array2[ ])
+static boolean equals(float array1[ ], float array2[ ])
+static boolean equals(int array1[ ], int array2[ ])
+static boolean equals(long array1[ ], long array2[ ])
+static boolean equals(short array1[ ], short array2[ ])
+static boolean equals(Object array1[ ], Object array2[ ])
+Here, array1 and array2 are the two arrays that are compared for equality.
