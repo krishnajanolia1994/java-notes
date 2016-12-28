@@ -3,6 +3,5 @@ a double-ended queue. Double-ended queues can function as standard, first-in, fi
 queues or as last-in, first-out stacks. Deque is a generic interface that has this declaration:
 interface Deque<E>
 
-A Deque implementation can be capacity-restricted, which meansChapter 17:
-java.util Part 1: The Collections Framework
+A Deque implementation can be capacity-restricted, which means
 that only a limited number of elements can be added to the deque.
