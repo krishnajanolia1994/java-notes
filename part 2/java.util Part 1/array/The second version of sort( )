@@ -1,0 +1,11 @@
+The second version of sort( ) enables you to specify a range within an array that you want
+to sort. Its forms are shown here:
+static void sort(byte array[ ], int start, int end)
+static void sort(char array[ ], int start, int end)
+static void sort(double array[ ], int start, int end)
+static void sort(float array[ ], int start, int end)
+static void sort(int array[ ], int start, int end)
+static void sort(long array[ ], int start, int end)
+static void sort(short array[ ], int start, int end)
+static void sort(Object array[ ], int start, int end)
+static <T> void sort(T array[ ], int start, int end, Comparator<? super T> c)
