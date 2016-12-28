@@ -6,3 +6,9 @@ element will cause a ClassCastException. Using such a view is especially helpful
 debugging because it ensures that the collection always contains valid elements. Related
 methods include checkedSet( ), checkedList( ), checkedMap( ), and so on. They obtain a
 type-safe view for the indicated collection.
+
+Notice that several methods, such as synchronizedList( ) and synchronizedSet( ), are used
+to obtain synchronized (thread-safe) copies of the various collections. As explained, none of
+the standard collections implementations are synchronized. You must use the synchronization
+algorithms to provide synchronization. One other point: iterators to synchronized collections
+must be used within synchronized blocks.
