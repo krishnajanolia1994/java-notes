@@ -7,3 +7,18 @@ Here, E specifies the type of objects that the list will hold. LinkedList has th
 shown here:
 LinkedList( )
 LinkedList(Collection<? extends E> c)
+
+Here, E specifies the type of objects that the list will hold. LinkedList has the two constructors
+shown here:
+LinkedList( )
+LinkedList(Collection<? extends E> c)
+
+The first constructor builds an empty linked list. The second constructor builds a linked list
+that is initialized with the elements of the collection c.
+Because LinkedList implements the Deque interface, you have access to the methods
+defined by Deque. For example, to add elements to the start of a list you can use addFirst( )
+or offerFirst( ). To add elements to the end of the list, use addLast( ) or offerLast( ). To
+obtain the first element, you can use getFirst( ) or peekFirst( ). To obtain the last element,
+use getLast( ) or peekLast( ). To remove the first element, use removeFirst( ) or pollFirst( ).
+To remove the last element, use removeLast( ) or pollLast( ).
+The following program illustrates LinkedList:
