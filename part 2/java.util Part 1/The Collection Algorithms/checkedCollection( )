@@ -1,0 +1,8 @@
+One thing to pay special attention to is the set of checked methods, such as
+checkedCollection( ), which returns what the API documentation refers to as a “dynamically
+typesafe view” of a collection. This view is a reference to the collection that monitors insertions
+into the collection for type compatibility at run time. An attempt to insert an incompatible
+element will cause a ClassCastException. Using such a view is especially helpful during
+debugging because it ensures that the collection always contains valid elements. Related
+methods include checkedSet( ), checkedList( ), checkedMap( ), and so on. They obtain a
+type-safe view for the indicated collection.
