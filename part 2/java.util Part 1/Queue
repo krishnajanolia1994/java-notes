@@ -1,0 +1,3 @@
+Second, there are two methods that obtain and remove
+elements: poll( ) and remove( ). The difference between them is that poll( ) returns null if the
+queue is empty, but remove( ) throws an exception
