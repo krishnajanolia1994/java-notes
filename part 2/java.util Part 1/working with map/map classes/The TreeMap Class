@@ -1,0 +1,12 @@
+The TreeMap class extends AbstractMap and implements the NavigableMap interface.
+It creates maps stored in a tree structure. A TreeMap provides an efficient means of storing
+key/value pairs in sorted order and allows rapid retrieval. You should note that, unlike a
+hash map, a tree map guarantees that its elements will be sorted in ascending key order.
+TreeMap is a generic class that has this declaration:
+class TreeMap<K, V>
+Here, K specifies the type of keys, and V specifies the type of values.
+The following TreeMap constructors are defined:
+TreeMap( )
+TreeMap(Comparator<? super K> comp)
+TreeMap(Map<? extends K, ? extends V> m)
+TreeMap(SortedMap<K, ? extends V> sm)
