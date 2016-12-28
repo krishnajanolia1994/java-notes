@@ -1,0 +1,10 @@
+Comparators
+Both TreeSet and TreeMap store elements in sorted order. However, it is the comparator that
+defines precisely what “sorted order” means. By default, these classes store their elements
+by using what Java refers to as “natural ordering,” which is usually the ordering that you
+would expect (A before B, 1 before 2, and so forth). If you want to order elements a different
+way, then specify a Comparator when you construct the set or map. Doing so gives you the
+ability to govern precisely how elements are stored within sorted collections and maps.
+Comparator is a generic interface that has this declaration:
+interface Comparator<T>
+Here, T specifies the type of objects being compared
