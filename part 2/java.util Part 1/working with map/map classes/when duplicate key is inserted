@@ -1,0 +1,5 @@
+Each key in a HashMap must be unique.
+When "adding a duplicate key" the old value (for the same key, as keys must be unique) is simply replaced;
+see HashMap.put: 
+Associates the specified value with the specified key in this map.
+If the map previously contained a mapping for the key, the old value is replace
