@@ -1,0 +1,7 @@
+The SortedMap interface extends Map. It ensures that the entries are maintained in ascending
+order based on the keys. SortedMap is generic and is declared as shown here:
+interface SortedMap<K, V>
+
+Sorted maps allow very efficient manipulations of submaps (in other words, subsets of a
+map). To obtain a submap, use headMap( ), tailMap( ), or subMap( ). To get the first key in
+the set, call firstKey( ). To get the last key, use lastKey( ).
