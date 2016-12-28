@@ -1,0 +1,15 @@
+The copyOfRange( ) method was also added by Java SE 6. It returns a copy of a range
+within an array and has the following forms:
+static boolean[ ] copyOfRange(boolean[ ] source, int start, int end)
+static byte[ ] copyOfRange(byte[ ] source, int start, int end)
+static char[ ] copyOfRange(char[ ] source, int start, int end)
+static double[ ] copyOfRange(double[ ] source, int start, int end)
+static float[ ] copyOfRange(float[ ] source, int start, int end)
+static int[ ] copyOfRange(int[ ] source, int start, int end)
+static long[ ] copyOfRange(long[ ] source, int start, int end)
+static short[ ] copyOfRange(short[ ] source, int start, int end)
+static <T> T[ ] copyOfRange(T[ ] source, int start, int end)
+static <T,U> T[ ] copyOfRange(U[ ] source, int start, int end,
+Class<? extends T[ ]> resultT)
+The original array is specified by source. The range to copy is specified by the indices
+passed via start and end.
