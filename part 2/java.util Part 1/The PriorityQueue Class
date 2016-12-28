@@ -1,0 +1,26 @@
+The PriorityQueue Class
+PriorityQueue extends AbstractQueue and implements the Queue interface. It creates a queue
+that is prioritized based on the queue’s comparator. PriorityQueue is a generic class that has
+this declaration:
+class PriorityQueue<E>
+Here, E specifies the type of objects stored in the queue. PriorityQueues are dynamic, growing
+as necessary.
+PriorityQueue defines the six constructors shown here:
+PriorityQueue( )
+PriorityQueue(int capacity)
+PriorityQueue(int capacity, Comparator<? super E> comp)
+PriorityQueue(Collection<? extends E> c)
+PriorityQueue(PriorityQueue<? extends E> c)
+PriorityQueue(SortedSet<? extends E> c)
+
+If no comparator is specified when a PriorityQueue is constructed, then the default
+comparator for the type of data stored in the queue is used. The default comparator will order
+the queue in ascending order
+
+You can obtain a reference to the comparator used by a PriorityQueue by calling its
+comparator( ) method, shown here:
+Comparator<? super E> comparator( )
+
+One word of caution: although you can iterate through a PriorityQueue using an iterator,
+the order of that iteration is undefined. To properly use a PriorityQueue, you must call methods
+such as offer( ) and poll( ), which are defined by the Queue interface.
