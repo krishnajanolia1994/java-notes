@@ -1,0 +1,7 @@
+The IdentityHashMap Class
+IdentityHashMap extends AbstractMap and implements the Map interface. It is similar to
+HashMap except that it uses reference equality when comparing elements. IdentityHashMap
+is a generic class that has this declaration:
+class IdentityHashMap<K, V>
+Here, K specifies the type of key, and V specifies the type of value. The API documentation
+explicitly states that IdentityHashMap is not for general use.
