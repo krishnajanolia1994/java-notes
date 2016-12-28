@@ -1,0 +1,5 @@
+
+Often, you will want to cycle through the elements in a collection. For example, you might
+want to display each element. One way to do this is to employ an iterator, which is an object
+that implements either the Iterator or the ListIterator interface. Iterator enables you to cycle
+through a collection, obtaining or removing elements. ListIterator extends Iterator to allow
