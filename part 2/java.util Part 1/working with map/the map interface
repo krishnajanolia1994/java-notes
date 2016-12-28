@@ -1,0 +1,12 @@
+The Map interface maps unique keys to values. A key is an object that you use to retrieve a
+value at a later date
+
+Given a key and a value, you can store the value in a Map object. After
+the value is stored, you can retrieve it by using its key. Map is generic and is declared as
+shown here:
+interface Map<K, V>
+
+As mentioned earlier, although part of the Collections Framework, maps are not,
+themselves, collections because they do not implement the Collection interface. However,
+you can obtain a collection-view of a map. To do this, you can use the entrySet( ) method. It
+returns a Set that contains the elements in the map. To obtain a collection-view of the keys,
