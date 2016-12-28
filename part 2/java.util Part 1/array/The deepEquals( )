@@ -1,0 +1,19 @@
+The deepEquals( ) method can be used to determine if two arrays, which might contain
+nested arrays, are equal. It has this declaration:
+static boolean deepEquals(Object[ ] a, Object[ ] b)
+It returns true if the arrays passed in a and b contain the same elements. If a and b contain
+nested arrays, then the contents of those nested arrays are also checked. It returns false if
+the arrays, or any nested arrays, differ.
+The fill( ) method assigns a value to all elements in an array. In other words, it fills an
+array with a specified value. The fill( ) method has two versions. The first version, which
+has the following forms, fills an entire array:
+static void fill(boolean array[ ], boolean value)
+static void fill(byte array[ ], byte value)
+static void fill(char array[ ], char value)
+static void fill(double array[ ], double value)
+static void fill(float array[ ], float value)
+static void fill(int array[ ], int value)
+static void fill(long array[ ], long value)
+static void fill(short array[ ], short value)
+static void fill(Object array[ ], Object value)
+Here, value is assigned to all elements in array.
