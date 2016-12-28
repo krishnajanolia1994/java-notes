@@ -1,0 +1,6 @@
+The LinkedHashSet class extends HashSet and adds no members of its own. It is a generic
+class that has this declaration:
+class LinkedHashSet<E>
+
+LinkedHashSet maintains a linked list of the entries in the set, in the order in which they
+were inserted
