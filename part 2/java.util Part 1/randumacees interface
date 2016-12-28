@@ -1,0 +1,5 @@
+The RandomAccess interface contains no members. However, by implementing this interface,
+a collection signals that it supports efficient random access to its elements.
+
+to large collections. (You can use instanceof to determine if a class implements an interface.) RandomAccess is implemented
+by ArrayList and by the legacy Vector class, among others.
