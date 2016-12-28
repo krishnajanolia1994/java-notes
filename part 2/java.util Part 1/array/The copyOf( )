@@ -1,0 +1,12 @@
+The copyOf( ) method was added by Java SE 6. It returns a copy of an array and has the
+following forms:
+static boolean[ ] copyOf(boolean[ ] source, int len)
+static byte[ ] copyOf(byte[ ] source, int len)
+static char[ ] copyOf(char[ ] source, int len)
+static double[ ] copyOf(double[ ] source, int len)
+static float[ ] copyOf(float[ ] source, int len)
+static int[ ] copyOf(int[ ] source, int len)
+static long[ ] copyOf(long[ ] source, int len)
+static short[ ] copyOf(short[ ] source, int len)
+static <T> T[ ] copyOf(T[ ] source, int len)
+static <T,U> T[ ] copyOf(U[ ] source, int len, Class<? extends T[ ]> resultT)
