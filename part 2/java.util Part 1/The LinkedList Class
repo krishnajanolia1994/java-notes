@@ -1,0 +1,9 @@
+The LinkedList class extends AbstractSequentialList and implements the List, Deque, and
+Queue interfaces. It provides a linked-list data structure. LinkedList is a generic class that
+has this declaration:
+class LinkedList<E>
+
+Here, E specifies the type of objects that the list will hold. LinkedList has the two constructors
+shown here:
+LinkedList( )
+LinkedList(Collection<? extends E> c)
