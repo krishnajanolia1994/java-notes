@@ -1,0 +1,12 @@
+Java SE 6 added the ArrayDeque class, which extends AbstractCollection and implements
+the Deque interface. It adds no methods of its own. ArrayDeque creates a dynamic array
+and has no capacity restrictions. (The Deque interface supports implementations that
+restrict capacity, but does not require such restrictions.) ArrayDeque is a generic class that
+has this declaration:
+class ArrayDeque<E>
+
+Here, E specifies the type of objects stored in the collection.
+ArrayDeque defines the following constructors:
+ArrayDeque( )
+ArrayDeque(int size)
+ArrayDeque(Collection<? extends E> c)
