@@ -1,0 +1,22 @@
+The HashSet Class
+HashSet extends AbstractSet and implements the Set interface. It creates a collection that
+uses a hash table for storage. HashSet is a generic class that has this declaration:
+class HashSet<E>
+
+As most readers likely know, a hash table stores information by using a mechanism called
+hashing. In hashing, the informational content of a key is used to determine a unique value,
+called its hash code. The hash code is then used as the index at which the data associated with
+the key is stored. The transformation of the key into its hash code is performed automatically—
+you never see the hash code itself. Also, your code can’t directly index the hash table. The
+advantage of hashing is that it allows the execution time of add( ), contains( ), remove( ), and
+size( ) to remain constant even for large sets.
+
+he following constructors are defined:
+HashSet( )
+HashSet(Collection<? extends E> c)
+HashSet(int capacity)
+HashSet(int capacity, float fillRatio)
+
+It is important to note that HashSet does not guarantee the order of its elements, because
+the process of hashing doesn’t usually lend itself to the creation of sorted sets. If you need
+sorted storage, then another collection, such as TreeSet, is a better choice.
