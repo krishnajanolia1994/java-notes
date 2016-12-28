@@ -18,3 +18,18 @@ NullPointerException is thrown if an attempt is made to store a null object and 
 are not allowed in the collection. An IllegalArgumentException is thrown if an invalid
 argument is used. An IllegalStateException is thrown if an attempt is made to add an
 element to a fixed-length collection that is full
+
+Java provided ad hoc classes such as Dictionary,
+Vector, Stack, and Properties to store and manipulate groups of objects. Although these classes
+were quite useful, they lacked a central, unifying theme.
+
+The Collections Framework was designed to meet several goals. First, the framework had
+to be high-performance.
+
+Second, the framework had to allow different types of
+collections to work in a similar manner and with a high degree of interoperability. Third,
+extending and/or adapting a collection had to be easy
+
+Beginning with the collection interfaces is necessary because they determine
+the fundamental nature of the collection classes. Put differently, the concrete classes simply
+provide different implementations of the standard interfaces
