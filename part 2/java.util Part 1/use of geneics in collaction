@@ -1,0 +1,17 @@
+The addition of generics fundamentally improves the usability and safety of collections
+because it
+• Ensures that only references to objects of the proper type can actually be stored in
+a collection. Thus, a collection will always contain references of a known type.
+• Eliminates the need to cast a reference retrieved from a collection. Instead, a reference
+retrieved from a collection is automatically cast into the proper type. This prevents
+run-time errors due to invalid casts and avoids an entire category of errors.
+
+These two improvements are made possible because each collection class has been given
+a type parameter that specifies the type of the collection. For example, ArrayList is now
+declared like this:
+class ArrayList<E>
+
+The Iterator and ListIterator interfaces are now also generic. This means that the type
+parameter must agree with the type of the collection for which the iterator is obtained.
+Furthermore, this type compatibility is enforced at compile time.
+The following program shows the modern, generic form of the preceding program:
