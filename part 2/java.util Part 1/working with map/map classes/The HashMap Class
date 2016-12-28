@@ -1,0 +1,11 @@
+The HashMap Class
+The HashMap class extends AbstractMap and implements the Map interface. It uses a hash
+table to store the map. This allows the execution time of get( ) and put( ) to remain constant
+even for large sets. HashMap is a generic class that has this declaration:
+class HashMap<K, V>
+Here, K specifies the type of keys, and V specifies the type of values.
+The following constructors are defined:
+HashMap( )
+HashMap(Map<? extends K, ? extends V> m)
+HashMap(int capacity)
+HashMap(int capacity, float fillRatio)
