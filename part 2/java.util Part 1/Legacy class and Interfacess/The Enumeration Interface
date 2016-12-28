@@ -1,0 +1,8 @@
+The Enumeration Interface
+The Enumeration interface defines the methods by which you can enumerate (obtain one at
+a time) the elements in a collection of objects.
+
+interface Enumeration<E>
+Enumeration specifies the following two methods:
+boolean hasMoreElements( )
+E nextElement( )
