@@ -1,0 +1,12 @@
+The NavigableMap Interface
+The NavigableMap interface was added by Java SE 6. It extends SortedMap and declares
+the behavior of a map that supports the retrieval of entries based on the closest match to a
+given key or keys. NavigableMap is a generic interface that has this declaration:
+interface NavigableMap<K,V>
+
+Here, K specifies the type of the keys, and V specifies the type of the values associated with
+the keys. In addition to the methods that it inherits from SortedMap, NavigableMap adds
+those summarized in Table 17-12. Several methods throw a ClassCastException when
+an object is incompatible with the keys in the map. A NullPointerException is thrown
+if an attempt is made to use a null object and null keys are not allowed in the set. An
+IllegalArgumentException is thrown if an invalid argument is used.
