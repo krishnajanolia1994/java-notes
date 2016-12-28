@@ -1,0 +1,3 @@
+WeakHashMap implements a map that uses “weak keys,” which allows an element in
+a map to be garbage-collected when its key is otherwise unused. This class is not discussed
+further here. The other map classes are described next.
