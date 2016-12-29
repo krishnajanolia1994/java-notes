@@ -1,3 +1,13 @@
 Vector
 Vector implements a dynamic array. It is similar to ArrayList, but with two differences: Vector
 is synchronized, and it contains many legacy methods that are not part of the Collections
+
+The amount of extra
+space allocated during each reallocation is determined by the increment that you specify
+when you create the vector. If you don’t specify an increment, the vector’s size is doubled
+by each allocation cycle.
+
+Vector defines these protected data members:
+int capacityIncrement;
+int elementCount;
+Object[ ] elementData;
