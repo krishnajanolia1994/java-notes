@@ -1,0 +1,10 @@
+Random
+The Random class is a generator of pseudorandom numbers. These are called pseudorandom
+numbers because they are simply uniformly distributed sequences. Random defines the
+following constructors:
+Random( )
+Random(long seed)
+
+If you initialize a Random object with a seed, you define the starting point for the random
+sequence. If you use the same seed to initialize another Random object, you will extract the
+same random sequence.
