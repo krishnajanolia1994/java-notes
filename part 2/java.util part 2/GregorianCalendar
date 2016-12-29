@@ -17,3 +17,13 @@ int minutes, int seconds)
 
 GregorianCalendar defines two fields: AD and BC. These represent the two eras defined
 by the Gregorian calendar.
+
+e Gregorian calendar.
+There are also several constructors for GregorianCalendar objects. The default,
+GregorianCalendar( ), initializes the object with the current date and time in the default
+locale and time zone. Three more constructors offer increasing levels of specificity:
+GregorianCalendar(int year, int month, int dayOfMonth)
+GregorianCalendar(int year, int month, int dayOfMonth, int hours,
+int minutes)
+GregorianCalendar(int year, int month, int dayOfMonth, int hours,
+int minutes, int seconds)
