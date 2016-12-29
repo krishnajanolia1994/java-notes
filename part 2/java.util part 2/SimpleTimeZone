@@ -1,0 +1,8 @@
+SimpleTimeZone
+The SimpleTimeZone class is a convenient subclass of TimeZone. It implements TimeZone’s
+abstract methods and allows you to work with time zones for a Gregorian calendar. It also
+computes daylight saving time.
+SimpleTimeZone defines four constructors. One is
+SimpleTimeZone(int timeDelta, String tzName)
+This constructor creates a SimpleTimeZone object. The offset relative to Greenwich mean
+time (GMT) is timeDelta. The time zone is named tzName.
