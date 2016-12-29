@@ -1,0 +1,23 @@
+Properties
+Properties is a subclass of Hashtable. It is used to maintain lists of values in which the key
+is a String and the value is also a String. The Properties class is used by many other Java
+classes. For example, it is the type of object returned by System.getProperties( ) when
+obtaining environmental values. Although the Properties class, itself, is not generic, several
+of its methods are.
+Properties defines the following instance variable:
+Properties defaults;
+This variable holds a default property list associated with a Properties object. Properties
+defines these constructors:
+Properties( )
+Properties(Properties propDefault)
+Properties is a subclass of Hashtable. It is used to maintain lists of values in which the key
+is a String and the value is also a String. The Properties class is used by many other Java
+classes. For example, it is the type of object returned by System.getProperties( ) when
+obtaining environmental values. Although the Properties class, itself, is not generic, several
+of its methods are.
+Properties defines the following instance variable:
+Properties defaults;
+This variable holds a default property list associated with a Properties object. Properties
+defines these constructors:
+Properties( )
+Properties(Properties propDefault)
