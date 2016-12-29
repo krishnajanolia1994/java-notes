@@ -1,0 +1,5 @@
+Stack
+Stack is a subclass of Vector that implements a standard last-in, first-out stack. Stack only
+defines the default constructor, which creates an empty stack. With the release of JDK 5, Stack
+was retrofitted for generics and is declared as shown here:
+class Stack<E>
