@@ -1,0 +1,10 @@
+Calendar
+The abstract Calendar class provides a set of methods that allows you to convert a time in
+milliseconds to a number of useful components. Some examples of the type of information
+that can be provided are year, month, day, hour, minute, and second.
+
+Calendar defines several protected instance variables. areFieldsSet is a boolean that
+indicates if the time components have been set. fields is an array of ints that holds the
+components of the time. isSet is a boolean array that indicates if a specific time component
+has been set. time is a long that holds the current time for this object. isTimeSet is a boolean
+that indicates if the current time has been set
