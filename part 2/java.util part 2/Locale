@@ -2,3 +2,15 @@ Locale
 The Locale class is instantiated to produce objects that describe a geographical or cultural
 region. It is one of several classes that provide you with the ability to write programs that
 can execute in different international environments
+
+For example, the expression Locale.CANADA represents the Locale object for Canada.
+The constructors for Locale are
+Locale(String language)
+Locale(String language, String country)
+Locale(String language, String country, String data)
+
+This sets the default locale to that specified by localeObj.
+Some other interesting methods are the following:
+final String getDisplayCountry( )
+final String getDisplayLanguage( )
+final String getDisplayName( )
