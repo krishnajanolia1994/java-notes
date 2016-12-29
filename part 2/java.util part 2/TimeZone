@@ -1,0 +1,5 @@
+TimeZone
+Another time-related class is TimeZone. The TimeZone class allows you to work with time
+zone offsets from Greenwich mean time (GMT), also referred to as Coordinated Universal Time
+(UTC). It also computes daylight saving time. TimeZone only supplies the default constructor.
+A sampling of methods defined by TimeZone is given in Table 18-5.
