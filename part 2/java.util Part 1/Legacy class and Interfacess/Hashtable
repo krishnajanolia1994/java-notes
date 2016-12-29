@@ -11,3 +11,12 @@ class Hashtable<K, V>
 Here, K specifies the type of keys, and V specifies the type of values.
 A hash table can only store objects that override the hashCode( ) and equals( ) methods
 that are defined by Object
+
+
+Hashtable	HashMap  
+Hashtable class is synchronized.	                                  HastMap is not synchronize.
+
+Because of Thread-safe, Hashtable is slower than HashMap           	HashMap works faster.
+Neither key nor values can be null	                                Both key and values can be null
+Order of table remain constant over time.                          	does not guarantee that order of map remain constant over time.
+
