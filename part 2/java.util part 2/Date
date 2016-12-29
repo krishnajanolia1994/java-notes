@@ -1,0 +1,7 @@
+Date
+The Date class encapsulates the current date and time.
+
+Date supports the following constructors:
+Date( )
+Date(long millisec)
+The first constructor initializes the object with the current date and time.
