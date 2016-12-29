@@ -21,3 +21,13 @@ This variable holds a default property list associated with a Properties object.
 defines these constructors:
 Properties( )
 Properties(Properties propDefault)
+
+
+Properties also contains one deprecated method: save( ).
+This was replaced by store( ) because save( ) did not handle errors correctly.
+
+One useful capability of the Properties class is that you can specify a default property
+that will be returned if no value is associated with a certain key
+
+One of the most useful aspects of Properties is that the information contained in a Properties
+object can be easily stored to or loaded from disk with the store( ) and load( ) methods.
