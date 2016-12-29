@@ -1,0 +1,9 @@
+Dictionary
+Dictionary is an abstract class that represents a key/value storage repository and operates
+much like Map. Given a key and value, you can store the value in a Dictionary object. Once
+the value is stored, you can retrieve it by using its key. Thus, like a map, a dictionary can be
+thought of as a list of key/value pairs. Although not currently deprecated, Dictionary is
+classified as obsolete, because it is fully superseded by Map. However, Dictionary is still in
+use and thus is fully discussed here.
+With the advent of JDK 5, Dictionary was made generic. It is declared as shown here:
+class Dictionary<K, V>
