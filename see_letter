@@ -24,3 +24,6 @@ protected boolean removeEldestEntry(Map.Entry<K, V> e)(page no 472 java complite
 
 
 implimentation of collactions algorithm
+
+
+SimpleTimeZone(page 515 java complete reference)
