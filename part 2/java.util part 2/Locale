@@ -1,0 +1,4 @@
+Locale
+The Locale class is instantiated to produce objects that describe a geographical or cultural
+region. It is one of several classes that provide you with the ability to write programs that
+can execute in different international environments
