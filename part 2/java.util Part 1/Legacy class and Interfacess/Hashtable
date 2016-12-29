@@ -1,0 +1,13 @@
+Hashtable was part of the original java.util and is a concrete implementation of a Dictionary.
+However, with the advent of collections, Hashtable was reengineered to also implement the
+Map interface. Thus, Hashtable is now integrated into the Collections Framework. It is similar
+to HashMap, but is synchronized.
+Like HashMap, Hashtable stores key/value pairs in a hash table. However, neither keys
+nor values can be null. When using a Hashtable, you specify an object that is used as a key,
+and the value that you want linked to that key. The key is then hashed, and the resulting
+hash code is used as the index at which the value is stored within the table.
+Hashtable was made generic by JDK 5. It is declared like this:
+class Hashtable<K, V>
+Here, K specifies the type of keys, and V specifies the type of values.
+A hash table can only store objects that override the hashCode( ) and equals( ) methods
+that are defined by Object
