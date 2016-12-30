@@ -1,0 +1,3 @@
+Scanner
+Scanner is the complement of Formatter. Added by JDK 5, Scanner reads formatted input
+and converts it into its binary form.
