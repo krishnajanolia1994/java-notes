@@ -1,0 +1,5 @@
+Directories
+A directory is a File that contains a list of other files and directories. When you create a File
+object and it is a directory, the isDirectory( ) method will return true. In this case, you can
+call list( ) on that object to extract the list of other files and directories inside. It has two forms.
+The first is shown here:
