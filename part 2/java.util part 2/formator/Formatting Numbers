@@ -1,0 +1,4 @@
+Formatting Numbers
+To format an integer in decimal format, use %d. To format a floating-point value in decimal
+format, use %f. To format a floating-point value in scientific notation, use %e. Numbers
+represented in scientific notation take this general form:
