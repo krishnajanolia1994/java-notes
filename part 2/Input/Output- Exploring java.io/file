@@ -16,3 +16,9 @@ a file.
 File defines many methods that obtain the standard properties of a File object. For example,
 getName( ) returns the name of the file, getParent( ) returns the name of the parent directory,
 and exists( ) returns true if the file exists, false if it does not.
+
+File also includes two useful utility methods. The first is renameTo( ), shown here:
+boolean renameTo(File newName)
+
+You can also use delete( ) to delete a directory if the directory is empty. delete( ) returns true
+if it deletes the file and false if the file cannot be removed.
