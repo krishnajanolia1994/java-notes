@@ -4,3 +4,16 @@ format you like. It operates in a manner similar to the C/C++ printf( ) function
 that if you are familiar with C/C++, then learning to use Formatter will be very easy. It also
 further streamlines the conversion of C/C++ code to Java. If you are not familiar with C/C++,
 it is still quite easy to format data
+
+
+Notice that many specifiers have both upper- and lowercase forms. When an
+uppercase specifier is used, then letters are shown in uppercase. Otherwise, the upper- and
+lowercase specifiers perform the same conversion
+
+t is important to understand that Java
+type-checks each format specifier against its corresponding argument. If the argument doesn’t
+match, an IllegalFormatException is thrown
+
+Of course, if you simply want to display the formatted string, there is no reason to first
+assign it to a String object. When a Formatter object is passed to println( ), for example, its
+toString( ) method is automatically called.
