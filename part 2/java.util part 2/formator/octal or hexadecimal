@@ -1,0 +1,5 @@
+You can display integers in octal or hexadecimal format by using %o and %x, respectively.
+For example, this fragment:
+fmt.format("Hex: %x, Octal: %o", 196, 196);
+produces this output:
+Hex: c4, Octal: 304
