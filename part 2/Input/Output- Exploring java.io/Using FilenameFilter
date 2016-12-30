@@ -1,0 +1,6 @@
+Using FilenameFilter
+You will often want to limit the number of files returned by the list( ) method to include
+only those files that match a certain filename pattern, or filter. To do this, you must use a
+second form of list( ), shown here:
+String[ ] list(FilenameFilter FFObj)
+In this form, FFObj is an object of a class that implements the FilenameFilter interface.
