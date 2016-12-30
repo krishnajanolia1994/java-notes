@@ -1,0 +1,6 @@
+At the core of Java’s support for creating formatted output is the Formatter class. It provides
+format conversions that let you display numbers, strings, and time and date in virtually any
+format you like. It operates in a manner similar to the C/C++ printf( ) function, which means
+that if you are familiar with C/C++, then learning to use Formatter will be very easy. It also
+further streamlines the conversion of C/C++ code to Java. If you are not familiar with C/C++,
+it is still quite easy to format data
