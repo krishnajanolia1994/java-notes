@@ -1,0 +1,4 @@
+Scanning Basics
+Once you have created a Scanner, it is a simple matter to use it to read formatted input.
+In general, a Scanner reads tokens from the underlying source that you specified when the
+Scanner was created
