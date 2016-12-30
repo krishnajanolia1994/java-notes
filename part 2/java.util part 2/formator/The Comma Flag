@@ -6,3 +6,7 @@ as 1,234,567. To add grouping specifiers, use the comma (,) flag. For example,
 fmt.format("%,.2f", 4356783497.34);
 creates this string:
 4,356,783,497.34
+
+There is a convenient shorthand called a relative index that enables you to reuse the
+argument matched by the preceding format specifier. Simply specify < for the argument
+index.
