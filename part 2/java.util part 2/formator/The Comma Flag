@@ -2,3 +2,7 @@ The Comma Flag
 When displaying large numbers, it is often useful to add grouping separators, which in
 English are commas. For example, the value 1234567 is more easily read when formatted
 as 1,234,567. To add grouping specifiers, use the comma (,) flag. For example,
+
+fmt.format("%,.2f", 4356783497.34);
+creates this string:
+4,356,783,497.34
