@@ -1,0 +1,3 @@
+Formatting Strings and Characters
+To format an individual character, use %c. This causes the matching character argument to
+be output, unmodified. To format a string, use %s.
