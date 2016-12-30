@@ -1,0 +1,7 @@
+The Scanner Constructors
+Scanner defines the constructors shown in Table 18-14. In general, a Scanner can be
+created for a String, an InputStream, a File, or any object that implements the Readable
+or ReadableByteChannel interfaces. Here are some examples.
+The following sequence creates a Scanner that reads the file Test.txt:
+FileReader fin = new FileReader("Test.txt");
+Scanner src = new Scanner(fin);
