@@ -1,0 +1,18 @@
+It deals directly with files and the file system.That is, the File class does not specify how
+information is retrieved from or stored in files; it describes the properties of a file itself. A
+File object is used to obtain or manipulate the information associated with a disk file, such
+as the permissions, time, date, and directory path, and to navigate subdirectory hierarchies.
+
+The following constructors can be used to create File objects:
+File(String directoryPath)
+File(String directoryPath, String filename)
+File(File dirObj, String filename)
+File(URI uriObj)
+
+Here, directoryPath is the path name of the file, filename is the name of the file or subdirectory,
+dirObj is a File object that specifies a directory, and uriObj is a URI object that describes
+a file.
+
+File defines many methods that obtain the standard properties of a File object. For example,
+getName( ) returns the name of the file, getParent( ) returns the name of the parent directory,
+and exists( ) returns true if the file exists, false if it does not.
