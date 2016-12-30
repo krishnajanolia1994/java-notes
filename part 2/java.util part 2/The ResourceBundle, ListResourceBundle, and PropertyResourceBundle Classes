@@ -5,3 +5,7 @@ the user interface elements in your program. You can define two or more sets of 
 strings that support various languages, such as English, German, or Chinese, with each
 translation set residing in its own bundle. You can then load the bundle appropriate to the
 current locale and use the strings to construct the program’s user interface.
+
+
+Notice the nested class ResourceBundle.Control. It was added by
+Java SE 6 and is used to control the resource-bundle loading process.
