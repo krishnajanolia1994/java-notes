@@ -4,3 +4,10 @@ only those files that match a certain filename pattern, or filter. To do this, y
 second form of list( ), shown here:
 String[ ] list(FilenameFilter FFObj)
 In this form, FFObj is an object of a class that implements the FilenameFilter interface.
+
+FilenameFilter defines only a single method, accept( ), which is called once for each file
+in a list. Its general form is given here:
+boolean accept(File directory, String filename)
+The accept( ) method returns true for files in the directory specified by directory that should
+be included in the list (that is, those that match the filename argument), and returns false for
+those files that should be excluded.
