@@ -1,0 +1,13 @@
+Specifying Precision
+A precision specifier can be applied to the %f, %e, %g, and %s format specifiers. It follows the
+minimum field-width specifier (if there is one) and consists of a period followed by an integer.
+Its exact meaning depends upon the type of data to which it is applied.
+When you apply the precision specifier to floating-point data using the %f or %e
+specifiers, it determines the number of decimal places displayed.
+
+
+When using %g, the precision
+determines the number of significant digits. The default precision is 6.
+
+For example,
+%5.7s displays a string at least five and not exceeding seven characters long.
