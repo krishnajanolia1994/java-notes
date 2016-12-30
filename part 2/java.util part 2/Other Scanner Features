@@ -1,0 +1,15 @@
+Other Scanner Features
+Scanner defines several other methods in addition to those already discussed. One that is
+particularly useful in some circumstances is findInLine( ). Its general forms are shown here:
+String findInLine(Pattern pattern)
+String findInLine(String pattern)
+This method searches for the specified pattern within the next line of text. If the pattern is
+found, the matching token is consumed and returned. Otherwise, null is returned
+
+
+Related to findInLine( ) is findWithinHorizon( ) It is shown here:
+String findWithinHorizon(Pattern pattern, int count)
+String findWithinHorizon(String pattern, int count)
+This method attempts to find an occurrence of the specified pattern within the next count
+characters. If successful, it returns the matching pattern. Otherwise, it returns null. If count is
+zero, then all input is searched until either a match is found or the end of input is encountered.
