@@ -1,0 +1,3 @@
+Specifying a Minimum Field Width
+An integer placed between the % sign and the format conversion code acts as a minimum
+field-width specifier.
