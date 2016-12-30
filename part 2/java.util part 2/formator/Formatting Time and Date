@@ -1,0 +1,4 @@
+Formatting Time and Date
+One of the more powerful conversion specifiers is %t. It lets you format time and date
+information. The %t specifier works a bit differently than the others because it requires the
+use of a suffix to describe the portion and precise format of the time or date desired.
