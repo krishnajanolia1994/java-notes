@@ -2,3 +2,12 @@ Scanning Basics
 Once you have created a Scanner, it is a simple matter to use it to read formatted input.
 In general, a Scanner reads tokens from the underlying source that you specified when the
 Scanner was created
+
+1. Determine if a specific type of input is available by calling one of Scanner’s
+   hasNextX methods, where X is the type of data desired.
+2. If input is available, read it by calling one of Scanner’s nextX methods.
+3. Repeat the process until input is exhausted.
+
+The program reads numbers from the keyboard, summing them in the process, until the
+user enters the string “done”. It then stops input and displays the average of the numbers.
+Here is a sample run:
