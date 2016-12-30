@@ -1,0 +1,5 @@
+Setting Delimiters
+Scanner defines where a token starts and ends based on a set of delimiters. The default delimiters
+are the whitespace characters, and this is the delimiter set that the preceding examples have
+used. However, it is possible to change the delimiters by calling the useDelimiter( ) method,
+shown here:
