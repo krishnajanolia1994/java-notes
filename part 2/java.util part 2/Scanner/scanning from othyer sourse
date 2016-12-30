@@ -1,3 +1,8 @@
 One thing that is especially nice about Scanner is that the same technique used to read
 from one source can be used to read from another. For example, here is the preceding program
 reworked to average a list of numbers contained in a text file:
+
+
+You can use Scanner to read input that contains several different types of data—even if
+the order of that data is unknown in advance. You must simply check what type of data is
+available before reading it. For example, consider this program:
