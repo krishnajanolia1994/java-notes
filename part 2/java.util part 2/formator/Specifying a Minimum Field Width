@@ -1,3 +1,7 @@
 Specifying a Minimum Field Width
 An integer placed between the % sign and the format conversion code acts as a minimum
 field-width specifier.
+
+If you want to pad with 0’s, place
+a 0 before the field-width specifier. For example, %05d will pad a number of less than five
+digits with 0’s so that its total length is five.
