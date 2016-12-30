@@ -1,0 +1,5 @@
+Justifying Output
+By default, all output is right-justified. That is, if the field width is larger than the data printed,
+the data will be placed on the right edge of the field. You can force output to be left-justified
+by placing a minus sign directly after the %. For instance, %–10.2f left-justifies a floating-point
+number with two decimal places in a 10-character field. For example, consider this program:
