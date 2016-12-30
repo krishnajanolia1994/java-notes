@@ -1,0 +1,4 @@
+Using the Format Flags
+Formatter recognizes a set of format flags that lets you control various aspects of a conversion.
+All format flags are single characters, and a format flag follows the % in a format specification.
+The flags are shown here:
