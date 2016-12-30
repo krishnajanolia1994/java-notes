@@ -1,0 +1,7 @@
+The java.util package includes three classes that aid in the internationalization of your
+program. The first is the abstract class ResourceBundle. It defines methods that enable you
+to manage a collection of locale-sensitive resources, such as the strings that are used to label
+the user interface elements in your program. You can define two or more sets of translated
+strings that support various languages, such as English, German, or Chinese, with each
+translation set residing in its own bundle. You can then load the bundle appropriate to the
+current locale and use the strings to construct the program’s user interface.
