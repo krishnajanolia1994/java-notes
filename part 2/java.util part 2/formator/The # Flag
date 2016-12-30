@@ -1,0 +1,3 @@
+The # Flag
+The # can be applied to %o, %x, %e, and %f. For %e and %f, the # ensures that there
+will be a decimal point even if there are no decimal digits.
