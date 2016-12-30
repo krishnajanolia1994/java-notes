@@ -1,0 +1,4 @@
+Currency
+The Currency class encapsulates information about a currency. It defines no constructors. The
+methods supported by Currency are shown in Table 18-10. The following program
+demonstrates Currency:
