@@ -1,0 +1,5 @@
+The Closeable and Flushable Interfaces
+Recently (with the release of JDK 5), two interfaces were added to java.io: Closeable and
+Flushable. The interfaces are implemented by several of the I/O classes. Their inclusion
+does not add new functionality to the stream classes. They simply offer a uniform way of
+specifying that a stream can be closed or flushed.
