@@ -1,0 +1,9 @@
+The Stream Classes
+Java’s stream-based I/O is built upon four abstract classes: InputStream, OutputStream,
+Reader, and Writer. These classes were briefly discussed in Chapter 13. They are used to
+create several concrete stream subclasses. Although your programs perform their I/O
+operations through concrete subclasses, the top-level classes define the basic functionality
+common to all stream classes.
+
+InputStream and OutputStream are designed for byte streams. Reader and Writer are
+designed for character streams
