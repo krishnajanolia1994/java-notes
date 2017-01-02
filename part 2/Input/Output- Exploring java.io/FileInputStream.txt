@@ -5,3 +5,7 @@ FileInputStream(String filepath)
 FileInputStream(File fileObj)
 Either can throw a FileNotFoundException. Here, filepath is the full path name of a file, and
 fileObj is a File object that describes the file.
+
+FileInputStream overrides six
+of the methods in the abstract class InputStream. The mark( ) and reset( ) methods are not
+overridden, and any attempt to use reset( ) on a FileInputStream will generate an IOException.
