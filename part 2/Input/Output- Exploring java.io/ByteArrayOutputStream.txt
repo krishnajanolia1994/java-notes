@@ -1,0 +1,11 @@
+ByteArrayOutputStream
+ByteArrayOutputStream is an implementation of an output stream that uses a byte array
+as the destination. ByteArrayOutputStream has two constructors, shown here:
+ByteArrayOutputStream( )
+ByteArrayOutputStream(int numBytes)
+In the first form, a buffer of 32 bytes is created. In the second, a buffer is created with
+a size equal to that specified by numBytes. The buffer is held in the protected buf field
+of ByteArrayOutputStream. The buffer size will be increased automatically, if needed.
+The number of bytes held by the buffer is contained in the protected count field of
+ByteArrayOutputStream.
+The following example demonstrates ByteArrayOutputStream:
