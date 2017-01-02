@@ -1,0 +1,14 @@
+FileOutputStream
+FileOutputStream creates an OutputStream that you can use to write bytes to a file. Its
+most commonly used constructors are shown here:
+FileOutputStream(String filePath)
+FileOutputStream(File fileObj)
+FileOutputStream(String filePath, boolean append)
+FileOutputStream(File fileObj, boolean append)
+
+
+Obj is a File object that describes the file. If append is true, the file is opened in append mode.
+Creation of a FileOutputStream is not dependent on the file already existing.
+FileOutputStream will create the file before opening it for output when you create the
+object. In the case where you attempt to open a read-only file, an IOException will be
+thrown.
