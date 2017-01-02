@@ -1,0 +1,10 @@
+Filtered Byte Streams
+Filtered streams are simply wrappers around underlying input or output streams that
+transparently provide some extended level of functionality. These streams are typically
+accessed by methods that are expecting a generic stream, which is a superclass of the
+filtered streams. Typical extensions are buffering, character translation, and raw data
+translation. The filtered byte streams are FilterInputStream and FilterOutputStream. Their
+constructors are shown here:
+FilterOutputStream(OutputStream os)
+FilterInputStream(InputStream is)
+The methods provided in these classes are identical to those in InputStream and OutputStream.
