@@ -1,0 +1,20 @@
+ByteArrayInputStream
+ByteArrayInputStream is an implementation of an input stream that uses a byte array as
+the source. This class has two constructors, each of which requires a byte array to provide the
+data source:
+ByteArrayInputStream(byte array[ ])
+ByteArrayInputStream(byte array[ ], int start, int numBytes)
+Here, array is the input source. The second constructor creates an InputStream from a
+subset of your byte array that begins with the character at the index specified by start and
+is numBytes long.
+The following example creates a pair of ByteArrayInputStreams, initializing them with
+the byte representation of the alphabet:
+// Demonstrate ByteArrayInputStream.
+import java.io.*;
+class ByteArrayInputStreamDemo {
+public static void main(String args[]) throws IOException {
+String tmp = "abcdefghijklmnopqrstuvwxyz";
+byte b[] = tmp.getBytes();
+ByteArrayInputStream input1 = new ByteArrayInputStream(b);
+ByteArrayInputStream input2 = new ByteArrayInputStream(b,0,3);
+}
