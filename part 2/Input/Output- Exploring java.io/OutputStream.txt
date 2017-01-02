@@ -1,0 +1,3 @@
+OutputStream
+OutputStream is an abstract class that defines streaming byte output. It implements the
+Closeable and Flushable interfaces
