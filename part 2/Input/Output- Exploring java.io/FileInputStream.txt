@@ -1,0 +1,7 @@
+FileInputStream
+The FileInputStream class creates an InputStream that you can use to read bytes from a file.
+Its two most common constructors are shown here:
+FileInputStream(String filepath)
+FileInputStream(File fileObj)
+Either can throw a FileNotFoundException. Here, filepath is the full path name of a file, and
+fileObj is a File object that describes the file.
