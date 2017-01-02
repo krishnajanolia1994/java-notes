@@ -1,0 +1,17 @@
+The listFiles( ) Alternative
+There is a variation to the list( ) method, called listFiles( ), which you might find useful.
+The signatures for listFiles( ) are shown here:
+File[ ] listFiles( )
+File[ ] listFiles(FilenameFilter FFObj)
+File[ ] listFiles(FileFilter FObj)
+These methods return the file list as an array of File objects instead of strings. The first method
+returns all files, and the second returns those files that satisfy the specified FilenameFilter.
+Aside from returning an array of File objects, these two versions of listFiles( ) work like their
+equivalent list( ) methods.
+
+The third version of listFiles( ) returns those files with path names that satisfy the specified
+FileFilter. FileFilter defines only a single method, accept( ), which is called once for each file in a
+list. Its general form is given here:
+boolean accept(File path)
+The accept( ) method returns true for files that should be included in the list (that is, those
+that match the path argument), and false for those that should be excluded.
