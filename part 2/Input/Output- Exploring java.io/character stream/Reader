@@ -1,0 +1,5 @@
+Reader
+Reader is an abstract class that defines Java’s model of streaming character input. It
+implements the Closeable and Readable interfaces. All of the methods in this class
+(except for markSupported( )) will throw an IOException on error conditions. Table 19-3
+provides a synopsis of the methods in Reader.
