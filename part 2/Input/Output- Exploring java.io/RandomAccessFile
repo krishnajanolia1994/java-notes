@@ -1,0 +1,21 @@
+RandomAccessFile
+RandomAccessFile encapsulates a random-access file. It is not derived from InputStream
+or OutputStream. Instead, it implements the interfaces DataInput and DataOutput, which
+define the basic I/O methods. It also implements the Closeable interface. RandomAccessFile
+is special because it supports positioning requests—that is, you can position the file pointer
+within the file. It has these two constructors:
+RandomAccessFile(File fileObj, String access)
+throws FileNotFoundException
+RandomAccessFile(String filename, String access)
+throws FileNotFoundException
+
+In both cases, access determines what type
+of file access is permitted
+
+RandomAccessFile implements the standard input and output methods, which you can
+use to read and write to random access files. It also includes some additional methods. One
+is setLength( ). It has this signature:
+
+void setLength(long len) throws IOException
+This method sets the length of the invoking file to that specified by len. This method can be
+used to lengthen or shorten a file. If the file is lengthened, the added portion is undefined.
