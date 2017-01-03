@@ -1,0 +1,4 @@
+Serialization
+Serialization is the process of writing the state of an object to a byte stream. This is useful
+when you want to save the state of your program to a persistent storage area, such as a file.
+At a later time, you may restore these objects by using the process of deserialization.
