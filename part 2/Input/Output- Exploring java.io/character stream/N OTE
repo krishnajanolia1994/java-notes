@@ -1,0 +1,4 @@
+NOTE
+As discussed in Chapter 13, the character I/O classes were added by the 1.1 release of Java.
+Because of this, you may still find legacy code that uses byte streams where character streams
+would be more appropriate. When working on such code, it is a good idea to update it.
