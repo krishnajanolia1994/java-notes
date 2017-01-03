@@ -1,0 +1,6 @@
+BufferedOutputStream
+A BufferedOutputStream is similar to any OutputStream with the exception of an added
+flush( ) method that is used to ensure that data buffers are physically written to the actual
+output device. Since the point of a BufferedOutputStream is to improve performance by
+reducing the number of times the system actually writes data, you may need to call flush( )
+to cause any data that is in the buffer to be immediately written
