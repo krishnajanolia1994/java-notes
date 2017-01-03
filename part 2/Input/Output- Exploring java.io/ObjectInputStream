@@ -1,0 +1,6 @@
+ObjectInputStream
+The ObjectInputStream class extends the InputStream class and implements the ObjectInput
+interface. ObjectInputStream is responsible for reading objects from a stream. A constructor of
+this class is
+ObjectInputStream(InputStream inStream)
+throws IOException
