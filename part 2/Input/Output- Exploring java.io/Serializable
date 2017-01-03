@@ -1,0 +1,5 @@
+Serializable
+Only an object that implements the Serializable interface can be saved and restored by the
+serialization facilities. The Serializable interface defines no members. It is simply used to
+indicate that a class may be serialized. If a class is serializable, all of its subclasses are also
+serializable.
