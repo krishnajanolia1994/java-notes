@@ -1,0 +1,7 @@
+SequenceInputStream
+The SequenceInputStream class allows you to concatenate multiple InputStreams. The
+construction of a SequenceInputStream is different from any other InputStream. A
+SequenceInputStream constructor uses either a pair of InputStreams or an Enumeration
+of InputStreams as its argument:
+SequenceInputStream(InputStream first, InputStream second)
+SequenceInputStream(Enumeration <? extends InputStream> streamEnum)
