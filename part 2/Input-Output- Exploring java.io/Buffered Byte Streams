@@ -6,3 +6,4 @@ than a byte at a time, hence increasing performance.
 the buffered byte stream classes are
 BufferedInputStream and BufferedOutputStream. PushbackInputStream also implements
 a buffered stream.
+.
