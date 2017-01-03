@@ -1,0 +1,2 @@
+InputStream and OutputStream are designed for byte streams. Reader and Writer are
+designed for character streams
