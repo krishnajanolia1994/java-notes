@@ -1,0 +1,8 @@
+Buffered Byte Streams
+For the byte-oriented streams, a buffered stream extends a filtered stream class by attaching
+a memory buffer to the I/O streams. This buffer allows Java to do I/O operations on more
+than a byte at a time, hence increasing performance.
+
+the buffered byte stream classes are
+BufferedInputStream and BufferedOutputStream. PushbackInputStream also implements
+a buffered stream.
