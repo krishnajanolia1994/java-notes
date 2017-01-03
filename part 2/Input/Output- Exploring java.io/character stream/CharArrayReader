@@ -1,0 +1,6 @@
+CharArrayReader
+CharArrayReader is an implementation of an input stream that uses a character array as the
+source. This class has two constructors, each of which requires a character array to provide
+the data source:
+CharArrayReader(char array[ ])
+CharArrayReader(char array[ ], int start, int numChars)
