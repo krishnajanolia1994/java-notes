@@ -1,0 +1,7 @@
+BufferedWriter
+A BufferedWriter is a Writer that buffers ouput. Using a BufferedWriter can increase
+performance by reducing the number of times data is actually physically written to the
+output stream.
+A BufferedWriter has these two constructors:
+BufferedWriter(Writer outputStream)
+BufferedWriter(Writer outputStream, int bufSize)
