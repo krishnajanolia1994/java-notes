@@ -20,3 +20,6 @@ method and then output the result.
 PrintWriter also supports the printf( ) method. It works the same way it does in the
 PrintStream class described earlier: it allows you to specify the precise format of the data.
 Here is how printf( ) is declared in PrintWriter:
+
+PrintWriter printf(String fmtString, Object ... args)
+PrintWriter printf(Locale loc, String fmtString, Object ... args)
