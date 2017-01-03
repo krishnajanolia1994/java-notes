@@ -1,0 +1,10 @@
+BufferedInputStream
+Buffering I/O is a very common performance optimization. Java’s BufferedInputStream class
+allows you to “wrap” any InputStream into a buffered stream and achieve this performance
+improvement.
+BufferedInputStream has two constructors:
+BufferedInputStream(InputStream inputStream)
+BufferedInputStream(InputStream inputStream, int bufSize)
+
+BufferedInputStream also supports the mark( ) and
+reset( ) methods.
