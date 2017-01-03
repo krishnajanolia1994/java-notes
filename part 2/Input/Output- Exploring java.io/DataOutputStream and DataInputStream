@@ -1,0 +1,32 @@
+DataOutputStream and DataInputStream
+DataOutputStream and DataInputStream enable you to write or read primitive data to or
+from a stream. They implement the DataOutput and DataInput interfaces, respectively.
+These interfaces define methods that convert primitive values to or from a sequence of
+bytes. These streams make it easy to store binary data, such as integers or floating-point
+values, in a file. Each is examined here.
+DataOutputStream extends FilterOutputStream, which extends OutputStream.
+DataOutputStream defines the following constructor:
+DataOutputStream(OutputStream outputStream)
+Here, outputStream specifies the output stream to which data will be written.
+DataOutputStream supports all of the methods defined by it superclasses. However,
+it is the methods defined by the DataOutput interface, which it implements, that make it
+interesting. DataOutput defines methods that convert values of a primitive type into a byte
+sequence and then writes it to the underlying stream. Here is a sampling of these methods:
+final void writeDouble(double value) throws IOException
+final void writeBoolean(boolean value) throws IOException
+final void writeInt(int value) throws IOException
+Here, value is the value written to the stream.
+
+
+DataInputStream is the complement of DataOuputStream. It extends FilterInputStream,
+which extends InputStream, and it implements the DataInput interface. Here is its only
+constructor:
+DataInputStream(InputStream inputStream)
+Here, inputStream specifies the input stream from which data will be read.
+Like DataOutputStream, DataInputStream supports all of the methods of its superclasses,
+but it is the methods defined by the DataInput interface that make it unique. These methods
+read a sequence of bytes and convert them into values of a primitive type. Here is a sampling
+of these methods:
+double readDouble( ) throws IOException
+boolean readBoolean( ) throws IOException
+int readInt( ) throws IOException
