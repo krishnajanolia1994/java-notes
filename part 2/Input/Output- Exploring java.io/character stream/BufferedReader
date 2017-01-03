@@ -1,0 +1,4 @@
+BufferedReader
+BufferedReader improves performance by buffering input. It has two constructors:
+BufferedReader(Reader inputStream)
+BufferedReader(Reader inputStream, int bufSize)
