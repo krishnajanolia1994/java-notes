@@ -1,0 +1,5 @@
+ObjectOutputStream
+The ObjectOutputStream class extends the OutputStream class and implements the
+ObjectOutput interface. It is responsible for writing objects to a stream. A constructor of
+this class is
+ObjectOutputStream(OutputStream outStream) throws IOException
