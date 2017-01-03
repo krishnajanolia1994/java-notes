@@ -1,0 +1,8 @@
+PushbackInputStream
+One of the novel uses of buffering is the implementation of pushback. Pushback is used on
+an input stream to allow a byte to be read and then returned (that is, “pushed back”) to the
+stream. The PushbackInputStream class implements this idea. It provides a mechanism to
+“peek” at what is coming from an input stream without disrupting it.
+PushbackInputStream has the following constructors:
+PushbackInputStream(InputStream inputStream)
+PushbackInputStream(InputStream inputStream, int numBytes)
