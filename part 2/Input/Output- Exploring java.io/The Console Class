@@ -1,0 +1,14 @@
+The Console Class
+Java SE 6 adds the Console class. It is used to read from and write to the console, if one exists.
+It implements the Flushable interface. Console is primarily a convenience class because most
+of its functionality is available through System.in and System.out. However, its use can
+simplify some types of console interactions, especially when reading strings from the console.
+Console supplies no constructors. Instead, a Console object is obtained by calling
+System.console( ), which is shown here:
+static Console console( )
+
+Console defines the methods shown in Table 19-5. Notice that the input methods, such as
+readLine( ), throw IOError if an input error occurs.
+
+Also notice the readPassword( ) methods. These methods let your application read a
+password without echoing what is typed.
