@@ -1,0 +1,4 @@
+Writer
+Writer is an abstract class that defines streaming character output. It implements the Closeable,
+Flushable, and Appendable interfaces. All of the methods in this class throw an IOException
+in the case of errors. Table 19-4 shows a synopsis of the methods in Writer.
