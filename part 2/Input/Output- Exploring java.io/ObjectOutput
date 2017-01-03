@@ -1,0 +1,2 @@
+ObjectOutput
+The ObjectOutput interface extends the DataOutput interface and supports object serialization.
