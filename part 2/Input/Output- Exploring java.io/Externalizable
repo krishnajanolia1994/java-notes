@@ -1,0 +1,10 @@
+Externalizable
+The Java facilities for serialization and deserialization have been designed so that much of
+the work to save and restore the state of an object occurs automatically. However, there are
+cases in which the programmer may need to have control over these processes. For example,
+it may be desirable to use compression or encryption techniques. The Externalizable interface
+is designed for these situations.
+The Externalizable interface defines these two methods:
+void readExternal(ObjectInput inStream)
+throws IOException, ClassNotFoundException
+void writeExternal(Object
