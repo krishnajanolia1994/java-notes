@@ -1,0 +1,22 @@
+PrintWriter
+PrintWriter is essentially a character-oriented version of PrintStream. It implements the
+Appendable, Closeable, and Flushable interfaces. PrintWriter has several constructors.
+The following have been supplied by PrintWriter from the start:
+PrintWriter(OutputStream outputStream)
+PrintWriter(OutputStream outputStream, boolean flushOnNewline)
+PrintWriter(Writer outputStream)
+PrintWriter(Writer outputStream, boolean flushOnNewline)
+
+printWriter(File outputFile) throws FileNotFoundException
+PrintWriter(File outputFile, String charSet)
+throws FileNotFoundException, UnsupportedEncodingException
+PrintWriter(String outputFileName) throws FileNotFoundException
+PrintWriter(String outputFileName, String charSet)
+throws FileNotFoundException, UnsupportedEncodingException
+
+PrintWriter supports the print( ) and println( ) methods for all types, including Object.
+If an argument is not a primitive type, the PrintWriter methods will call the object’s toString( )
+method and then output the result.
+PrintWriter also supports the printf( ) method. It works the same way it does in the
+PrintStream class described earlier: it allows you to specify the precise format of the data.
+Here is how printf( ) is declared in PrintWriter:
