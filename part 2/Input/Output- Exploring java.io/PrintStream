@@ -18,3 +18,16 @@ throws FileNotFoundException, UnsupportedEncodingException
 PrintStream(String outputFileName) throws FileNotFoundException
 PrintStream(String outputFileName, String charSet)
 throws FileNotFoundException, UnsupportedEncodingException
+
+These allow a PrintStream to be created from a File object or by specifying the name of a
+file. In either case, the file is automatically created. Any preexisting file by the same name is
+destroyed.
+
+
+PrintStream supports the print( ) and println( ) methods for all types, including Object.
+If an argument is not a primitive type, the PrintStream methods will call the object’s toString( )
+method and then display the result.
+
+Recently (with the release of JDK 5), the printf( ) method was added to PrintStream. It
+allows you to specify the precise format of the data to be written. The printf( ) method uses
+the Formatter class (described in Chapter 18) to format data.
