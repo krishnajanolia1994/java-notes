@@ -1,0 +1,5 @@
+FileReader
+The FileReader class creates a Reader that you can use to read the contents of a file. Its two
+most commonly used constructors are shown here:
+FileReader(String filePath)
+FileReader(File fileObj)
