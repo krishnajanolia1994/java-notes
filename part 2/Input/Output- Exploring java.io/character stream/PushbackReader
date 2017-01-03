@@ -1,0 +1,12 @@
+PushbackReader
+The PushbackReader class allows one or more characters to be returned to the input stream.
+This allows you to look ahead in the input stream. Here are its two constructors:
+PushbackReader(Reader inputStream)
+PushbackReader(Reader inputStream, int bufSize)
+
+
+PushbackReader provides unread( ), which returns one or more characters to the invoking
+input stream. It has the three forms shown here:
+void unread(int ch)
+void unread(char buffer[ ])
+void unread(char buffer[ ], int offset, int numChars)
