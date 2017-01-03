@@ -1,0 +1,20 @@
+PrintStream
+The PrintStream class provides all of the output capabilities we have been using from the
+System file handle, System.out, since the beginning of the book. This makes PrintStream
+one of Java’s most often used classes. It implements the Appendable, Closeable, and
+Flushable interfaces.
+PrintStream defines several constructors. The ones shown next have been specified
+from the start:
+PrintStream(OutputStream outputStream)
+PrintStream(OutputStream outputStream, boolean flushOnNewline)
+PrintStream(OutputStream outputStream, boolean flushOnNewline,
+String charSet)
+Here, outputStream specifies an open OutputStream that will receive output.
+
+
+PrintStream(File outputFile) throws FileNotFoundException
+PrintStream(File outputFile, String charSet)
+throws FileNotFoundException, UnsupportedEncodingException
+PrintStream(String outputFileName) throws FileNotFoundException
+PrintStream(String outputFileName, String charSet)
+throws FileNotFoundException, UnsupportedEncodingException
