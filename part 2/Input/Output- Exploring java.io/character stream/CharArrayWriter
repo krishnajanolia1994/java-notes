@@ -1,0 +1,11 @@
+CharArrayWriter
+CharArrayWriter is an implementation of an output stream that uses an array as the destination.
+CharArrayWriter has two constructors, shown here:
+
+CharArrayWriter( )
+CharArrayWriter(int numChars)
+In the first form, a buffer with a default size is created. In the second, a buffer is created with a
+size equal to that specified by numChars. The buffer is held in the buf field of CharArrayWriter.
+The buffer size will be increased automatically, if needed. The number of characters held by the
+buffer is contained in the count field of CharArrayWriter. Both buf and count are protected
+fields.
