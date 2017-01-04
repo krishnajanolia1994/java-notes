@@ -1,0 +1,3 @@
+init( )
+The init( ) method is the first method to be called. This is where you should initialize variables.
+This method is called only once during the run time of your applet.
