@@ -1,0 +1,6 @@
+The Networking Classes and Interfaces
+Java supports TCP/IP both by extending the already established stream I/O interface
+introduced in Chapter 19 and by adding the features required to build I/O objects across
+the network. Java supports both the TCP and UDP protocol families. TCP is used for reliable
+stream-based I/O across the network. UDP supports a simpler, hence faster, point-to-point
+datagram-oriented model. The classes contained in the java.net package are shown here:
