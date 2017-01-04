@@ -1,1 +1,28 @@
-.
+A socket identifies an endpoint in a network .Sockets are at the foundation of
+modern networking because a socket allows a single computer to serve many different clients
+at once, as well as to serve many different types of information.This is accomplished through
+the use of a port, which is a numbered socket on a particular machine.
+
+A server is allowed to accept multiple clients
+connected to the same port number, although each session is unique. To manage multiple
+client connections, a server process must be multithreaded or have some other means of
+multiplexing the simultaneous I/O
+
+Socket communication takes place via a protocol. Internet Protocol (IP) is a low-level
+routing protocol that breaks data into small packets and sends them to an address across a
+network, which does not guarantee to deliver said packets to the destination.
+
+Transmission Control Protocol (TCP) is a higher-level protocol that manages to robustly string together
+these packets, sorting and retransmitting them as necessary to reliably transmit data
+
+
+User Datagram Protocol (UDP), sits next to TCP and can be used directly to
+support fast, connectionless, unreliable transport of packets.
+
+TCP/IP reserves the lower 1,024 ports for specific protocols.
+
+
+Just as the numbers of an IP address describe a network hierarchy, the name of an Internet
+address, called its domain name, describes a machine’s location in a name space. For example,
+www.osborne.com is in the COM domain (reserved for U.S. commercial sites); it is called
+osborne (after the company name),
