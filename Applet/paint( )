@@ -1,0 +1,9 @@
+paint( )
+The paint( ) method is called each time your applet’s output must be redrawn. This situation
+can occur for several reasons. For example, the window in which the applet is running may
+be overwritten by another window and then uncovered. Or the applet window may be
+minimized and then restored. paint( ) is also called when the applet begins execution.
+Whatever the cause, whenever the applet must redraw its output, paint( ) is called. The paint( )
+method has one parameter of type Graphics. This parameter will contain the graphics context,
+which describes the graphics environment in which the applet is running. This context is used
+whenever output to the applet is required.
