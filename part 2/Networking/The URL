@@ -1,0 +1,4 @@
+The URL provides a reasonably intelligible form to uniquely identify or address
+information on the Internet
+Within Java’s network class library, the URL class provides a
+simple, concise API to access information across the Internet using URLs.
