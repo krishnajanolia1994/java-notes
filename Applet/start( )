@@ -1,0 +1,5 @@
+start( )
+The start( ) method is called after init( ). It is also called to restart an applet after it has been
+stopped. Whereas init( ) is called once—the first time an applet is loaded—start( ) is called
+each time an applet’s HTML document is displayed onscreen. So, if a user leaves a web page
+and comes back, the applet resumes execution at start( ).
