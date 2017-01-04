@@ -1,0 +1,3 @@
+stop( )
+The stop( ) method is called when a web browser leaves the HTML document containing the
+applet—when it goes to another page, for example.You can restart them when start( ) is called if the user returns to the page.
