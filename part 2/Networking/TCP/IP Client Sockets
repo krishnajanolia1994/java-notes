@@ -1,0 +1,5 @@
+TCP/IP Client Sockets
+TCP/IP sockets are used to implement reliable, bidirectional, persistent, point-to-point,
+stream-based connections between hosts on the Internet. A socket can be used to connect
+Java’s I/O system to other programs that may reside either on the local machine or on any
+other machine on the Internet.
