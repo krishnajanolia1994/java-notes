@@ -1,0 +1,11 @@
+In a Java window, the upper-left
+corner is location 0,0.
+To set the background color of an applet’s window, use setBackground( ).
+A good place to set the foreground and background colors is in the init( ) method. Of
+course, you can change these colors as often as necessary during the execution of your applet.
+
+You can obtain the current settings for the background and foreground colors by calling
+getBackground( ) and getForeground( ), respectively. They are also defined by Component
+and are shown here:
+Color getBackground( )
+Color getForeground( )
