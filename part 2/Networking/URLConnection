@@ -1,0 +1,4 @@
+URLConnection
+URLConnection is a general-purpose class for accessing the attributes of a remote resource.
+Once you make a connection to a remote server, you can use URLConnection to inspect the
+properties of the remote object before actually transporting it locally.
