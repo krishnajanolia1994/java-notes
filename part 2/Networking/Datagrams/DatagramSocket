@@ -1,0 +1,9 @@
+DatagramSocket
+DatagramSocket defines four public constructors. They are shown here:
+DatagramSocket( ) throws SocketException
+DatagramSocket(int port) throws SocketException
+DatagramSocket(int port, InetAddress ipAddress) throws SocketException
+DatagramSocket(SocketAddress address) throws SocketException
+
+DatagramSocket defines many methods. Two of the most important are send( ) and
+receive( ), which are shown here:
