@@ -1,0 +1,4 @@
+Inet4Address and Inet6Address
+Beginning with version 1.4, Java has included support for IPv6 addresses. Because of this, two
+subclasses of InetAddress were created: Inet4Address and Inet6Address. Inet4Address
+represents a traditional-style IPv4 address
