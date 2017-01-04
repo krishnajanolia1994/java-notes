@@ -1,0 +1,8 @@
+HttpURLConnection
+Java provides a subclass of URLConnection that provides support for HTTP connections.
+This class is called HttpURLConnection. You obtain an HttpURLConnection in the same
+way just shown, by calling openConnection( ) on a URL object, but you must cast the result
+to HttpURLConnection. (Of course, you must make sure that you are actually opening an
+HTTP connection.) Once you have obtained a reference to an HttpURLConnection object,
+you can use any of the methods inherited from URLConnection. You can also use any of the
+several methods defined by HttpURLConnection. Here is a sampling:
