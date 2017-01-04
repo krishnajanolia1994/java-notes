@@ -1,0 +1,25 @@
+Factory Methods
+The InetAddress class has no visible constructors. To create an InetAddress object, you
+have to use one of the available factory methods
+
+Three commonly used InetAddress factory methods are
+shown here:
+static InetAddress getLocalHost( )
+throws UnknownHostException
+static InetAddress getByName(String hostName)
+throws UnknownHostException
+static InetAddress[ ] getAllByName(String hostName)
+throws UnknownHostException
+The getLocalHost( ) method simply returns the InetAddress object that represents the local
+host. The getByName( ) method returns an InetAddress for a host name passed to it. If these
+methods are unable to resolve the host name, they throw an UnknownHostException.
+
+On the Internet, it is common for a single name to be used to represent several machines.
+In the world of web servers, this is one way to provide some degree of scaling. The
+getAllByName( ) factory method returns an array of InetAddresses that represent all of
+the addresses that a particular name resolves to. It will also throw an UnknownHostException
+if it can’t resolve the name to at least one address.
+
+can’t resolve the name to at least one address.
+InetAddress also includes the factory method getByAddress( ), which takes an IP
+address and returns an InetAddress object
