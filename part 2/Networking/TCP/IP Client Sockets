@@ -3,3 +3,15 @@ TCP/IP sockets are used to implement reliable, bidirectional, persistent, point-
 stream-based connections between hosts on the Internet. A socket can be used to connect
 Java’s I/O system to other programs that may reside either on the local machine or on any
 other machine on the Internet.
+
+The ServerSocket class is designed to be a “listener,” which waits for clients to
+connect before doing anything.The Socket class is for
+clients. It is designed to connect to server sockets and initiate protocol exchanges
+
+You can gain access to the input and output streams associated with a Socket by use of
+the getInputStream( ) and getOuptutStream( ) methods,
+
+Several other methods are available, including connect( ), which allows you to specify a new
+connection; isConnected( ), which returns true if the socket is connected to a server; isBound( ),
+which returns true if the socket is bound to an address; and isClosed( ), which returns true
+if the socket is closed.
