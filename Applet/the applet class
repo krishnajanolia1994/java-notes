@@ -1,0 +1,10 @@
+Applet provides all necessary
+support for applet execution, such as starting and stopping. It also provides methods that
+load and display images, and methods that load and play audio clips.
+
+First, applets are event driven.
+
+In those
+situations in which your applet needs to perform a repetitive task on its own (for example,
+displaying a scrolling message across its window), you must start an additional thread of
+execution.
