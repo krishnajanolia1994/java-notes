@@ -1,0 +1,5 @@
+Four of these methods, init( ), start( ), stop( ), and destroy( ), apply to all
+applets and are defined by Applet
+
+AWT-based applets (such as those discussed in this chapter) will also override the
+paint( ) method, which is defined by the AWT Component class.
