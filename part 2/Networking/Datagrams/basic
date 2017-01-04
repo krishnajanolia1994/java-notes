@@ -1,0 +1,7 @@
+Datagrams are bundles of information passed between machines. They are somewhat
+like a hard throw from a well-trained but blindfolded catcher to the third baseman. Once
+the datagram has been released to its intended target, there is no assurance that it will arrive
+or even that someone will be there to catch it. Likewise, when the datagram is received,
+there is no assurance that it hasn’t been damaged in transit or that whoever sent it is still
+there to receive a response.
+Java implements datagra
