@@ -1,0 +1,3 @@
+The InetAddress class is used to encapsulate both the numerical IP address and the domain
+name for that address. You interact with this class by using the name of an IP host, which is
+more convenient and understandable than its IP address
