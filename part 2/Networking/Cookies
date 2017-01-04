@@ -1,0 +1,6 @@
+Cookies
+The java.net package includes classes and interfaces that help manage cookies and can be used
+to create a stateful (as opposed to stateless) HTTP session. The classes are CookieHandler,
+CookieManager, and HttpCookie. The interfaces are CookiePolicy and CookieStore. All but
+CookieHandler was added by Java SE 6. (CookieHandler was added by JDK 5.) The creation of
+a stateful HTTP session is beyond the scope of this book.
