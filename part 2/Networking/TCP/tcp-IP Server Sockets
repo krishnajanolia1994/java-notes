@@ -1,0 +1,5 @@
+ServerSockets are quite
+different from normal Sockets. When you create a ServerSocket, it will register itself with
+the system as having an interest in client connections. The constructors for ServerSocket
+reflect the port number that you want to accept connections on and, optionally, how long
+you want the queue for said port to be.
