@@ -1,0 +1,20 @@
+Remember, one of the fundamental architectural constraints imposed on an
+applet is that it must quickly return control to the run-time system. It cannot create a loop
+inside paint( ) that repeatedly scrolls the banner,
+Whenever your applet needs
+to update the information displayed in its window, it simply calls repaint( ).
+
+The repaint( ) method has four forms. Let’s look at each one, in turn. The simplest version
+of repaint( ) is shown here:
+void repaint( )
+This version causes the entire window to be repainted. The following version specifies a region
+that will be repainted:
+void repaint(int left, int top, int width, int height)
+
+Multiple
+requests for repainting that occur within a short time can be collapsed by the AWT in a
+manner such that update( ) is only called sporadically
+One solution to this
+problem is to use the following forms of repaint( ):
+void repaint(long maxDelay)
+void repaint(long maxDelay, int x, int y, int width, int height)
