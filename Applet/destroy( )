@@ -1,0 +1,4 @@
+destroy( )
+The destroy( ) method is called when the environment determines that your applet needs to
+be removed completely from memory. At this point, you should free up any resources the
+applet may be using. The stop( ) method is always called before destroy( ).
