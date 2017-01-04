@@ -1,0 +1,17 @@
+DatagramPacket
+DatagramPacket defines several constructors. Four are shown here:
+DatagramPacket(byte data[ ], int size)
+DatagramPacket(byte data[ ], int offset, int size)
+DatagramPacket(byte data[ ], int size, InetAddress ipAddress, int port)
+DatagramPacket(byte data[ ], int offset, int size, InetAddress ipAddress, int port)
+The first constructor specifies a buffer that will receive data and the size of a packet. It is
+used for receiving data over a DatagramSocket. The second form allows you to specify an
+offset into the buffer at which data will be stored. The third form specifies a target address
+and port, which are used by a DatagramSocket to determine where the data in the packet
+will be sent. The fourth form transmits packets beginning at the specified offset into the
+data. Think of the first two forms as building an “in box,” and the second two forms as
+stuffing and addressing an envelope.
+DatagramPacket defines several methods, including those shown here, that give access
+to the address and port number of a packet, as well as the raw data and its length. In general,
+the get methods are used on packets that are received and the set methods are used on
+packets that will be sent.
