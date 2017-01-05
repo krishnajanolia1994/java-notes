@@ -18,3 +18,10 @@ One solution to this
 problem is to use the following forms of repaint( ):
 void repaint(long maxDelay)
 void repaint(long maxDelay, int x, int y, int width, int height)
+
+
+imp note{  program of banner=>
+the thread is started by a call to t.start( ). Remember that t.start( ) calls a method defined by
+Thread, which causes run( ) to begin executing. It does not cause a call to the version of
+start( ) defined by Applet
+}
