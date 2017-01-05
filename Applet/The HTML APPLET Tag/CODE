@@ -1,0 +1,3 @@
+ CODE is a required attribute that gives the name of the file containing your applet’s
+compiled .class file. This file is relative to the code base URL of the applet, which is the
+directory that the HTML file was in or the directory indicated by CODEBASE if set.
