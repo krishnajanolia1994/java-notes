@@ -1,0 +1,4 @@
+NAME
+NAME is an optional attribute used to specify a name for the applet instance.
+Applets must be named in order for other applets on the same page to find them by name
+and communicate with them.
