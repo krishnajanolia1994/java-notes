@@ -1,0 +1,4 @@
+VSPACE and HSPACE 
+These attributes are optional. VSPACE specifies the space, in pixels,
+above and below the applet. HSPACE specifies the space, in pixels, on each side of the applet.
+They’re treated the same as the IMG tag’s VSPACE and HSPACE attributes
