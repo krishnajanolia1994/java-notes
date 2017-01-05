@@ -1,0 +1,3 @@
+ALT
+The ALT tag is an optional attribute used to specify a short text message that should
+be displayed if the browser recognizes the APPLET tag but can’t currently run Java applets.
