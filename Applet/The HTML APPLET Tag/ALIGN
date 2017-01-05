@@ -1,0 +1,4 @@
+ALIGN
+ALIGN is an optional attribute that specifies the alignment of the applet. This
+attribute is treated the same as the HTML IMG tag with these possible values: LEFT, RIGHT,
+TOP, BOTTOM, MIDDLE, BASELINE, TEXTTOP, ABSMIDDLE, and ABSBOTTOM.
