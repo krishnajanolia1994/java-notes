@@ -1,0 +1,4 @@
+Using the Status Window
+In addition to displaying information in its window, an applet can also output a message
+to the status window of the browser or applet viewer on which it is running. To do so, call
+showStatus( ) with the string that you want displayed.
