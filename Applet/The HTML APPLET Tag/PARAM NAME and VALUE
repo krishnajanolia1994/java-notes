@@ -1,0 +1,3 @@
+PARAM NAME and VALUE
+The PARAM tag allows you to specify applet-specific arguments
+in an HTML page. Applets access their attributes with the getParameter( ) method.
