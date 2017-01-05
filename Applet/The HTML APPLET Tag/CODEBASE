@@ -1,0 +1,2 @@
+ CODEBASE is an optional attribute that specifies the base URL of the applet
+code, which is the directory that will be searched for the applet’s executable class file
