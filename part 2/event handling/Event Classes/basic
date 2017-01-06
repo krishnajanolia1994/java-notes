@@ -1,0 +1,16 @@
+At the root of the Java event class hierarchy is EventObject, which is in java.util. It is the
+superclass for all events. Its one constructor is shown here:
+
+EventObject(Object src)
+
+Here, src is the object that generates this event.
+
+
+EventObject contains two methods: getSource( ) and toString( ). The getSource( ) method
+returns the source of the event. Its general form is shown here:
+Object getSource( )
+As expected, toString( ) returns the string equivalent of the event.
+
+The class AWTEvent, defined within the java.awt package, is a subclass of EventObject.
+It is the superclass (either directly or indirectly) of all AWT-based events used by the delegation
+event model.
