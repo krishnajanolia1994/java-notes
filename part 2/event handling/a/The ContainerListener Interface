@@ -1,0 +1,6 @@
+The ContainerListener Interface
+This interface contains two methods. When a component is added to a container,
+componentAdded( ) is invoked. When a component is removed from a container,
+componentRemoved( ) is invoked. Their general forms are shown here:
+void componentAdded(ContainerEvent ce)
+void componentRemoved(ContainerEvent ce)
