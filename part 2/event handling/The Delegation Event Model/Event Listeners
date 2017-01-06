@@ -5,3 +5,6 @@ A listener is an object that is notified when an event occurs. It has two major 
 First, it must have been registered with one or more sources to receive notifications about
 specific types of events. Second, it must implement methods to receive and process these
 notifications.
+
+The methods that receive and process events are defined in a set of interfaces found in
+java.awt.event.
