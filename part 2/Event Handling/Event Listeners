@@ -1,0 +1,5 @@
+Event Listeners
+A listener is an object that is notified when an event occurs. It has two major requirements.
+First, it must have been registered with one or more sources to receive notifications about
+specific types of events. Second, it must implement methods to receive and process these
+notifications.
