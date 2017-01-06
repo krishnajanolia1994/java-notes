@@ -1,0 +1,7 @@
+The ComponentListener Interface
+This interface defines four methods that are invoked when a component is resized, moved,
+shown, or hidden. Their general forms are shown here:
+void componentResized(ComponentEvent ce)
+void componentMoved(ComponentEvent ce)
+void componentShown(ComponentEvent ce)
+void componentHidden(ComponentEvent ce)
