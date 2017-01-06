@@ -1,0 +1,11 @@
+To allow your
+applet to transfer control to another URL, you must use the showDocument( ) method defined
+by the AppletContext interface.
+AppletContext is an interface that lets you get information from the applet’s execution environment
+
+Within an applet, once you have obtained the applet’s context, you can bring another
+document into view by calling showDocument( ). This method has no return value and
+throws no exception if it fails, so use it carefully. There are two showDocument( ) methods.
+The method showDocument(URL) displays the document at the specified URL. The
+method showDocument(URL, String) displays the specified document at the specified
+location within the browser window.
