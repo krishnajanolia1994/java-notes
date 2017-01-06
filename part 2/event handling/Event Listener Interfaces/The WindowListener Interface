@@ -1,0 +1,14 @@
+The WindowListener Interface
+This interface defines seven methods. The windowActivated( ) and windowDeactivated( )
+methods are invoked when a window is activated or deactivated, respectively. If a window
+is iconified, the windowIconified( ) method is called. When a window is deiconified,
+the windowDeiconified( ) method is called. When a window is opened or closed, the
+windowOpened( ) or windowClosed( ) methods are called, respectively. The windowClosing( )
+method is called when a window is being closed. The general forms of these methods are
+void windowActivated(WindowEvent we)
+void windowClosed(WindowEvent we)
+void windowClosing(WindowEvent we)
+void windowDeactivated(WindowEvent we)
+void windowDeiconified(WindowEvent we)
+void windowIconified(WindowEvent we)
+void windowOpened(WindowEvent we)
