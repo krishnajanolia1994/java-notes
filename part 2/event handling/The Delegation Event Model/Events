@@ -1,0 +1,4 @@
+Events
+In the delegation model, an event is an object that describes a state change in a source. It can
+be generated as a consequence of a person interacting with the elements in a graphical user
+interface.
