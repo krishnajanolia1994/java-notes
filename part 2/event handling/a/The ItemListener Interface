@@ -1,0 +1,4 @@
+The ItemListener Interface
+This interface defines the itemStateChanged( ) method that is invoked when the state of an
+item changes. Its general form is shown here:
+void itemStateChanged(ItemEvent ie)
