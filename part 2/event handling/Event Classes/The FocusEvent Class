@@ -1,0 +1,22 @@
+The FocusEvent Class
+A FocusEvent is generated when a component gains or loses input focus. These events are
+identified by the integer constants FOCUS_GAINED and FOCUS_LOST.
+
+ComponentEvent and has these constructors:
+FocusEvent(Component src, int type)
+FocusEvent(Component src, int type, boolean temporaryFlag)
+FocusEvent(Component src, int type, boolean temporaryFlag, Component other)
+The argument temporaryFlag is set to true if the focus event is temporary
+
+You can determine the other component by calling getOppositeComponent( ),
+shown here:
+Component getOppositeComponent()
+
+To test if a modifier was pressed at the time an event is generated, use the isAltDown( ),
+isAltGraphDown( ), isControlDown( ), isMetaDown( ), and isShiftDown( ) methods. The
+forms of these methods are shown here:
+boolean isAltDown( )
+boolean isAltGraphDown( )
+boolean isControlDown( )
+boolean isMetaDown( )
+boolean isShiftDown( )
