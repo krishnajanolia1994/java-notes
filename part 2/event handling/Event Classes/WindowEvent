@@ -1,0 +1,9 @@
+WindowEvent 
+is a subclass of ComponentEvent. It defines several constructors. The
+first is
+WindowEvent(Window src, int type)
+Here, src is a reference to the object that generated this event. The type of the event is type.
+The next three constructors offer more detailed control:
+WindowEvent(Window src, int type, Window other)
+WindowEvent(Window src, int type, int fromState, int toState)
+WindowEvent(Window src, int type, Window other, int fromState, int toState)
