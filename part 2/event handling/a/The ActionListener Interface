@@ -1,0 +1,4 @@
+The ActionListener Interface
+This interface defines the actionPerformed( ) method that is invoked when an action event
+occurs. Its general form is shown here:
+void actionPerformed(ActionEvent ae)
