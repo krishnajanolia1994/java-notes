@@ -1,3 +1,8 @@
 Event Sources
 A source is an object that generates an event. This occurs when the internal state of that object
 changes in some way. Sources may generate more than one type of event.
+
+A source must register listeners in order for the listeners to receive notifications about
+a specific type of event. Each type of event has its own registration method. Here is the
+general form:
+public void addTypeListener(TypeListener el)
