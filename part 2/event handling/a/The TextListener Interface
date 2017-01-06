@@ -1,0 +1,6 @@
+The TextListener Interface
+This interface defines the textChanged( ) method that is invoked when a change occurs
+in a text area or text field. Its general form is shown here:
+void textChanged(TextEvent te)This interface defines the textChanged( ) method that is invoked when a change occurs
+in a text area or text field. Its general form is shown here:
+void textChanged(TextEvent te)
