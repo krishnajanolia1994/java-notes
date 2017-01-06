@@ -1,0 +1,11 @@
+The MouseListener Interface
+This interface defines five methods. If the mouse is pressed and released at the same point,
+mouseClicked( ) is invoked. When the mouse enters a component, the mouseEntered( )
+method is called. When it leaves, mouseExited( ) is called. The mousePressed( ) and
+mouseReleased( ) methods are invoked when the mouse is pressed and released, respectively.
+The general forms of these methods are shown here:
+void mouseClicked(MouseEvent me)
+void mouseEntered(MouseEvent me)
+void mouseExited(MouseEvent me)
+void mousePressed(MouseEvent me)
+void mouseReleased(MouseEvent me)
