@@ -1,3 +1,8 @@
 The Delegation Event Model
 The modern approach to handling events is based on the delegation event model, which defines
-standard and consistent mechanisms to generate and process events.
+standard and consistent mechanisms to generate and process events.Its concept is quite simple:
+a source generates an event and sends it to one or more listeners. In this scheme, the listener
+simply waits until it receives an event. Once an event is received, the listener processes the event
+and then returns.The advantage of this design is that the application logic that processes events
+is cleanly separated from the user interface logic that generates those events.In the delegation event model,
+listeners must register with a source in order to receive an event notification.
