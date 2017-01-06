@@ -1,0 +1,3 @@
+The Delegation Event Model
+The modern approach to handling events is based on the delegation event model, which defines
+standard and consistent mechanisms to generate and process events.
