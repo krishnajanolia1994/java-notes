@@ -1,0 +1,7 @@
+The ItemEvent Class
+An ItemEvent is generated when a check box or a list item is clicked or when a checkable menu
+item is selected or deselected. (Check boxes and list boxes are described later in this book.)
+There are two types of item events, which are identified by the following integer constants:
+
+In addition, ItemEvent defines one integer constant, ITEM_STATE_CHANGED, that
+signifies a change of state.
