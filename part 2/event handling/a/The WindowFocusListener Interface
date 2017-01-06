@@ -1,0 +1,5 @@
+The WindowFocusListener Interface
+This interface defines two methods: windowGainedFocus( ) and windowLostFocus( ). These
+are called when a window gains or loses input focus. Their general forms are shown here:
+void windowGainedFocus(WindowEvent we)
+void windowLostFocus(WindowEvent we)
