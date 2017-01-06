@@ -5,3 +5,10 @@ There are two types of item events, which are identified by the following intege
 
 In addition, ItemEvent defines one integer constant, ITEM_STATE_CHANGED, that
 signifies a change of state.
+
+ItemEvent has this constructor:
+ItemEvent(ItemSelectable src, int type, Object entry, int state)
+
+The getItem( ) method can be used to obtain a reference to the item that generated an
+event. Its signature is shown here:
+Object getItem( )
