@@ -1,0 +1,10 @@
+The MouseMotionListener Interface
+This interface defines two methods. The mouseDragged( ) method is called multiple times
+as the mouse is dragged. The mouseMoved( ) method is called multiple times as the mouse
+is moved. Their general forms are shown here:
+void mouseDragged(MouseEvent me)
+void mouseMoved(MouseEvent me)This interface defines two methods. The mouseDragged( ) method is called multiple times
+as the mouse is dragged. The mouseMoved( ) method is called multiple times as the mouse
+is moved. Their general forms are shown here:
+void mouseDragged(MouseEvent me)
+void mouseMoved(MouseEvent me)
