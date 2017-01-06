@@ -1,0 +1,4 @@
+The KeyListener Interface
+This interface defines three methods. The keyPressed( ) and keyReleased( ) methods are
+invoked when a key is pressed and released, respectively. The keyTyped( ) method is invoked
+when a character has been entered.
