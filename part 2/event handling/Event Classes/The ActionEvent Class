@@ -1,0 +1,26 @@
+The ActionEvent Class
+An ActionEvent is generated when a button is pressed, a list item is double-clicked, or a
+menu item is selected. The ActionEvent class defines four integer constants that can be
+used to identify any modifiers associated with an action event: ALT_MASK, CTRL_MASK,
+META_MASK, and SHIFT_MASK. In addition, there is an integer constant, ACTION_
+PERFORMED, which can be used to identify action events.
+
+ActionEvent has these three constructors:
+ActionEvent(Object src, int type, String cmd)
+ActionEvent(Object src, int type, String cmd, int modifiers)
+ActionEvent(Object src, int type, String cmd, long when, int modifiers)
+Here, src is a reference to the object that generated this event. The type of the event is specified
+by type, and its command string is cmd. The argument modifiers indicates which modifier keys
+( ALT , CTRL , META , and/or SHIFT ) were pressed when the event was generated. The when
+parameter specifies when the event occurred.
+You can obtain the command name for the invoking ActionEvent object by using the
+getActionCommand( ) method, shown here:
+String getActionCommand( )
+For example, when a button is pressed, an action event is generated that has a command
+name equal to the label on that button.
+The getModifiers( ) method returns a value that indicates which modifier keys ( ALT , CTRL ,
+META , and/or SHIFT ) were pressed when the event was generated. Its form is shown here:
+int getModifiers( )
+The method getWhen( ) returns the time at which the event took place. This is called the
+event’s timestamp. The getWhen( ) method is shown here:
+long getWhen( )
