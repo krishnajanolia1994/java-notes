@@ -6,3 +6,13 @@ A source must register listeners in order for the listeners to receive notificat
 a specific type of event. Each type of event has its own registration method. Here is the
 general form:
 public void addTypeListener(TypeListener el)
+
+When an event
+occurs, all registered listeners are notified and receive a copy of the event object. This is known
+as multicasting the event.
+
+event occurs, the registered listener is notified. This is known as unicasting the event.
+
+A source must also provide a method that allows a listener to unregister an interest
+in a specific type of event. The general form of such a method is this:
+public void removeTypeListener(TypeListener el)
