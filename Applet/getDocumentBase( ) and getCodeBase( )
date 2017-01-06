@@ -1,0 +1,9 @@
+getDocumentBase( ) and getCodeBase( )
+Often, you will create applets that will need to explicitly load media and text. Java will
+allow the applet to load data from the directory holding the HTML file that started the
+applet (the document base) and the directory from which the applet’s class file was loaded
+(the code base). These directories are returned as URL objects (described in Chapter 20) by
+getDocumentBase( ) and getCodeBase( ). They can be concatenated with a string that names
+the file you want to load. To actually load another file, you will use the showDocument( )
+method defined by the AppletContext interface, discussed in the next section.
+The following applet illustrates these methods:
