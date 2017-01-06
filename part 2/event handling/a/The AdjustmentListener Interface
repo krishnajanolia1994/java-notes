@@ -1,0 +1,4 @@
+The AdjustmentListener Interface
+This interface defines the adjustmentValueChanged( ) method that is invoked when an
+adjustment event occurs. Its general form is shown here:
+void adjustmentValueChanged(AdjustmentEvent ae)
