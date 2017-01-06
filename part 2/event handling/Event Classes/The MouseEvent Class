@@ -1,0 +1,14 @@
+The MouseEvent Class
+There are eight types of mouse events. The MouseEvent class defines the following integer
+constants that can be used to identify them:
+
+MouseEvent is a subclass of InputEvent. Here is one of its constructors:
+MouseEvent(Component src, int type, long when, int modifiers,
+int x, int y, int clicks, boolean triggersPopup)
+
+e NOBUTTON value indicates that no button was pressed or released.
+Java SE 6 added three methods to MouseEvent that obtain the coordinates of the mouse
+relative to the screen rather than the component. They are shown here:
+Point getLocationOnScreen( )
+int getXOnScreen( )
+int getYOnScreen( )
