@@ -1,0 +1,8 @@
+The KeyEvent Class
+A KeyEvent is generated when keyboard input occurs. There are three types of key events,
+which are identified by these integer constants: KEY_PRESSED, KEY_RELEASED, and
+KEY_TYPED.
+
+KeyEvent is a subclass of InputEvent. Here is one of its constructors:
+KeyEvent(Component src, int type, long when, int modifiers, int code, char ch)
+Here, src is a reference to the component that generated the event.
