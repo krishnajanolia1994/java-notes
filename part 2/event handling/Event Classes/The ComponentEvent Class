@@ -1,0 +1,8 @@
+The ComponentEvent Class
+A ComponentEvent is generated when the size, position, or visibility of a component is
+changed
+
+ComponentEvent has this constructor:
+ComponentEvent(Component src, int type)
+Here, src is a reference to the object that generated this event. The type of the event is
+specified by type.
