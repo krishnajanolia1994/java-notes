@@ -1,0 +1,10 @@
+The ContainerEvent Class
+A ContainerEvent is generated when a component is added to or removed from a container.
+The ContainerEvent class defines int constants that
+can be used to identify them: COMPONENT_ADDED and COMPONENT_REMOVED.
+
+ComponentEvent and has this constructor:
+ContainerEvent(Component src, int type, Component comp)
+Here, src is a reference to the container that generated this event. The type of the event is specified
+by type, and the component that has been added to or removed from the container is comp.
+You can obtain a reference to the container that generated this event by using the
