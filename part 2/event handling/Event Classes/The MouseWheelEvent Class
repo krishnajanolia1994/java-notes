@@ -1,0 +1,10 @@
+The MouseWheelEvent Class
+The MouseWheelEvent class encapsulates a mouse wheel event. It is a subclass of MouseEvent.
+Not all mice have wheels. If a mouse has a wheel, it is located between the left and right
+buttons. Mouse wheels are used for scrolling. MouseWheelEvent defines these two integer
+constants:
+
+Here is one of the constructors defined by MouseWheelEvent:
+MouseWheelEvent(Component src, int type, long when, int modifiers,
+int x, int y, int clicks, boolean triggersPopup,
+int scrollHow, int amount, int count)
