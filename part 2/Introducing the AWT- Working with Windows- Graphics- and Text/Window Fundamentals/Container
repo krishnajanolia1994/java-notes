@@ -1,0 +1,3 @@
+Container
+The Container class is a subclass of Component. It has additional methods that allow other
+Component objects to be nested within it.
