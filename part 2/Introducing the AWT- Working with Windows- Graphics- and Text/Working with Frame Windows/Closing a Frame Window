@@ -1,0 +1,6 @@
+Closing a Frame Window
+When using a frame window, your program must remove that window from the screen when
+it is closed, by calling setVisible(false). To intercept a window-close event, you must implement
+the windowClosing( ) method of the WindowListener interface. Inside windowClosing( ),
+you must remove the window from the screen. The example in the next section illustrates
+this technique.
