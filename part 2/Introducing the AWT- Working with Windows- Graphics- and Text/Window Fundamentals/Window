@@ -1,0 +1,4 @@
+Window
+The Window class creates a top-level window. A top-level window is not contained within any
+other object; it sits directly on the desktop. Generally, you won’t create Window objects
+directly. Instead, you will use a subclass of Window called Frame, described next.
