@@ -1,0 +1,4 @@
+Component
+At the top of the AWT hierarchy is the Component class. Component is an abstract class that
+encapsulates all of the attributes of a visual component. All user interface elements that are
+displayed on the screen and that interact with the user are subclasses of Component.
