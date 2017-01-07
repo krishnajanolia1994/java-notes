@@ -1,0 +1,4 @@
+Panel
+The Panel class is a concrete subclass of Container. It doesn’t add any new methods; it simply
+implements Container. A Panel may be thought of as a recursively nestable, concrete screen
+component. Panel is the superclass for Applet.
