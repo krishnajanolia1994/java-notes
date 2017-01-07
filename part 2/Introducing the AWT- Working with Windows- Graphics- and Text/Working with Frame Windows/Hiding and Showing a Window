@@ -1,0 +1,5 @@
+Hiding and Showing a Window
+After a frame window has been created, it will not be visible until you call setVisible( ).
+Its signature is shown here:
+void setVisible(boolean visibleFlag)
+The component is visible if the argument to this method is true. Otherwise, it is hidden.
