@@ -1,0 +1,4 @@
+Setting a Window’s Title
+You can change the title in a frame window using setTitle( ), which has this general form:
+void setTitle(String newTitle)
+Here, newTitle is the new title for the window.
