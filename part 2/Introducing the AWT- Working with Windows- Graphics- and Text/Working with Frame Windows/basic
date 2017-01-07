@@ -1,0 +1,6 @@
+After the applet, the type of window you will most often create is derived from Frame. You will
+use it to create child windows within applets, and top-level or child windows for stand-alone
+applications. As mentioned, it creates a standard-style window.
+Here are two of Frame’s constructors:
+Frame( )
+Frame(String title)
