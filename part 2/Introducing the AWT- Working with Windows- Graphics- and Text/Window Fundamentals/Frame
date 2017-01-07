@@ -1,0 +1,5 @@
+Frame(p 667)
+Frame encapsulates what is commonly thought of as a “window.” It is a subclass of Window
+and has a title bar, menu bar, borders, and resizing corners. If you create a Frame object from
+within an applet, it will contain a warning message, such as “Java Applet Window,” to the
+user that an applet window has been created
