@@ -2,3 +2,7 @@ Setting the Window’s Dimensions
 The setSize( ) method is used to set the dimensions of the window. Its signature is shown here:
 void setSize(int newWidth, int newHeight)
 void setSize(Dimension newSize)
+
+The getSize( ) method is used to obtain the current size of a window. Its signature is
+shown here:
+Dimension getSize( )
