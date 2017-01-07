@@ -1,0 +1,4 @@
+Canvas
+Although it is not part of the hierarchy for applet or frame windows, there is one other type
+of window that you will find valuable: Canvas. Canvas encapsulates a blank window upon
+which you can draw. You will see an example of Canvas later in this book.
