@@ -1,0 +1,4 @@
+Setting the Window’s Dimensions
+The setSize( ) method is used to set the dimensions of the window. Its signature is shown here:
+void setSize(int newWidth, int newHeight)
+void setSize(Dimension newSize)
