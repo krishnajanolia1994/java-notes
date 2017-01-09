@@ -3,3 +3,14 @@ When working with fonts, often you need to know which fonts are available on you
 To obtain this information, you can use the getAvailableFontFamilyNames( ) method defined
 by the GraphicsEnvironment class. It is shown here:
 String[ ] getAvailableFontFamilyNames( )
+
+In addition, the getAllFonts( ) method is defined by the GraphicsEnvironment class. It
+is shown here:
+Font[ ] getAllFonts( )
+This method returns an array of Font objects for all of the available fonts.
+
+
+Since these methods are members of GraphicsEnvironment, you need a
+GraphicsEnvironment reference to call them. You can obtain this reference by using the
+getLocalGraphicsEnvironment( ) static method, which is defined by GraphicsEnvironment.
+It is shown here:
