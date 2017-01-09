@@ -1,0 +1,3 @@
+at color the object is drawn over.
+To return to overwrite mode, call setPaintMode( ), shown here:
+void setPaintMode( )
