@@ -1,0 +1,12 @@
+Working with Color
+Java supports color in a portable, device-independent fashion. The AWT color system allows
+you to specify any color you want. It then finds the best match for that color, given the limits
+of the display hardware currently executing your program or applet. Thus, your code does not
+need to be concerned with the differences in the way color is supported by various hardware
+devices. Color is encapsulated by the Color class.
+As you saw in Chapter 21, Color defines several constants (for example, Color.black) to
+specify a number of common colors. You can also create your own colors, using one of the
+color constructors. Three commonly used forms are shown here:
+Color(int red, int green, int blue)
+Color(int rgbValue)
+Color(float red, float green, float blue)
