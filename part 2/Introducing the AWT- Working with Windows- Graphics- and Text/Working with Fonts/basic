@@ -1,0 +1,8 @@
+Working with Fonts
+The AWT supports multiple type fonts. Years ago, fonts emerged from the domain of traditional
+typesetting to become an important part of computer-generated documents and displays.
+The AWT provides flexibility by abstracting font-manipulation operations and allowing for
+dynamic selection of fonts.
+Fonts have a family name, a logical font name, and a face name. The family name is the
+general name of the font, such as Courier. The logical name specifies a category of font, such
+as Monospaced. The face name specifies a specific font, such as Courier Italic.
