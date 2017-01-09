@@ -1,0 +1,4 @@
+. A graphics context is encapsulated by the Graphics class and is obtained in two ways:
+• It is passed to an applet when one of its various methods, such as paint( ) or update( ),
+is called.
+• It is returned by the getGraphics( ) method of Component.
