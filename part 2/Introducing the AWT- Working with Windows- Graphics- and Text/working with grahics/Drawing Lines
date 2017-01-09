@@ -1,0 +1,5 @@
+Drawing Lines
+Lines are drawn by means of the drawLine( ) method, shown here:
+void drawLine(int startX, int startY, int endX, int endY)
+drawLine( ) displays a line in the current drawing color that begins at startX,startY and ends
+at endX,endY.
