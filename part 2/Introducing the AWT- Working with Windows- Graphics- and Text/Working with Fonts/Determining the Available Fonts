@@ -1,0 +1,5 @@
+Determining the Available Fonts
+When working with fonts, often you need to know which fonts are available on your machine.
+To obtain this information, you can use the getAvailableFontFamilyNames( ) method defined
+by the GraphicsEnvironment class. It is shown here:
+String[ ] getAvailableFontFamilyNames( )
