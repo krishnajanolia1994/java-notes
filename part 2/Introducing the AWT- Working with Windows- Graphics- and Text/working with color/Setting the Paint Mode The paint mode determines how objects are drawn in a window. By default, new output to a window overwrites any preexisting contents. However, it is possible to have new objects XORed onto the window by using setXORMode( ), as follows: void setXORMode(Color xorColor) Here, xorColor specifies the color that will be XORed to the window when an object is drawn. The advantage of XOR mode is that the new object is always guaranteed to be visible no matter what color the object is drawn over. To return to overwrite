@@ -1,0 +1,9 @@
+Setting the Paint Mode
+The paint mode determines how objects are drawn in a window. By default, new output to
+a window overwrites any preexisting contents. However, it is possible to have new objects
+XORed onto the window by using setXORMode( ), as follows:
+void setXORMode(Color xorColor)
+Here, xorColor specifies the color that will be XORed to the window when an object is drawn.
+The advantage of XOR mode is that the new object is always guaranteed to be visible no matter
+what color the object is drawn over.
+To return to overwrite
