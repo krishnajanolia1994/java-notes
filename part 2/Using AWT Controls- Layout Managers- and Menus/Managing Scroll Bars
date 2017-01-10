@@ -1,0 +1,25 @@
+Managing Scroll Bars
+Scroll bars are used to select continuous values between a specified minimum and maximum.
+Scroll bars may be oriented horizontally or vertically. A scroll bar is actually a composite of
+several individual parts. Each end has an arrow that you can click to move the current value
+of the scroll bar one unit in the direction of the arrow.
+
+Scrollbar( ) throws HeadlessException
+Scrollbar(int style) throws HeadlessException
+Scrollbar(int style, int initialValue, int thumbSize, int min, int max)
+throws HeadlessException
+
+To obtain the current value of the scroll bar, call getValue( ). It returns the current
+setting. To set the current value, call setValue( ). These methods are as follows:
+int getValue( )
+void setValue(int newValue)
+
+
+You can also retrieve the minimum and maximum values via getMinimum( ) and
+getMaximum( ), shown here:
+int getMinimum( )
+int getMaximum( )
+
+
+void setUnitIncrement(int newIncr)
+void setBlockIncrement(int newIncr)
