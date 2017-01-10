@@ -9,3 +9,7 @@ After a button has been created, you can set its label by calling setLabel( ). Y
 retrieve its label by calling getLabel( ). These methods are as follows:
 void setLabel(String str)
 String getLabel( )
+
+setActionCommand( ). This method changes the action command string, but does not affect
+the string used to label the button. Thus, setting the action command enables the action
+command and the label of a button to differ.
