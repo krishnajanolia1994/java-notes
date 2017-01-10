@@ -1,0 +1,5 @@
+The HeadlessException
+Most of the AWT controls described in this chapter now have constructors that can throw
+a HeadlessException when an attempt is made to instantiate a GUI component in a
+non-interactive environment (such as one in which no display, mouse, or keyboard is
+present).
