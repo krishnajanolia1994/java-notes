@@ -7,3 +7,11 @@ TextArea(int numLines, int numChars) throws HeadlessException
 TextArea(String str) throws HeadlessException
 TextArea(String str, int numLines, int numChars) throws HeadlessException
 TextArea(String str, int numLines, int numChars, int sBars) throws HeadlessException
+
+TextArea is a subclass of TextComponent. Therefore, it supports the getText( ), setText( ),
+getSelectedText( ), select( ), isEditable( ), and setEditable( ) methods described in the
+preceding section.
+TextArea adds the following methods:
+void append(String str)
+void insert(String str, int index)
+void replaceRange(String str, int startIndex, int endIndex)
