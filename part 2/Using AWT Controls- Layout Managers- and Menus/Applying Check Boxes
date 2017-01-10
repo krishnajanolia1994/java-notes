@@ -1,0 +1,22 @@
+Applying Check Boxes
+A check box is a control that is used to turn an option on or off. It consists of a small box that
+can either contain a check mark or not. There is a label associated with each check box that
+describes what option the box represents. You change the state of a check box by clicking on
+it. Check boxes can be used individually or as part of a group. Check boxes are objects of the
+Checkbox class.
+Checkbox supports these constructors:
+Checkbox( ) throws HeadlessException
+Checkbox(String str) throws HeadlessException
+Checkbox(String str, boolean on) throws HeadlessException
+Checkbox(String str, boolean on, CheckboxGroup cbGroup) throws HeadlessException
+Checkbox(String str, CheckboxGroup cbGroup, boolean on) throws HeadlessException
+
+
+To retrieve the current state of a check box, call getState( ). To set its state, call
+setState( ). You can obtain the current label associated with a check box by calling
+getLabel( ). To set the label, call setLabel( ). These methods are as follows:
+
+
+Handling Check Boxes
+it is handale by ItemListener
+which contain methot  itemStateChanged( )
