@@ -1,0 +1,19 @@
+Choice Controls
+The Choice class is used to create a pop-up list of items from which the user may choose.
+Thus, a Choice control is a form of menu. When inactive, a Choice component takes up
+only enough space to show the currently selected item. When the user clicks on it, the whole
+list of choices pops up, and a new selection can be made. Each item in the list is a string that
+appears as a left-justified label in the order it is added to the Choice object. Choice only
+defines the default constructor, which creates an empty list.
+To add a selection to the list, call add( ). It has this general form:
+void add(String name)
+
+To determine which item is currently selected, you may call either getSelectedItem( )
+or getSelectedIndex( ). These methods are shown here:
+String getSelectedItem( )
+int getSelectedIndex( )
+The getSelectedItem( ) method returns a string containing the name of the item.
+getSelectedIndex( ) returns the index of the item.
+
+To obtain the number of items in the list, call getItemCount( ) .you can set the currently
+selected item using the select( )
