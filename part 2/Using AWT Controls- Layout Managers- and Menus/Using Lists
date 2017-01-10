@@ -1,0 +1,8 @@
+Using Lists
+The List class provides a compact, multiple-choice, scrolling selection list. Unlike the
+Choice object, which shows only the single selected item in the menu, a List object can be
+constructed to show any number of choices in the visible window. It can also be created to
+allow multiple selections. List provides these constructors:
+List( ) throws HeadlessException
+List(int numRows) throws HeadlessException
+List(int numRows, boolean multipleSelect) throws HeadlessException
