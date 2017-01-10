@@ -1,0 +1,9 @@
+Using a TextArea
+Sometimes a single line of text input is not enough for a given task. To handle these situations,
+the AWT includes a simple multiline editor called TextArea. Following are the constructors
+for TextArea:
+TextArea( ) throws HeadlessException
+TextArea(int numLines, int numChars) throws HeadlessException
+TextArea(String str) throws HeadlessException
+TextArea(String str, int numLines, int numChars) throws HeadlessException
+TextArea(String str, int numLines, int numChars, int sBars) throws HeadlessException
