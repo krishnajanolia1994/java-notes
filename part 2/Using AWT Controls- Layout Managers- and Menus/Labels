@@ -1,0 +1,16 @@
+Labels
+The easiest control to use is a label. A label is an object of type Label, and it contains a string,
+which it displays. Labels are passive controls that do not support any interaction with the
+user. Label defines the following constructors
+Label( ) throws HeadlessException
+Label(String str) throws HeadlessException
+Label(String str, int how) throws HeadlessException
+
+You can set or change the text in a label by using the setText( ) method. You can obtain
+the current label by calling getText( ). These methods are shown here:
+void setText(String str)
+String getText( )
+
+
+You can set the alignment of the string within the label by calling setAlignment( ).
+To obtain the current alignment, call getAlignment( ). The methods are as follows:
