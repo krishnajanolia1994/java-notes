@@ -1,0 +1,13 @@
+Ascent, Descent, and Leading
+
+Ascent, descent, and leading are properties of fonts. The ascent of a font is the distance from the tops of the tallest glyphs to the baseline.
+
+ascent
+
+The descent of a font is the distance from the baseline to the bottom of the lowest descenders on the glyphs.
+
+descent
+
+The leading is the recommended vertical distance from the bottom of the descenders to the top of the next line in a multiline setting.
+
+leading 
