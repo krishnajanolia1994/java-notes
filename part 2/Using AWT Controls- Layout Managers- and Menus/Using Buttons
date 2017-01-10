@@ -1,0 +1,11 @@
+Using Buttons
+Perhaps the most widely used control is the push button. A push button is a component that
+contains a label and that generates an event when it is pressed. Push buttons are objects of
+type Button. Button defines these two constructors:
+Button( ) throws HeadlessException
+Button(String str) throws HeadlessException
+
+After a button has been created, you can set its label by calling setLabel( ). You can
+retrieve its label by calling getLabel( ). These methods are as follows:
+void setLabel(String str)
+String getLabel( )
