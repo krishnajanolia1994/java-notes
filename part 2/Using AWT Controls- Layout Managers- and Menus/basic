@@ -1,0 +1,6 @@
+Controls 
+are components that allow a user to interact with your application in various
+ways—for example, a commonly used control is the push button. A layout manager
+automatically positions components within a container. Thus, the appearance of a window
+is determined by a combination of the controls that it contains and the layout manager used
+to position them
