@@ -1,0 +1,4 @@
+Responding to Controls
+Except for labels, which are passive, all controls generate events when they are accessed by
+the user. For example, when the user clicks on a push button, an event is sent that identifies
+the push button
