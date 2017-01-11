@@ -1,0 +1,4 @@
+The location and size of each component in a grid bag are determined by a set of constraints
+linked to it. The constraints are contained in an object of type GridBagConstraints. Constraints
+include the height and width of a cell, and the placement of a component, its alignment, and its
+anchor point within the cell.
