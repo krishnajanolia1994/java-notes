@@ -1,0 +1,4 @@
+Using Insets
+Sometimes you will want to leave a small amount of space between the container that holds
+your components and the window that contains it. To do this, override the getInsets( ) method
+that is defined by Container.
