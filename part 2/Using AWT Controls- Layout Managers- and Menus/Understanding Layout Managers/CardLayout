@@ -1,0 +1,20 @@
+CardLayout
+The CardLayout class is unique among the other layout managers in that it stores several
+different layouts. Each layout can be thought of as being on a separate index card in a deck
+that can be shuffled so that any card is on top at a given time.
+
+Thus, you must create a panel that contains the deck and a panel for each card in the deck. Next, you add to the
+appropriate panel the components that form each card. You then add these panels to the panel
+for which CardLayout is the layout manager.
+
+When card panels are added to a panel, they are usually given a name. Thus, most of
+the time, you will use this form of add( ) when adding cards to a panel:
+void add(Component panelObj, Object name)
+
+After you have created a deck, your program activates a card by calling one of the
+following methods defined by CardLayout:
+void first(Container deck)
+void last(Container deck)
+void next(Container deck)
+void previous(Container deck)
+void show(Container deck, String cardName)
