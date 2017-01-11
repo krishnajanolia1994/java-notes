@@ -1,0 +1,12 @@
+Each Container object has a layout manager associated with it. A layout manager is an
+instance of any class that implements the LayoutManager interface. The layout manager is
+set by the setLayout( ) method. If no call to setLayout( ) is made, then the default layout
+manager is used. Whenever a container is resized (or sized for the first time), the layout
+manager is used to position each of the components within it.
+The setLayout( ) method has the following general form:
+void setLayout(LayoutManager layoutObj)
+
+Whenever the
+container needs to be resized, the layout manager is consulted via its minimumLayoutSize( )
+and preferredLayoutSize( ) methods. Each component that is being managed by a layout
+manager contains the getPreferredSize( ) and getMinimumSize( ) methods.
