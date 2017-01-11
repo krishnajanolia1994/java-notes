@@ -2,4 +2,4 @@ BorderLayout
 The BorderLayout class implements a common layout
 style for top-level windows. It has four narrow,
 fixed-width components at the edges and one large
-area in the center. The four sides are referred to as north,
+area in the center. The four sides are referred to as north,south, east, and west.
