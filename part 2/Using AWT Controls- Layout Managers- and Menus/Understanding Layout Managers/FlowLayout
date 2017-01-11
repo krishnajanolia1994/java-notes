@@ -1,0 +1,9 @@
+FlowLayout
+FlowLayout is the default layout manager. This is the layout manager that the preceding
+examples have used. FlowLayout implements a simple layout style, which is similar to
+how words flow in a text editor.
+
+FlowLayout:
+FlowLayout( )
+FlowLayout(int how)
+FlowLayout(int how, int horz, int vert)
