@@ -2,3 +2,11 @@ The location and size of each component in a grid bag are determined by a set of
 linked to it. The constraints are contained in an object of type GridBagConstraints. Constraints
 include the height and width of a cell, and the placement of a component, its alignment, and its
 anchor point within the cell.
+
+
+nagers, it is still quite easy to use once you understand how it works.
+GridBagLayout defines only one constructor, which is shown here:
+GridBagLayout( )
+GridBagLayout defines several methods, of which many are protected and not for general
+use. There is one method, however, that you must use: setConstraints( ). It is shown here:
+void setConstraints(Component comp, GridBagConstraints cons)
