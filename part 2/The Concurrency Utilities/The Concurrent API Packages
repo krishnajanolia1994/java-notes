@@ -1,0 +1,6 @@
+java.util.concurrent
+java.util.concurrent defines the core features that support alternatives to the built-in approaches
+to synchronization and interthread communication. It defines the following key features:
+Synchronizers
+Executors
+Concurrent collections
