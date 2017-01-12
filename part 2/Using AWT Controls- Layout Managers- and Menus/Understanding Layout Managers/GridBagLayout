@@ -10,3 +10,10 @@ GridBagLayout( )
 GridBagLayout defines several methods, of which many are protected and not for general
 use. There is one method, however, that you must use: setConstraints( ). It is shown here:
 void setConstraints(Component comp, GridBagConstraints cons)
+
+
+The gridwidth variable lets you specify the width of a cell in terms of cell units.
+The default is 1. To specify that a component use the remaining space in a row, use
+GridBagConstraints.REMAINDER. To specify that a component use the next-to-last
+cell in a row, use GridBagConstraints.RELATIVE. The gridheight constraint works the
+same way, but in the vertical direction.
