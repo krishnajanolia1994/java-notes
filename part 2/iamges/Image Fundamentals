@@ -1,0 +1,6 @@
+the Component class in java.awt has a factory method called createImage( )
+that is used to create Image objects. (Remember that all of the AWT components are subclasses
+of Component, so all support this method.)
+The createImage( ) method has the following two forms:
+Image createImage(ImageProducer imgProd)
+Image createImage(int width, int height)
