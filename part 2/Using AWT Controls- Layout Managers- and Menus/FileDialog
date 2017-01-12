@@ -1,0 +1,8 @@
+FileDialog
+Java provides a built-in dialog box that lets the user specify a file. To create a file dialog box,
+instantiate an object of type FileDialog. This causes a file dialog box to be displayed. Usually,
+this is the standard file dialog box provided by the operating system. Here are three
+FileDialog constructors:
+FileDialog(Frame parent)
+FileDialog(Frame parent, String boxName)
+FileDialog(Frame parent, String boxName, int how)
