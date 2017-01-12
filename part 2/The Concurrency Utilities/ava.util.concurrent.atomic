@@ -1,0 +1,7 @@
+java.util.concurrent.atomic
+java.util.concurrent.atomic facilitates the use of variables in a concurrent environment.
+It provides a means of efficiently updating the value of a variable without the use of locks.
+
+This is accomplished through the use of classes, such as AtomicInteger and AtomicLong,
+and methods, such as compareAndSet( ), decrementAndGet( ), and getAndSet( ). These
+methods execute as a single, non-interruptible operation.
