@@ -1,0 +1,5 @@
+Loading an Image
+The other way to obtain an image is to load one. One way to do this is to use the getImage( )
+method defined by the Applet class. It has the following forms:
+Image getImage(URL url)
+Image getImage(URL url, String imageName)
