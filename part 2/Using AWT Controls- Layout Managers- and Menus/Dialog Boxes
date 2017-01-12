@@ -1,0 +1,10 @@
+Dialog Boxes
+Often, you will want to use a dialog box to hold a set of related controls. Dialog boxes are
+primarily used to obtain user input and are often child windows of a top-level window.
+Dialog boxes don’t have menu bars, but in other respects, they function like frame windows.
+(You can add controls to them, for example, in the same way that you add controls to a
+frame window.
+
+When a modal dialog box is active,
+all input is directed to it until it is closed. This means that you cannot access other parts of
+your program until you have closed the dialog box.
