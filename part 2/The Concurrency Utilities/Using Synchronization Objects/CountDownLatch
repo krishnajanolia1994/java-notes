@@ -1,0 +1,15 @@
+CountDownLatch
+Sometimes you will want a thread to wait until one or more events have occurred. To handle
+such a situation, the concurrent API supplies CountDownLatch. A CountDownLatch is
+initially created with a count of the number of events that must occur before the latch is
+released. Each time an event happens, the count is decremented. When the count reaches zero,
+the latch opens.
+CountDownLatch has the following constructor:
+CountDownLatch(int num)
+
+To wait on the latch, a thread calls await( ), which has the forms shown here:
+void await( ) throws InterruptedException
+void await(long wait, TimeUnit tu) throws InterruptedException
+
+To signal an event, call the countDown( ) method, shown next:
+void countDown( )
