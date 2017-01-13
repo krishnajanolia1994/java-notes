@@ -1,0 +1,9 @@
+CyclicBarrier
+A situation not uncommon in concurrent programming occurs when a set of two or more
+threads must wait at a predetermined execution point until all threads in the set have reached that point.
+To handle such a situation, the concurrent API supplies the CyclicBarrier class.
+It enables you to define a synchronization object that suspends until the specified number
+of threads has reached the barrier point.
+CyclicBarrier has the following two constructors:
+CyclicBarrier(int numThreads)
+CyclicBarrier(int numThreads, Runnable action)
