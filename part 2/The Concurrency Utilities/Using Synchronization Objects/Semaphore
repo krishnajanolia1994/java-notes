@@ -1,0 +1,22 @@
+Semaphore
+The synchronization object that many readers will immediately recognize is Semaphore,
+which implements a classic semaphore. A semaphore controls access to a shared resource
+through the use of a counter. If the counter is greater than zero, then access is allowed. If it
+is zero, then access is denied. What the counter is counting are permits that allow access to
+the shared resource. Thus, to access the resource, a thread must be granted a permit from the
+
+To acquire a permit, call the acquire( ) method, which has these two forms:
+void acquire( ) throws InterruptedException
+void acquire(int num) throws InterruptedException
+
+
+To release a permit, call release( ), which has these two forms:
+void release( )
+void release(int num)
+
+In both IncThread and DecThread, notice the call to sleep( ) within run( ). It is used to
+“prove” that accesses to Shared.count are synchronized by the semaphore. In run( ), the call
+to sleep( ) causes the invoking thread to pause between each access to Shared.count. This
+would normally enable the second thread to run. However, because of the semaphore, the
+second thread must wait until the first has released the permit, which happens only after all
+accesses by the first thread are complete.
