@@ -7,3 +7,15 @@ of threads has reached the barrier point.
 CyclicBarrier has the following two constructors:
 CyclicBarrier(int numThreads)
 CyclicBarrier(int numThreads, Runnable action)
+
+
+Here is the general procedure that you will follow to use CyclicBarrier. First, create a
+CyclicBarrier object, specifying the number of threads that you will be waiting for. Next,
+when each thread reaches the barrier, have it call await( ) on that object. This will pause
+execution of the thread until all of the other threads also call await( ). Once the specified
+number of threads has reached the barrier, await( ) will return, and execution will resume.
+Also, if you have specified an action, then that thread is executed.
+The await( ) method has the following two forms:
+int await( ) throws InterruptedException, BrokenBarrierException
+int await(long wait, TimeUnit tu)
+throws InterruptedException, BrokenBarrierException, TimeoutException
