@@ -1,0 +1,24 @@
+Matcher
+The Matcher class has no constructors. Instead, you create a Matcher by calling the matcher( )
+factory method defined by Pattern, as just explained. Once you have created a Matcher, you
+will use its methods to perform various pattern matching operations
+
+To determine if a subsequence of the input sequence matches the pattern, use find( ).
+One version is shown here:
+boolean find( )
+
+You can obtain the index within the input sequence of the current match by calling
+start( ).
+
+You can replace all occurrences of a matching sequence with another sequence by
+calling replaceAll( ), shown here:
+String replaceAll(String newStr)
+
+A character class is a set of characters. A character class is specified by putting the
+characters in the class between brackets. For example, the class [wxyz] matches w, x, y, or z.
+To specify an inverted set, precede the characters with a ^. For example, [^wxyz] matches
+any character except w, x, y, or z. You can specify a range of characters using a hyphen.
+For example, to specify a character class that will match the digits 1 through 9, use [1-9].
+
+The wildcard character is the . (dot) and it matches any character. Thus, a pattern that
+consists of “.” will match these (and other) input sequences: “A”, “a”, “x”, and so on.
