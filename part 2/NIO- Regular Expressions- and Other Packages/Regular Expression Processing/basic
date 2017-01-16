@@ -1,2 +1,6 @@
 The java.util.regex package supports regular expression processing. As the term is used
 here, a regular expression is a string of characters that describes a character sequence.
+
+There are two classes that support regular expression processing: Pattern and Matcher.
+These classes work together. Use Pattern to define a regular expression. Match the pattern
+against another sequence using Matcher
