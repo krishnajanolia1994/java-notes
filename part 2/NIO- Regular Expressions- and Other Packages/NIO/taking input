@@ -1,0 +1,4 @@
+Next, the buffer is rewound
+through a call to rewind( ). This call is necessary because the current position is at the end
+of the buffer after the call to read( ). It must be reset to the start of the buffer in order for the
+bytes in mBuf to be read by calling get( ).
