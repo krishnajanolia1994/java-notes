@@ -1,0 +1,12 @@
+Channels
+Channels are defined in java.nio.channels. A channel represents an open connection to an
+I/O source or destination. You obtain a channel by calling getChannel( ) on an object that
+supports channels. For example, getChannel( ) is supported by following I/O classes.
+
+The specific type of channel returned depends upon the type of object getChannel( )
+is called on. For example, when called on a FileInputStream, FileOutputStream, or
+RandomAccessFile, getChannel( ) returns a channel of type FileChannel. When called
+on a Socket, getChannel( ) returns a SocketChannel.
+
+FileChannel also provides the map( ) method, which lets you
+map a file to a buffer.
