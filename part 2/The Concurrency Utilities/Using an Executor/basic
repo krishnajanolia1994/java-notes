@@ -4,3 +4,17 @@ through the Thread class.
 At the core of an executor is the Executor interface. It defines the following method:
 void execute(Runnable thread)
 The thread specified by thread is executed.
+
+
+The concurrent API defines two predefined executor classes: ThreadPoolExecutor
+and ScheduledThreadPoolExecutor. ThreadPoolExecutor implements the Executor and
+ExecutorService interfaces and provides support for a managed pool of threads.
+ScheduledThreadPoolExecutor also implements the ScheduledExecutorService interface
+to allow a pool of threads to be scheduled.
+
+most often you will want to obtain an executor
+by calling one of the following static factory methods defined by the Executors utility class.
+Here are some examples:
+static ExecutorService newCachedThreadPool( )
+static ExecutorService newFixedThreadPool(int numThreads)
+static ScheduledExecutorService newScheduledThreadPool(int numThreads)
