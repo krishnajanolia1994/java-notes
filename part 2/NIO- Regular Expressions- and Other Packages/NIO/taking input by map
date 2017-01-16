@@ -1,0 +1,12 @@
+A second, and often easier, way to read a file is to map it to a buffer. The advantage to
+this approach is that the buffer automatically contains the contents of the file. No explicit
+read operation is necessary. To map and read the contents of a file, follow this general
+procedure. First, open the file using FileInputStream. Next, obtain a channel to that file by
+calling getChannel( ) on the file object. Then, map the channel to a buffer by calling map( )
+on the FileChannel object. The map( ) method is shown here:
+MappedByteBuffer map(FileChannel.MapMode how,
+long pos, long size) throws IOException
+
+For reading a file, use MapMode.READ_ONLY. To read and write, use MapeMode.READ_
+WRITE. MapMode.PRIVATE causes a private copy of the file to be made, and changes to
+the buffer do not affect the underlying file.
