@@ -1,0 +1,6 @@
+Writing to a File
+There are several ways to write to a file through a channel. Again, we will look at two. First,
+you can write data to an output file through a channel, by using explicit write operations.
+Second, if the file is opened for read/write operations, you can map the file to a buffer and
+then write to that buffer. Changes to the buffer will automatically be reflected in the file.
+Both ways are described here.
