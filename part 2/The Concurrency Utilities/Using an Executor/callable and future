@@ -1,0 +1,22 @@
+Callable is a generic interface that is defined like this:
+interface Callable<V>
+
+Here, V indicates the type of data returned by the task. Callable defines only one method,
+call( ), which is shown here:
+V call( ) throws Exception
+
+A Callable task is executed by an ExecutorService, by calling its submit( ) method. There
+are three forms of submit( ), but only one is used to execute a Callable. It is shown here:
+<T> Future<T> submit(Callable<T> task)
+Here, task is the Callable object that will be executed in its own thread. The result is returned
+through an object of type Future.
+Future is a generic interface that represents the value that will be returned by a Callable
+object. Because this value is obtained at some future time, the name Future is appropriate.
+Future is defined like this:
+interface Future<V>
+Here, V specifies the type of the result.
+To obtain the returned value, you will call Future’s get( ) method, which has these two forms:
+V get( )
+throws InterruptedException, ExecutionException
+V get(long wait, TimeUnit tu)
+throws InterruptedException, ExecutionException, TimeoutException
