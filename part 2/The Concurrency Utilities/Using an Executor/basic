@@ -1,0 +1,6 @@
+The concurrent API supplies a feature called an executor that initiates and controls the
+execution of threads. As such, an executor offers an alternative to managing threads
+through the Thread class.
+At the core of an executor is the Executor interface. It defines the following method:
+void execute(Runnable thread)
+The thread specified by thread is executed.
