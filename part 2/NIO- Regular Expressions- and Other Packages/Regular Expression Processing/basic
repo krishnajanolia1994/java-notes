@@ -1,0 +1,2 @@
+The java.util.regex package supports regular expression processing. As the term is used
+here, a regular expression is a string of characters that describes a character sequence.
