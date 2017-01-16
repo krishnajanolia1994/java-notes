@@ -1,0 +1,4 @@
+Buffers
+Buffers are defined in the java.nio package. All buffers are subclasses of the Buffer class,
+which defines the core functionality common to all buffers: current position, limit, and
+capacity.  Buffer also supports mark and reset. Buffer defines several methods,
