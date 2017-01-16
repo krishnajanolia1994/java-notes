@@ -1,0 +1,8 @@
+Exchanger
+Perhaps the most interesting of the synchronization classes is Exchanger. It is designed
+to simplify the exchange of data between two threads. The operation of an Exchanger is
+astoundingly simple: it simply waits until two separate threads call its exchange( ) method.
+When that occurs, it exchanges the data supplied by the threads.
+
+Exchanger is a generic class that is declared as shown here:
+Exchanger<V>
