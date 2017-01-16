@@ -1,0 +1,12 @@
+Locks
+The java.util.concurrent.locks package provides support for locks, which are objects that
+offer an alternative to using synchronized to control access to a shared resource. In general,
+here is how a lock works. Before accessing a shared resource, the lock that protects that
+resource is acquired. When access to the resource is complete, the lock is released. If a second
+thread attempts to acquire the lock when it is in use by another thread, the second thread
+will suspend until the lock is released. In this way, conflicting access to a shared resource
+is prevented.
+
+java.util.concurrent.locks supplies an implementation of Lock called ReentrantLock.
+ReentrantLock implements a reentrant lock, which is a lock that can be repeatedly entered
+by the thread that currently holds the lock.
