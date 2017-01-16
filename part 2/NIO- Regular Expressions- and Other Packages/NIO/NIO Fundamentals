@@ -1,0 +1,4 @@
+NIO Fundamentals
+The NIO system is built on two foundational items: buffers and channels. A buffer holds data.
+A channel represents an open connection to an I/O device, such as a file or a socket. In general,
+to use the NIO system, you obtain a channel to an I/O device and a buffer to hold data.
