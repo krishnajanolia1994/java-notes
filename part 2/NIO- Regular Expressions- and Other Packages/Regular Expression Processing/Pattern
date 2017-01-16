@@ -1,0 +1,8 @@
+Pattern
+The Pattern class defines no constructors. Instead, a pattern is created by calling the compile( )
+factory method. One of its forms is shown here:
+static Pattern compile(String pattern)
+
+Here, pattern is the regular expression that you want to use. The compile( ) method transforms
+the string in pattern into a pattern that can be used for pattern matching by the Matcher class.
+It returns a Pattern object that contains the pattern.
