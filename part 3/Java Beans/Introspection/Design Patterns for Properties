@@ -1,0 +1,4 @@
+Design Patterns for Properties
+A property is a subset of a Bean’s state. The values assigned to the properties determine the
+behavior and appearance of that component. A property is set through a setter method. A
+property is obtained by a getter method. There are two types of properties: simple and indexed.
