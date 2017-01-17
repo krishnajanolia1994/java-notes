@@ -1,0 +1,6 @@
+Customizers
+A Bean developer can provide a customizer that helps another developer configure the Bean. A
+customizer can provide a step-by-step guide through the process that must be followed to use
+the component in a specific context. Online documentation can also be provided. A Bean
+developer has great flexibility to develop a customizer that can differentiate his or her product
+in the marketplace.
