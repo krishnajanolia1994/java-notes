@@ -1,0 +1,5 @@
+Simple Properties
+A simple property has a single value. It can be identified by the following design patterns,
+where N is the name of the property and T is its type:
+public T getN( )
+public void setN(T arg)
