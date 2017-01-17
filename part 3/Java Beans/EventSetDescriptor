@@ -1,0 +1,4 @@
+EventSetDescriptor
+The EventSetDescriptor class represents a Bean event. It supports several methods that
+obtain the methods that a Bean uses to add or remove event listeners, and to otherwise manage
+events.
