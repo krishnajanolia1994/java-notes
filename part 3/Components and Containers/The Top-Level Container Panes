@@ -1,0 +1,10 @@
+The Top-Level Container Panes
+Each top-level container defines a set of panes. At the top of the hierarchy is an instance of
+JRootPane. JRootPane is a lightweight container whose purpose is to manage the other
+panes. It also helps manage the optional menu bar. The panes that comprise the root pane
+are called the glass pane, the content pane, and the layered pane.
+
+The glass pane enables you to manage mouse events that affect the entire container.
+
+The layered pane is an instance of JLayeredPane. The layered pane allows components
+to be given a depth value. This value determines which component overlays another. 
