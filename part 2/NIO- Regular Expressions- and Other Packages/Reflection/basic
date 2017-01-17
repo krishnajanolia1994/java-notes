@@ -1,0 +1,4 @@
+Reflection is the ability of software to analyze itself.
+The package java.lang.reflect includes several interfaces. Of special interest is Member,
+which defines methods that allow you to get information about a field, constructor, or
+method of a class. There are also eight classes in this package. These are listed in Table 27-4.
