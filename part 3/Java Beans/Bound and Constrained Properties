@@ -3,3 +3,10 @@ A Bean that has a bound property generates an event when the property is changed
 event is of type PropertyChangeEvent and is sent to objects that previously registered anChapter 28:
 Java Beans
 interest in receiving such notifications.
+
+
+A class that handles this event must implement the
+PropertyChangeListener interface.
+A Bean that has a constrained property generates an event when an attempt is made to
+change its value. It also generates an event of type PropertyChangeEvent. It too is sent to objects
+that previously registered an interest in receiving such notifications.
