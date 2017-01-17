@@ -1,0 +1,3 @@
+MethodDescriptor
+The MethodDescriptor class represents a Bean method. To obtain the name of the method,
+call getName( ).
