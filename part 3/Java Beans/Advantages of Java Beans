@@ -1,0 +1,13 @@
+Advantages of Java Beans
+The following list enumerates some of the benefits that Java Bean technology provides for
+a component developer:
+• A Bean obtains all the benefits of Java’s “write-once, run-anywhere” paradigm.
+• The properties, events, and methods of a Bean that are exposed to another application
+can be controlled.
+• Auxiliary software can be provided to help configure a Bean. This software is only
+needed when the design-time parameters for that component are being set. It does
+not need to be included in the run-time environment.
+• The configuration settings of a Bean can be saved in persistent storage and restored
+at a later time.
+• A Bean may register to receive events from other objects and can generate events
+that are sent to other objects.
