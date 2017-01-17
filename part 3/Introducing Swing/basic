@@ -1,0 +1,19 @@
+. Because the AWT components use native code resources, they are referred to as heavyweight.
+
+The use of native peers led to several problems.
+
+First, because of variations between
+operating systems, a component might look, or even act, differently on different platforms.
+This potential variability threatened the overarching philosophy of Java: write once, run
+anywhere.
+
+Second, the look and feel of each component was fixed.) and could not be (easily) changed
+
+Third, the use of heavyweight components caused some frustrating restrictions.
+
+
+To owercome above problem swing was introduced in 1997
+
+Before moving on, it is necessary to make one important point: although Swing eliminates
+a number of the limitations inherent in the AWT, Swing does not replace it. Instead, Swing
+is built on the foundation of the AWT. This is why the AWT is still a crucial part of Java.
