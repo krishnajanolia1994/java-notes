@@ -1,0 +1,8 @@
+Design Patterns for Events
+Beans use the delegation event model that was discussed earlier in this book. Beans can
+generate events and send them to other objects. These can be identified by the following
+design patterns, where T is the type of the event:
+public void addTListener(TListener eventListener)
+public void addTListener(TListener eventListener)
+throws java.util.TooManyListenersException
+public void removeTListener(TListener eventListener)
