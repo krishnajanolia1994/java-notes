@@ -1,0 +1,5 @@
+Introspection
+At the core of Java Beans is introspection. This is the process of analyzing a Bean to determine
+its capabilities. This is an essential feature of the Java Beans API because it allows another
+application, such as a design tool, to obtain information about a component. Without
+introspection, the Java Beans technology could not operate.
