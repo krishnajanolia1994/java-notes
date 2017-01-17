@@ -1,0 +1,9 @@
+Create a Swing Applet
+The second type of program that commonly uses Swing is the applet. Swing-based applets
+are similar to AWT-based applets, but with an important difference: A Swing applet extends
+JApplet rather than Applet. JApplet is derived from Applet. Thus, JApplet includes all of
+the functionality found in Applet and adds support for Swing. JApplet is a top-level Swing
+container, which means that it is not derived from JComponent. Because JApplet is a
+top-level container, it includes the various panes described earlier. This means that all
+components are added to JApplet’s content pane in the same way that components are
+added to JFrame’s content pane.
