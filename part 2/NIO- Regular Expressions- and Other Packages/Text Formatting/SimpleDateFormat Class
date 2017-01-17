@@ -1,0 +1,15 @@
+SimpleDateFormat Class
+SimpleDateFormat is a concrete subclass of DateFormat. It allows you to define your own
+formatting patterns that are used to display date and time information.
+One of its constructors is shown here:
+SimpleDateFormat(String formatString)
+The argument formatString describes how date and time information is displayed. An example
+of its use is given here:
+SimpleDateFormat sdf = SimpleDateFormat("dd MMM yyyy hh:mm:ss zzz");
+
+
+For numbers, the number of times a pattern letter is repeated determines how many digits
+are presented. For example, hh:mm:ss can present 01:51:15, but h:m:s displays the same time
+value as 1:51:15.
+Finally, M or MM causes the month to be displayed as one or two digits. However, three
+or more repetitions of M cause the month to be displayed as a text string.
