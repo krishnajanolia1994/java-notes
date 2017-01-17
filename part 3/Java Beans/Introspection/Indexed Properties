@@ -1,0 +1,7 @@
+Indexed Properties
+An indexed property consists of multiple values. It can be identified by the following design
+patterns, where N is the name of the property and T is its type:
+public T getN(int index);
+public void setN(int index, T value);
+public T[ ] getN( );
+public void setN(T values[ ]);
