@@ -1,0 +1,11 @@
+DateFormat Class
+DateFormat is an abstract class that provides the ability to format and parse dates and
+times. The getDateInstance( ) method returns an instance of DateFormat that can format
+date information. It is available in these forms:
+static final DateFormat getDateInstance( )
+static final DateFormat getDateInstance(int style)
+static final DateFormat getDateInstance(int style, Locale locale)
+
+One of the most commonly used methods in this class is format( ). It has several
+overloaded forms, one of which is shown here:
+final String format(Date d)
