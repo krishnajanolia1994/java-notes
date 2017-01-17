@@ -1,0 +1,7 @@
+Using the BeanInfo Interface
+As the preceding discussion shows, design patterns implicitly determine what information is
+available to the user of a Bean. The BeanInfo interface enables you to explicitly control what
+information is available. The BeanInfo interface defines several methods, including these:
+PropertyDescriptor[ ] getPropertyDescriptors( )
+EventSetDescriptor[ ] getEventSetDescriptors( )
+MethodDescriptor[ ] getMethodDescriptors( )
