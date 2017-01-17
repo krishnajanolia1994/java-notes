@@ -1,0 +1,5 @@
+Bound and Constrained Properties
+A Bean that has a bound property generates an event when the property is changed. The
+event is of type PropertyChangeEvent and is sent to objects that previously registered anChapter 28:
+Java Beans
+interest in receiving such notifications.
