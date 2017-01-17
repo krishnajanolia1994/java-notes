@@ -1,0 +1,4 @@
+In general, Swing components are derived from the JComponent class.
+JComponent provides the functionality that is common to all components. For example, JComponent supports the
+pluggable look and feel. JComponent inherits the AWT classes Container and Component.
+Thus, a Swing component is built on and compatible with an AWT component.
