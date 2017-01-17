@@ -5,3 +5,7 @@ circumstances. If you only need to perform a one-time pattern match, you can use
 matches( ) method defined by Pattern. It is shown here:
 static boolean matches(String pattern, CharSequence str)
 It returns true if pattern matches str and false otherwise.
+
+You can also perform a pattern match by using the matches( ) method implemented by
+String. It is shown here:
+boolean matches(String pattern)
