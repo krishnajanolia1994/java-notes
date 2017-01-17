@@ -1,0 +1,4 @@
+a component is an independent visual control, such as a push button or slider.
+Thus, a container is a special type of component that is designed to hold other
+components. Furthermore, in order for a component to be displayed, it must be held within
+a container.
