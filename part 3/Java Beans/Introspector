@@ -1,0 +1,3 @@
+Introspector
+The Introspector class provides several static methods that support introspection. Of most
+interest is getBeanInfo( )
