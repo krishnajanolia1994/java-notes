@@ -1,0 +1,6 @@
+Swing Components Are Lightweight
+With very few exceptions, Swing components are lightweight. This means that they are written
+entirely in Java and do not map directly to platform-specific peers., 
+because lightweight components do not translate into native peers, the look and
+feel of each component is determined by Swing, not by the underlying operating system. This
+means that each component will work in a consistent manner across all platforms.
