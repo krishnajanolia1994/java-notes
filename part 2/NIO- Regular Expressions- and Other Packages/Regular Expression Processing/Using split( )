@@ -1,0 +1,6 @@
+Using split( )
+You can reduce an input sequence into its individual tokens by using the split( ) method
+defined by Pattern. One form of the split( ) method is shown here:
+String[ ] split(CharSequence str)
+It processes the input sequence passed in str, reducing it into tokens based on the delimiters
+specified by the pattern.
