@@ -1,0 +1,4 @@
+Remote Method Invocation (RMI)
+Remote Method Invocation (RMI) allows a Java object that executes on one machine to invoke
+a method of a Java object that executes on another machine. This is an important feature,
+because it allows you to build distributed applications.
