@@ -1,0 +1,11 @@
+Containers
+Swing defines two types of containers. The first are top-level containers: JFrame, JApplet,
+JWindow, and JDialog. These containers do not inherit JComponent. They do, however,
+inherit the AWT classes Component and Container. Unlike Swing’s other components,
+which are lightweight, the top-level containers are heavyweight. This makes the top-level
+containers a special case in the Swing component library.
+
+The second type of containers supported by Swing are lightweight containers. Lightweight
+containers do inherit JComponent.
+
+lightweight container can be contained within another container.
