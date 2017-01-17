@@ -1,0 +1,7 @@
+Two Pattern-Matching Options
+Although the pattern-matching techniques described in the foregoing offer the greatest
+flexibility and power, there are two alternatives which you might find useful in some
+circumstances. If you only need to perform a one-time pattern match, you can use the
+matches( ) method defined by Pattern. It is shown here:
+static boolean matches(String pattern, CharSequence str)
+It returns true if pattern matches str and false otherwise.
