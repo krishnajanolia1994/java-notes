@@ -4,3 +4,12 @@ buttons, in which only one button can be selected at
 any one time. They are supported by the JRadioButton class, which extends JToggleButton.
 JRadioButton provides several constructors. The one used in the example is shown here:
 JRadioButton(String str)
+
+
+In order for their mutually exclusive nature to be activated, radio buttons must be
+configured into a group. Only one of the buttons in the group can be selected at any time.
+For example, if a user presses a radio button that is in a group, any previously selected
+button in that group is automatically deselected. A button group is created by the ButtonGroup
+class. Its default constructor is invoked for this purpose. Elements are then added to the
+button group via the following method:
+void add(AbstractButton ab)
