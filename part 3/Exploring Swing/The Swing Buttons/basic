@@ -1,0 +1,4 @@
+The Swing Buttons
+Swing defines four types of buttons: JButton, JToggleButton, JCheckBox, and JRadioButton.
+All are subclasses of the AbstractButton class, which extends JComponent. Thus, all
+buttons share a set of common traits.
