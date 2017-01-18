@@ -1,0 +1,8 @@
+JScrollPane
+JScrollPane is a lightweight container that automatically handles the scrolling of another
+component. The component being scrolled can either be an individual component, such as
+a table, or a group of components contained within another lightweight container, such as a
+JPanel. In either case, if the object being scrolled is larger than the viewable area, horizontal
+and/or vertical scroll bars are automatically provided, and the component can be scrolled
+through the pane. Because JScrollPane automates scrolling, it usually eliminates the need
+to manage individual scroll bars.
