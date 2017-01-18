@@ -1,0 +1,7 @@
+Check Boxes
+The JCheckBox class provides the functionality of a check box. Its immediate superclass is
+JToggleButton, which provides support for two-state buttons, as just described. JCheckBox
+defines several constructors. The one used here is
+JCheckBox(String str)
+It creates a check box that has the text specified by str as a label. Other constructors let you
+specify the initial selection state of the button and specify an icon.
