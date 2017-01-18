@@ -1,0 +1,14 @@
+JTextField
+JTextField is the simplest Swing text component. It is also probably its most widely used text
+component. JTextField allows you to edit one line of text. It is derived from JTextComponent,
+which provides the basic functionality common to Swing text components. JTextField uses
+the Document interface for its model.
+Three of JTextField’s constructors are shown here:
+JTextField(int cols)
+JTextField(String str, int cols)
+JTextField(String str)
+Here, str is the string to be initially presented, and cols is the number of columns in the text
+field. If no string is specified, the text field is initially empty. If the number of columns is not
+specified, the text field is sized to fit the specified string.
+
+To obtain the text currently in the text field, call getText( ).
