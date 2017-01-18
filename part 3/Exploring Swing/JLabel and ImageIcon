@@ -1,0 +1,19 @@
+JLabel and ImageIcon
+JLabel is Swing’s easiest-to-use component. It creates a label and was introduced in the
+preceding chapter. Here, we will look at JLabel a bit more closely. JLabel can be used to
+display text and/or an icon. It is a passive component in that it does not respond to user
+input. JLabel defines several constructors. Here are three of them:
+JLabel(Icon icon)
+JLabel(String str)
+JLabel(String str, Icon icon, int align)
+
+
+The ImageIcon constructor used by the example in this section:
+ImageIcon(String filename)
+It obtains the image in the file named filename.
+The icon and text associated with the label can be obtained by the following methods:
+Icon getIcon( )
+String getText( )
+The icon and text associated with a label can be set by these methods:
+void setIcon(Icon icon)
+void setText(String str)
