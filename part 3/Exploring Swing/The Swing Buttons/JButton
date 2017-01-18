@@ -1,0 +1,11 @@
+JButton
+The JButton class provides the functionality of a push button. You have already seen a
+simple form of it in the preceding chapter. JButton allows an icon, a string, or both to be
+associated with the push button. Three of its constructors are shown here:
+JButton(Icon icon)
+JButton(String str)
+JButton(String str, Icon icon)
+
+setActionCommand( )
+
+getActionCommand( ):--The action command identifies the button.
