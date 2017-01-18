@@ -1,0 +1,9 @@
+JTabbedPane
+JTabbedPane encapsulates a tabbed pane. It manages a set of components by linking them
+with tabs. Selecting a tab causes the component associated with that tab to come to the
+forefront. Tabbed panes are very common in the modern GUI, and you have no doubt used
+them many times. Given the complex nature of a tabbed pane, they are surprisingly easy to
+create and use.
+
+Tabs are added by calling addTab( ). Here is one of its forms:
+void addTab(String name, Component comp)
