@@ -1,0 +1,7 @@
+Because JComponent inherits Component, all Swing’s lightweight components inherit
+the paint( ) method. However, you will not override it to paint directly to the surface of a
+component. The reason is that Swing uses a bit more sophisticated approach to painting that
+involves three distinct methods: paintComponent( ), paintBorder( ), and paintChildren( ).
+These methods paint the indicated portion of a component and divide the painting process
+into its three distinct, logical actions. In a lightweight component, the original AWT method
+paint( ) simply executes calls to these methods, in the order just shown.
