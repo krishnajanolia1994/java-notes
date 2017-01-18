@@ -1,0 +1,15 @@
+JToggleButton
+A useful variation on the push button is called a
+toggle button. A toggle button looks just like a push
+button, but it acts differently because it has two
+states: pushed and released. That is, when you press
+a toggle button, it stays pressed rather than popping
+back up as a regular push button does. When you
+press the toggle button a second time, it releases
+(pops up). Therefore, each time a toggle button is
+pushed, it toggles between its two states.
+
+Like JButton, JToggleButton generates an action event each time it is pressed. Unlike
+JButton, however, JToggleButton also generates an item event. This event is used by those
+components that support the concept of selection. When a JToggleButton is pressed in, it is
+selected. When it is popped out, it is deselected
