@@ -1,0 +1,6 @@
+Compute the Paintable Area
+When drawing to the surface of a component, you must be careful to restrict your output
+to the area that is inside the border. Although Swing automatically clips any output that
+will exceed the boundaries of a component, it is still possible to paint into the border, which
+will then get overwritten when the border is drawn. To avoid this, you must compute the
+paintable area of the component.
