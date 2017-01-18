@@ -1,0 +1,6 @@
+Radio Buttons
+Radio buttons are a group of mutually exclusive
+buttons, in which only one button can be selected at
+any one time. They are supported by the JRadioButton class, which extends JToggleButton.
+JRadioButton provides several constructors. The one used in the example is shown here:
+JRadioButton(String str)
