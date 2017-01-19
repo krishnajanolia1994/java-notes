@@ -20,3 +20,7 @@ ListSelectionModel:
 SINGLE_SELECTION
 SINGLE_INTERVAL_SELECTION
 MULTIPLE_INTERVAL_SELECTION
+
+You can obtain the index of the first item selected, which will also be the index of the only
+selected item when using single-selection mode, by calling getSelectedIndex( ), shown here:
+int getSelectedIndex( )
