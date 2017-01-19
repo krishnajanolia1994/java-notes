@@ -1,0 +1,22 @@
+JList
+In Swing, the basic list class is called JList. It supports the selection of one or more items
+from a list. Although the list often consists of strings, it is possible to create a list of just
+about any object that can be displayed. JList is so widely used in Java that it is highly
+unlikely that you have not seen one before.
+JList provides several constructors. The one used here is
+JList(Object[ ] items)
+
+A JList generates a ListSelectionEvent when the user makes or changes a selection.
+This event is also generated when the user deselects an item. It is handled by implementing
+ListSelectionListener. This listener specifies only one method, called valueChanged( ),
+which is shown here:
+
+By default, a JList allows the user to select multiple ranges of items within the list, but
+you can change this behavior by calling setSelectionMode( ), which is defined by JList. It is
+shown here:
+void setSelectionMode(int mode)
+Here, mode specifies the selection mode. It must be one of these values defined by
+ListSelectionModel:
+SINGLE_SELECTION
+SINGLE_INTERVAL_SELECTION
+MULTIPLE_INTERVAL_SELECTION
