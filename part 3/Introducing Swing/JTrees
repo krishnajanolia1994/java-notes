@@ -1,0 +1,27 @@
+JTrees
+A tree is a component that presents a hierarchical view of data. The user has the ability to
+expand or collapse individual subtrees in this display. Trees are implemented in Swing by
+the JTree class. A sampling of its constructors is shown here:
+JTree(Object obj[ ])
+JTree(Vector<?> v)
+JTree(TreeNode tn)
+
+
+JTree relies on two models: TreeModel and TreeSelectionModel. A JTree generates a
+variety of events, but three relate specifically to trees: TreeExpansionEvent,
+TreeSelectionEvent, and TreeModelEvent. TreeExpansionEvent events occur when a node
+is expanded or collapsed. A TreeSelectionEvent is generated when the user selects or
+deselects a node within the tree. A TreeModelEvent is fired when the data or structure of the
+tree changes. The listeners for these events are TreeExpansionListener, TreeSelectionListener,
+and TreeModelListener, respectively. The tree event classes and listener interfaces are
+packaged in javax.swing.event.
+
+
+valueChanged( ), which receives the TreeSelectionEvent object. You can obtain the path to
+the selected object by calling getPath( ), shown here, on the event object.
+TreePath getPath( )
+It returns a TreePath object that describes the path to the changed node.
+
+To create a hierarchy of tree nodes, the add( ) method of DefaultMutableTreeNode can
+be used. Its signature is shown here:
+void add(MutableTreeNode child)
