@@ -1,0 +1,15 @@
+JComboBox
+Swing provides a combo box (a combination of a text field and a drop-down list) through
+the JComboBox class. A combo box normally displays one entry, but it will also display a
+drop-down list that allows a user to select a different entry. You can also create a combo box
+
+JComboBox uses the ComboBoxModel. Mutable combo boxes (those whose entries can
+be changed) use the MutableComboBoxModel.
+
+items can be dynamically added to the list of choices via the addItem( ) method, shown here:
+void addItem(Object obj)
+
+JComboBox generates an action event when the user selects an item from the list.
+JComboBox also generates an item event when the state of selection changes, which occurs
+when an item is selected or deselected. Thus, changing a selection means that two item
+events will occur: one for the deselected item and another for the selected item
