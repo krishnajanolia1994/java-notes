@@ -1,0 +1,3 @@
+The Life Cycle of a Servlet
+Three methods are central to the life cycle of a servlet. These are init( ), service( ), and destroy( ).
+They are implemented by every servlet and are invoked at specific times by the server. Let
