@@ -1,0 +1,34 @@
+JTable
+JTable is a component that displays rows and columns of data. You can drag the cursor
+on column boundaries to resize columns.
+
+Like JTree, JTable has many classes and interfaces associated with it. These are
+packaged in javax.swing.table.
+
+
+JTable does
+not provide any scrolling capabilities of its own. Instead, you will normally wrap a JTable
+inside a JScrollPane.
+JTable supplies several constructors. The one used here is
+JTable(Object data[ ][ ], Object colHeads[ ])
+
+JTable relies on three models. The first is the table model, which is defined by the
+TableModel interface. This model defines those things related to displaying data in a
+two-dimensional format. The second is the table column model, which is represented by
+TableColumnModel. JTable is defined in terms of columns, and it is TableColumnModel that
+specifies the characteristics of a column. These two models are packaged in javax.swing.table.
+The third model determines how items are selected, and it is specified by the
+ListSelectionModel, which was described when JList was discussed.
+
+A JTable can generate several different events. The two most fundamental to a table’s
+operation are ListSelectionEvent and TableModelEvent. A ListSelectionEvent is generated
+when the user selects something in the table.
+
+A TableModelEvent is fired when that table’s
+data changes in some way. Handling these events requires a bit more work
+
+
+1. Create an instance of JTable.
+2. Create a JScrollPane object, specifying the table as the object to scroll.
+3. Add the table to the scroll pane.
+4. Add the scroll pane to the content pane.
