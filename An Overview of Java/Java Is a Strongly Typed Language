@@ -1,0 +1,4 @@
+First, every
+variable has a type, every expression has a type, and every type is strictly defined. Second,
+all assignments, whether explicit or via parameter passing in method calls, are checked for
+type compatibility.
