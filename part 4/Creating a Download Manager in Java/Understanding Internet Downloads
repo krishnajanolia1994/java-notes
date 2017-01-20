@@ -1,0 +1,16 @@
+The client, your browser, requests to download a file from a server on the Internet. The server
+then responds by sending the requested file to your browser. In order for clients to communicate
+with servers, they must have an established protocol for doing so. The most common protocols
+for downloading files are File Transfer Protocol (FTP) and Hypertext Transfer Protocol (HTTP).
+FTP is usually associated generically with exchanging files between computers, whereas
+HTTP is usually associated specifically with transferring web pages and their related files
+(that is, graphics, sounds, and so on). Over time, as the World Wide Web has grown in
+popularity, HTTP has become the dominant protocol for downloading files from the Internet.
+FTP is definitely not extinct, though.
+
+
+
+The difference between these two forms lies in the way files can
+be requested from servers. With the antiquated HTTP 1.0, a client can only request that a server
+send it a file, whereas with HTTP 1.1, a client can request that a server send it a complete file or
+only a specific portion of a file. This is the feature the Download Manager is built on.
