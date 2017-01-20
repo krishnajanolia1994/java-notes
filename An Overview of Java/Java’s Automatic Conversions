@@ -1,0 +1,12 @@
+Java’s Automatic Conversions
+When one type of data is assigned to another type of variable, an automatic type conversion
+will take place if the following two conditions are met:
+• The two types are compatible.
+• The destination type is larger than the source type.
+
+
+Casting Incompatible Types
+int a;
+byte b;
+// ...
+b = (byte) a;
