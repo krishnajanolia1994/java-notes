@@ -1,0 +1,3 @@
+Variables
+The variable is the basic unit of storage in a Java program. A variable is defined by the
+combination of an identifier, a type, and an optional initializer.
