@@ -1,0 +1,4 @@
+The Type Promotion Rules
+Java defines several type promotion rules that apply to expressions. They are as follows: First,
+all byte, short, and char values are promoted to int, as just described. Then, if one operand
+is a long, the whole expression is promoted to long. I
